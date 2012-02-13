@@ -1,0 +1,1 @@
+I'm using LYX and http://code.google.com/p/classicthesis/
