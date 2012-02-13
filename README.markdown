@@ -1,1 +1,1 @@
-I'm using LYX and http://code.google.com/p/classicthesis/
+I'm using [LyX](http://www.lyx.org/) "The Document Processor" and [classicthesis](http://code.google.com/p/classicthesis/): "An Homage to The Elements of Typographic Style"
