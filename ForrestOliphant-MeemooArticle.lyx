@@ -83,7 +83,7 @@
 \begin_body
 
 \begin_layout Title
-Meemoo: Designing Hackable Creative Web Apps
+Meemoo: Hackable Creative Web Apps
 \end_layout
 
 \begin_layout Author
@@ -120,16 +120,101 @@ LatexCommand tableofcontents
 Intro
 \end_layout
 
+\begin_layout Subsection
+Hackability
+\end_layout
+
+\begin_layout Subsection
+Metamedia
+\end_layout
+
 \begin_layout Section
 Context
+\end_layout
+
+\begin_layout Subsection
+Computers as abstraction
+\end_layout
+
+\begin_layout Subsubsection
+Mainframe to PC: Dynabook
+\end_layout
+
+\begin_layout Subsubsection
+Programming for kids: Logo, Scratch
+\end_layout
+
+\begin_layout Subsection
+Visual programming languages
+\end_layout
+
+\begin_layout Standard
+Meemoo is a kind of dataflow visual programming environment.
+ This means that on a programming 
+\end_layout
+
+\begin_layout Subsection
+Open hardware
 \end_layout
 
 \begin_layout Section
 Development
 \end_layout
 
+\begin_layout Subsection
+Software design for hackability
+\end_layout
+
+\begin_layout Standard
+One of the goals for the project is that it is hackable on all levels.
+\end_layout
+
+\begin_layout Subsubsection
+Common communication library for modules
+\end_layout
+
+\begin_layout Subsubsection
+Sharable app 
+\begin_inset Quotes eld
+\end_inset
+
+source code
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+User experience design for hackability
+\end_layout
+
 \begin_layout Section
 Tests/Results
+\end_layout
+
+\begin_layout Subsection
+Economic model illustrated with Meemoo
+\end_layout
+
+\begin_layout Subsection
+Live animation for dance party visuals
+\end_layout
+
+\begin_layout Section
+Future Development
+\end_layout
+
+\begin_layout Subsection
+Community for sharing apps
+\end_layout
+
+\begin_layout Subsection
+Meemoo hardware
+\end_layout
+
+\begin_layout Subsection
+Twenty concepts to explore with Meemoo
 \end_layout
 
 \begin_layout Section
