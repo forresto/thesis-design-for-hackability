@@ -91,20 +91,56 @@ Forrest Oliphant
 \end_layout
 
 \begin_layout Abstract
-\noindent
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-lipsum[1]
+Meemoo is a framework for creating hackable web apps.
+ An app is a graph of modules and the wires that connect them.
+ A module is a web page that can live anywhere online, and use any web technolog
+y.
+ This web page includes JavaScript that defines the module's inputs and
+ outputs: what data is accepted and what kind of data will be sent.
+ The wires define where each module sends data.
+ The graph that defines an app's layout, routing, and state can be saved
+ and shared with a small amount of text.
 \end_layout
 
+\begin_layout Abstract
+I have focused module development on realtime animation tools, as this makes
+ it simple to explain and engage creatively with the concept.
+ It is not limited to animation though; any app or system that can be described
+ by a dataflow graph can be made into a Meemoo app.
+\end_layout
+
+\begin_layout Abstract
+It has been designed with a few groups of people in mind: creators, hackers,
+ and modders.
+ Creators will use Meemoo apps to make audio-visual media and share them
+ online.
+ Hackers will explore how the apps work, and rewire them to work differently.
+ Modders will use web technologies to create new modules which will allow
+ different kinds of apps.
+ It is designed in a way that each of these levels leads to the next, encouragin
+g people 
+\begin_inset Quotes eld
 \end_inset
 
+down the rabbit hole
+\begin_inset Quotes erd
+\end_inset
 
+ towards learning programming.
+\end_layout
+
+\begin_layout Abstract
+This thesis describes the Iris concept in detail, including the design decisions
+ on the inter- face and architecture.
+ It provides a contextual framework for the production: I explore the methods
+ of creating rhythms in different music genres.
+ I also look at the history of sequenc- ing and looping music, and benchmark
+ existing products and productions related to the concept.
+ The outcomes of the project are reviewed from my personal perspective as
+ a musician and designer.
+ Initial user feedback received from the prototype is also presented.
+ The source codes for the implementations on the iPad and Max 4 Live environment
+ are released as a part of this thesis.
 \end_layout
 
 \begin_layout Standard
@@ -124,8 +160,51 @@ Intro
 Hackability
 \end_layout
 
+\begin_layout Standard
+Designing for hackability implies respect.
+ The designer acknowledges that they can't imagine every use of their thing,
+ so they enable people to hack, bend, mod, or fork it to their will.
+\end_layout
+
+\begin_layout Standard
+Meemoo is designed for hackability on all levels.
+ On the highest level, people can add and remove modules and wires
+\end_layout
+
 \begin_layout Subsection
 Metamedia
+\end_layout
+
+\begin_layout Standard
+Kay: computer can be all other media, and is also active.
+ Internet makes all media available everywhere.
+ Web 2.0 made it participatory for publishing text, photos, videos.
+ Blogger, Flickr, Youtube: one solution per media.
+ Meemoo makes the modes of production also participatory.
+ This makes it possible for people to invent and share new media.
+ This is the metamedium.
+\end_layout
+
+\begin_layout Standard
+If, as McLuhan proposed, 
+\begin_inset Quotes eld
+\end_inset
+
+The medium is the message,
+\begin_inset Quotes erd
+\end_inset
+
+ then what is the message of the metamedium?
+\end_layout
+
+\begin_layout Subsection
+Tools
+\end_layout
+
+\begin_layout Standard
+From making tools to making toolmakers.
+ Thinking about thinking about thinking (about thinking?).
+ Metaconstructionism?
 \end_layout
 
 \begin_layout Section
@@ -154,11 +233,111 @@ Meemoo is a kind of dataflow visual programming environment.
 \end_layout
 
 \begin_layout Subsection
-Open hardware
+Open hardware and maker movement
+\end_layout
+
+\begin_layout Standard
+Arduino modules: Gameduino, Heart rate sensor, Lilypad...
+ abstracting some of the electronics intricacies.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+If you can't open it you don't own it.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+JQuery Plugins
+\end_layout
+
+\begin_layout Standard
+JQuery : plugin :: Meemoo : module
 \end_layout
 
 \begin_layout Section
 Development
+\end_layout
+
+\begin_layout Subsection
+Previous work
+\end_layout
+
+\begin_layout Standard
+Meemoo is an abstraction of all of my earlier creative web app experiments,
+ and I plan on rebuilding them in Meemoo to make it easier for me (and others)
+ to modify how they work.
+ I call it my 
+\shape italic
+opus sink
+\shape default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Media Bitch (2002), Flash.
+ 
+\end_layout
+
+\begin_layout Standard
+http://forresto.com/oldsite/interactive/mbx/mediabitch.html
+\end_layout
+
+\begin_layout Subsubsection
+Kaleidocam (2007), Quartz Composer.
+ 
+\end_layout
+
+\begin_layout Standard
+https://vimeo.com/387429
+\end_layout
+
+\begin_layout Subsubsection
+Megacam (2010), Flash.
+ 
+\end_layout
+
+\begin_layout Standard
+http://sembiki.com/megacam
+\end_layout
+
+\begin_layout Standard
+Webcam apps inspired in part by Lomo cameras.
+ I chose presets for each toy to make it simpler, but also removed the possibili
+ty for people to experiment with the variables.
+\end_layout
+
+\begin_layout Subsubsection
+Opera stage projection mapping (2011), Quartz Composer.
+ 
+\end_layout
+
+\begin_layout Standard
+Last year I was working on a multi-screen video projection system for the
+ set design of an Opera.
+ I found Quartz Composer modules for midi control, video playback, and projectio
+n mapping.
+ I patched them together to create a system that controlled four screens
+ projected from one projector.
+ These modules were shared online in the open-source spirit.
+ Meemoo will make it possible for people to not only share such HTML modules
+ online, but also wire them together online.
+ This will lower the barrier to entry.
+\end_layout
+
+\begin_layout Subsubsection
+Web Video Remixer (2011), HTML.
+ 
+\end_layout
+
+\begin_layout Standard
+This is the direct parent project of Meemoo, where I figured out how to
+ communicate between web pages in iframes.
 \end_layout
 
 \begin_layout Subsection
@@ -189,8 +368,71 @@ source code
 User experience design for hackability
 \end_layout
 
+\begin_layout Subsubsection
+Direct manipulation
+\end_layout
+
+\begin_layout Standard
+Ben Shneiderman
+\end_layout
+
+\begin_layout Subsubsection
+Visual programming 
+\begin_inset Quotes eld
+\end_inset
+
+patching
+\begin_inset Quotes erd
+\end_inset
+
+ metaphor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+The use of flexible cords with plugs at their ends and sockets (jacks) to
+ make temporary connections dates back to cord-type manually operated telephone
+ switchboards (if not even earlier, possibly for telegraph circuits).
+ Cords with plugs at both ends had been used for many decades before the
+ advent of Dr.
+ Moog's synthesizers to make temporary connections ("patches") in such places
+ as radio and recording studios.
+ These came to be known as "patch cords", and that term was also used for
+ Moog modular systems.
+ As familiarity developed, a given setup of the synthesizer (both cord connectio
+ns and knob settings) came to be referred to as a "patch", and the term
+ has persisted, applying to systems that do not use patch cords.
+\begin_inset Quotes erd
+\end_inset
+
+ - 
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia on Moog"
+target "http://en.wikipedia.org/wiki/Moog_synthesizer#Early_history"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+What is abstracted
+\end_layout
+
+\begin_layout Standard
+As a programmer, working in Puredata and Quartz Composer can be frustrating.
+ Certain logical constructions that would be easy to describe in code.
+\end_layout
+
 \begin_layout Section
 Tests/Results
+\end_layout
+
+\begin_layout Subsection
+User testing and feedback
 \end_layout
 
 \begin_layout Subsection
@@ -198,7 +440,7 @@ Economic model illustrated with Meemoo
 \end_layout
 
 \begin_layout Subsection
-Live animation for dance party visuals
+Live animation visuals for dance party
 \end_layout
 
 \begin_layout Section
@@ -214,11 +456,47 @@ Meemoo hardware
 \end_layout
 
 \begin_layout Subsection
-Twenty concepts to explore with Meemoo
+Twenty Apps to Build With Meemoo
+\end_layout
+
+\begin_layout Standard
+In the spirit of Seymour Papert and Cynthia Solomon's 1971 memo, Twenty
+ Things to Do With a Computer, I present this list of potential Meemoo apps:
+\end_layout
+
+\begin_layout Enumerate
+Kaleidoscope with reconfigurable mirrors
+\end_layout
+
+\begin_layout Enumerate
+Experiment with video feedback with webcams pointed at screens
+\end_layout
+
+\begin_layout Enumerate
+Text-to-song generator with computer generated voices singing in harmony
+\end_layout
+
+\begin_layout Enumerate
+Artistic visualization of data from bio-sensors
+\end_layout
+
+\begin_layout Enumerate
+Beatbox control of video mashup (sCrAmBlEd?HaCkZ!)
+\end_layout
+
+\begin_layout Enumerate
+...
 \end_layout
 
 \begin_layout Section
 Conclusions
+\end_layout
+
+\begin_layout Standard
+Making a creative tool maker is pointless if nothing creative is made.
+ The hope in putting so much time into a creative project dream is that
+ somebody will make something beautiful with it.
+ If I don't do it, why would anybody else?
 \end_layout
 
 \begin_layout Standard
