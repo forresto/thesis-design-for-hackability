@@ -126,21 +126,11 @@ down the rabbit hole
 \begin_inset Quotes erd
 \end_inset
 
- towards learning programming.
+ towards learning coding.
 \end_layout
 
 \begin_layout Abstract
-This thesis describes the Iris concept in detail, including the design decisions
- on the inter- face and architecture.
- It provides a contextual framework for the production: I explore the methods
- of creating rhythms in different music genres.
- I also look at the history of sequenc- ing and looping music, and benchmark
- existing products and productions related to the concept.
- The outcomes of the project are reviewed from my personal perspective as
- a musician and designer.
- Initial user feedback received from the prototype is also presented.
- The source codes for the implementations on the iPad and Max 4 Live environment
- are released as a part of this thesis.
+In this thesis I describe...
 \end_layout
 
 \begin_layout Standard
@@ -156,6 +146,12 @@ LatexCommand tableofcontents
 Intro
 \end_layout
 
+\begin_layout Standard
+Learning by example.
+ How I learned HTML.
+ Social constructionism?
+\end_layout
+
 \begin_layout Subsection
 Hackability
 \end_layout
@@ -168,7 +164,10 @@ Designing for hackability implies respect.
 
 \begin_layout Standard
 Meemoo is designed for hackability on all levels.
- On the highest level, people can add and remove modules and wires
+ On the highest level, people can add and remove modules and wires without
+ coding knowledge.
+ On the lowest level, the entire project is Free software.
+ https://github.com/meemoo
 \end_layout
 
 \begin_layout Subsection
@@ -179,10 +178,24 @@ Metamedia
 Kay: computer can be all other media, and is also active.
  Internet makes all media available everywhere.
  Web 2.0 made it participatory for publishing text, photos, videos.
- Blogger, Flickr, Youtube: one solution per media.
- Meemoo makes the modes of production also participatory.
+ Twitter, Flickr, Youtube: one solution per media, no coding needed.
+ 
+\end_layout
+
+\begin_layout Standard
+Web 2.0 makes media distribution easier by abstracting away FTP, HTML, etc.
+\end_layout
+
+\begin_layout Standard
+Maybe Web 2.5 is creative apps online, like Picnik photo editor and TinkerCAD
+ 3D design software.
+ Media creation without desktop software.
+\end_layout
+
+\begin_layout Standard
+Meemoo makes the modes of production also participatory.
  This makes it possible for people to invent and share new media.
- This is the metamedium.
+ Web 3.0: web software creation without desktop software (or code)?
 \end_layout
 
 \begin_layout Standard
@@ -190,11 +203,18 @@ If, as McLuhan proposed,
 \begin_inset Quotes eld
 \end_inset
 
-The medium is the message,
+the medium is the message,
 \begin_inset Quotes erd
 \end_inset
 
- then what is the message of the metamedium?
+ then what kinds of messages are implied by the metamedium? 
+\end_layout
+
+\begin_layout Standard
+D.
+ Rushkoff argues (Program or Be Programmed) that learning to code opens
+ people's eyes to the design of all systems.
+ They see that bad design can be fixed.
 \end_layout
 
 \begin_layout Subsection
@@ -203,8 +223,30 @@ Tools
 
 \begin_layout Standard
 From making tools to making toolmakers.
- Thinking about thinking about thinking (about thinking?).
- Metaconstructionism?
+ Tool designer thinks: 
+\begin_inset Quotes eld
+\end_inset
+
+How will people use this tool?
+\begin_inset Quotes erd
+\end_inset
+
+ Toolmaker designer thinks: how will tool designers use this tool (to think
+ about how people will use their tool)? Thinking about thinking about thinking
+ (about thinking?).
+ Metaconstructionism? 
+\end_layout
+
+\begin_layout Standard
+Meemoo will enable people to become tool designers before learning coding
+ skills.
+\end_layout
+
+\begin_layout Standard
+Programming skills distinct from coding skills.
+ Visual programming makes the dataflow logic visual.
+ With text-based coding you need to keep track of these relationships in
+ another way.
 \end_layout
 
 \begin_layout Section
@@ -219,8 +261,25 @@ Computers as abstraction
 Mainframe to PC: Dynabook
 \end_layout
 
+\begin_layout Standard
+Kay: Promethian effort to bring computation from 
+\begin_inset Quotes eld
+\end_inset
+
+priesthood
+\begin_inset Quotes erd
+\end_inset
+
+ of mainframe admins to all people, especially children.
+\end_layout
+
 \begin_layout Subsubsection
-Programming for kids: Logo, Scratch
+Programming for kids: Smalltalk, Logo, Scratch, Alice
+\end_layout
+
+\begin_layout Standard
+Constructionism: getting kids programming gets them to think about thinking.
+ The metamedium gives them control.
 \end_layout
 
 \begin_layout Subsection
@@ -233,12 +292,21 @@ Meemoo is a kind of dataflow visual programming environment.
 \end_layout
 
 \begin_layout Subsection
+Free Software movement
+\end_layout
+
+\begin_layout Standard
+Can't own ideas.
+ Why do people give away their work?
+\end_layout
+
+\begin_layout Subsection
 Open hardware and maker movement
 \end_layout
 
 \begin_layout Standard
-Arduino modules: Gameduino, Heart rate sensor, Lilypad...
- abstracting some of the electronics intricacies.
+Arduino modules: Gameduino, heart rate sensor, Lilypad...
+ abstracting some of the electronics intricacies into modular components.
 \end_layout
 
 \begin_layout Standard
@@ -260,8 +328,19 @@ JQuery Plugins
 JQuery : plugin :: Meemoo : module
 \end_layout
 
+\begin_layout Standard
+Large community sharing plugins.
+ I made this thing and it is useful to me.
+ 
+\end_layout
+
 \begin_layout Section
 Development
+\end_layout
+
+\begin_layout Standard
+Development on Meemoo's ancestor project began in January 2011.
+ In October 2011 Meemoo became a Mozilla WebFWD fellow project.
 \end_layout
 
 \begin_layout Subsection
@@ -280,8 +359,7 @@ opus sink
 \end_layout
 
 \begin_layout Subsubsection
-Media Bitch (2002), Flash.
- 
+Media Bitch (2002), Flash
 \end_layout
 
 \begin_layout Standard
@@ -289,17 +367,19 @@ http://forresto.com/oldsite/interactive/mbx/mediabitch.html
 \end_layout
 
 \begin_layout Subsubsection
-Kaleidocam (2007), Quartz Composer.
- 
+Kaleidocam (2007), Quartz Composer
 \end_layout
 
 \begin_layout Standard
 https://vimeo.com/387429
 \end_layout
 
+\begin_layout Standard
+Learning QC and dataflow programming.
+\end_layout
+
 \begin_layout Subsubsection
-Megacam (2010), Flash.
- 
+Megacam (2010), Flash
 \end_layout
 
 \begin_layout Standard
@@ -308,13 +388,25 @@ http://sembiki.com/megacam
 
 \begin_layout Standard
 Webcam apps inspired in part by Lomo cameras.
- I chose presets for each toy to make it simpler, but also removed the possibili
-ty for people to experiment with the variables.
+ I chose presets for each toy to make it simpler, but that also removed
+ the possibility to experiment with the variables.
 \end_layout
 
 \begin_layout Subsubsection
-Opera stage projection mapping (2011), Quartz Composer.
- 
+Looplab (2010), Pure Data
+\end_layout
+
+\begin_layout Standard
+https://vimeo.com/16956269 http://www.flickr.com/photos/forresto/5125930908/
+\end_layout
+
+\begin_layout Standard
+Learning Pure Data.
+ Network communcation of identical apps, each passing data to the next.
+\end_layout
+
+\begin_layout Subsubsection
+Opera stage projection mapping (2011), Quartz Composer
 \end_layout
 
 \begin_layout Standard
@@ -322,17 +414,21 @@ Last year I was working on a multi-screen video projection system for the
  set design of an Opera.
  I found Quartz Composer modules for midi control, video playback, and projectio
 n mapping.
- I patched them together to create a system that controlled four screens
- projected from one projector.
- These modules were shared online in the open-source spirit.
- Meemoo will make it possible for people to not only share such HTML modules
- online, but also wire them together online.
- This will lower the barrier to entry.
+ I patched them together to create a system that controlled video on four
+ projection-mapped screens from one projector.
+ These modules were all shared online by their authors in the open-source
+ spirit.
+ I needed to add a feature to one of them, and was able to do so in XCode.
+\end_layout
+
+\begin_layout Standard
+Meemoo will make it possible for people to not only share such modules online,
+ but also wire them together, experiement, and save output instantly online.
+ This will lower the barrier to entry and increase collaboration potential.
 \end_layout
 
 \begin_layout Subsubsection
-Web Video Remixer (2011), HTML.
- 
+Web Video Remixer (2011), HTML
 \end_layout
 
 \begin_layout Standard
@@ -346,10 +442,62 @@ Software design for hackability
 
 \begin_layout Standard
 One of the goals for the project is that it is hackable on all levels.
+ On the lowest level, this means that the code is open source.
 \end_layout
 
 \begin_layout Subsubsection
 Common communication library for modules
+\end_layout
+
+\begin_layout Standard
+Each Meemoo module needs to include meemoo.js, which handles message routing.
+ The inputs and outputs are then specified as in Algorithm 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "Defining Inputs and Outputs"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Defining Inputs and Outputs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "children/define-inputs-outputs-example.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -364,6 +512,22 @@ source code
 
 \end_layout
 
+\begin_layout Standard
+The graph format is JSON, like graph={nodes:[],edges:[]}.
+ This 
+\begin_inset Quotes eld
+\end_inset
+
+text blob
+\begin_inset Quotes erd
+\end_inset
+
+ stores the position, connections, and state of all of the modules in the
+ graph, which can be considered the source code of the app.
+ Because it is a small amount of text, it is easy to share the app source
+ code in forums, image descriptions, comments...
+\end_layout
+
 \begin_layout Subsection
 User experience design for hackability
 \end_layout
@@ -374,6 +538,12 @@ Direct manipulation
 
 \begin_layout Standard
 Ben Shneiderman
+\end_layout
+
+\begin_layout Standard
+Visual indication of what is happening in each module.
+ (Like TouchDesigner).
+ Dragging to change variables.
 \end_layout
 
 \begin_layout Subsubsection
@@ -424,7 +594,8 @@ What is abstracted
 
 \begin_layout Standard
 As a programmer, working in Puredata and Quartz Composer can be frustrating.
- Certain logical constructions that would be easy to describe in code.
+ Certain logical constructions that would be easy to describe in code become
+ a jumbled mess of boxes and wires.
 \end_layout
 
 \begin_layout Section
@@ -435,24 +606,81 @@ Tests/Results
 User testing and feedback
 \end_layout
 
+\begin_layout Standard
+Aino - Camdoodle
+\end_layout
+
+\begin_layout Standard
+Ginger - 
+\begin_inset Quotes eld
+\end_inset
+
+You should add an onionskin
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Teemu - Metronome animation
+\end_layout
+
+\begin_layout Standard
+Facebook Beta group
+\end_layout
+
 \begin_layout Subsection
 Economic model illustrated with Meemoo
+\end_layout
+
+\begin_layout Standard
+http://meemoo.org/blog/2012-01-24-friction-free-post-scarcity-creative-economies/
 \end_layout
 
 \begin_layout Subsection
 Live animation visuals for dance party
 \end_layout
 
+\begin_layout Standard
+http://www.youtube.com/watch?v=x1L-2jRVyhk
+\end_layout
+
 \begin_layout Section
 Future Development
+\end_layout
+
+\begin_layout Standard
+This idea is bigger than one developer and one master's thesis.
+ I plan on finding resources to continue work, and to bring more people
+ with varied talents into the project.
 \end_layout
 
 \begin_layout Subsection
 Community for sharing apps
 \end_layout
 
+\begin_layout Standard
+Meemoo was designed for sharing.
+ 
+\end_layout
+
+\begin_layout Subsection
+Socket communication
+\end_layout
+
+\begin_layout Standard
+UX and server for sending arbitrary data from Meemoo on my smartphone to
+ my laptop to your tablet (and back).
+\end_layout
+
 \begin_layout Subsection
 Meemoo hardware
+\end_layout
+
+\begin_layout Standard
+Cheap computers (Raspberry Pi) + knobs + sliders + physical patch cables
+ for performative interaction.
 \end_layout
 
 \begin_layout Subsection
@@ -493,10 +721,30 @@ Conclusions
 \end_layout
 
 \begin_layout Standard
-Making a creative tool maker is pointless if nothing creative is made.
- The hope in putting so much time into a creative project dream is that
- somebody will make something beautiful with it.
- If I don't do it, why would anybody else?
+I contacted Ze Frank to ask if he would be a project advisor.
+ He gave me some good things to think about:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+Creating 'possibility spaces' can be exciting for a number of reasons...
+ but also can be a false God.
+ It can be an excuse to never to actually grapple with whether there is
+ value in the output itself, whether beauty is enough, whether people actually
+ want what you are making, etc...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Making a creative tool maker is pointless if, in the end, nothing creative
+ is made.
+ My dream is that somebody will make something beautiful with it.
+ Shouldn't that somebody be me? If I don't do it, why would anybody else?
 \end_layout
 
 \begin_layout Standard
