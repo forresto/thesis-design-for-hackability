@@ -335,21 +335,13 @@ Large community sharing plugins.
 \end_layout
 
 \begin_layout Section
-Development
+Previous work and motivation
 \end_layout
 
 \begin_layout Standard
-Development on Meemoo's ancestor project began in January 2011.
- In October 2011 Meemoo became a Mozilla WebFWD fellow project.
-\end_layout
-
-\begin_layout Subsection
-Previous work
-\end_layout
-
-\begin_layout Standard
-Meemoo is an abstraction of all of my earlier creative web app experiments,
- and I plan on rebuilding them in Meemoo to make it easier for me (and others)
+In a way, Meemoo is an abstraction of all of my earlier digital creative
+ experiments.
+ I plan on rebuilding them in Meemoo to make it easier for me (and others)
  to modify how they work.
  I call it my 
 \shape italic
@@ -358,7 +350,7 @@ opus sink
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Media Bitch (2002), Flash
 \end_layout
 
@@ -366,7 +358,7 @@ Media Bitch (2002), Flash
 http://forresto.com/oldsite/interactive/mbx/mediabitch.html
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Kaleidocam (2007), Quartz Composer
 \end_layout
 
@@ -378,7 +370,7 @@ https://vimeo.com/387429
 Learning QC and dataflow programming.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Megacam (2010), Flash
 \end_layout
 
@@ -392,7 +384,7 @@ Webcam apps inspired in part by Lomo cameras.
  the possibility to experiment with the variables.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Looplab (2010), Pure Data
 \end_layout
 
@@ -405,7 +397,7 @@ Learning Pure Data.
  Network communcation of identical apps, each passing data to the next.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Opera stage projection mapping (2011), Quartz Composer
 \end_layout
 
@@ -427,13 +419,22 @@ Meemoo will make it possible for people to not only share such modules online,
  This will lower the barrier to entry and increase collaboration potential.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Web Video Remixer (2011), HTML
 \end_layout
 
 \begin_layout Standard
 This is the direct parent project of Meemoo, where I figured out how to
  communicate between web pages in iframes.
+\end_layout
+
+\begin_layout Section
+Development
+\end_layout
+
+\begin_layout Standard
+Development on Meemoo's ancestor project began in January 2011.
+ In October 2011 Meemoo became a Mozilla WebFWD fellow project.
 \end_layout
 
 \begin_layout Subsection
@@ -459,45 +460,6 @@ reference "Defining Inputs and Outputs"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float algorithm
-wide false
-sideways false
-status open
-
-\begin_layout LyX-Code
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "Defining Inputs and Outputs"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "children/define-inputs-outputs-example.js"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -624,6 +586,18 @@ You should add an onionskin
 
 \begin_layout Standard
 Teemu - Metronome animation
+\end_layout
+
+\begin_layout Standard
+Jona - 
+\begin_inset Quotes eld
+\end_inset
+
+Can I use this in my class?
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -781,6 +755,50 @@ options "bibtotoc,plain"
 \end_inset
 
  
+\end_layout
+
+\begin_layout Section*
+Appendix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Defining Inputs and Outputs
+\begin_inset CommandInset label
+LatexCommand label
+name "Defining Inputs and Outputs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "children/define-inputs-outputs-example.js"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
