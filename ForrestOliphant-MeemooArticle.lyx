@@ -91,7 +91,24 @@ Forrest Oliphant
 \end_layout
 
 \begin_layout Abstract
-Meemoo is a framework for creating hackable web apps.
+The main objective of this project is to design a modular flow-based visual
+ programming environment using web technologies.
+ The environment should empower non-coders to 
+\begin_inset Quotes eld
+\end_inset
+
+hack
+\begin_inset Quotes erd
+\end_inset
+
+ creative web apps by configuring wires that represent how modules communicate.
+ Apps created with the environment should have compact source code that
+ is easy to read and share.
+\end_layout
+
+\begin_layout Abstract
+I have named the framework Meemoo.
+ It is a browser-based framework for creating hackable web apps.
  An app is a graph of modules and the wires that connect them.
  A module is a web page that can live anywhere online, and use any web technolog
 y.
@@ -106,7 +123,7 @@ y.
 I have focused module development on realtime animation tools, as this makes
  it simple to explain and engage creatively with the concept.
  It is not limited to animation though; any app or system that can be described
- by a dataflow graph can be made into a Meemoo app.
+ by a data-flow graph can be made into a Meemoo app.
 \end_layout
 
 \begin_layout Abstract
