@@ -55,7 +55,7 @@
 \use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine basic
+\cite_engine natbib_authoryear
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -102,38 +102,40 @@ hack
 \end_inset
 
  creative web apps by configuring wires that represent how modules communicate.
- Apps created with the environment should have compact source code that
- is easy to read and share.
+ Apps created with the environment should have source code that is easy
+ to read and share.
 \end_layout
 
 \begin_layout Abstract
 I have named the framework Meemoo.
- It is a browser-based framework for creating hackable web apps.
- An app is a graph of modules and the wires that connect them.
+ Within this framework, an app is a graph of modules and the wires that
+ connect them.
  A module is a web page that can live anywhere online, and use any web technolog
 y.
  This web page includes JavaScript that defines the module's inputs and
  outputs: what data is accepted and what kind of data will be sent.
  The wires define where each module sends data.
- The graph that defines an app's layout, routing, and state can be saved
- and shared with a small amount of text.
+ The source code of the graph that defines an app's layout, routing, and
+ state can be saved and shared with a small amount of text.
+ 
 \end_layout
 
 \begin_layout Abstract
-I have focused module development on realtime animation tools, as this makes
- it simple to explain and engage creatively with the concept.
+So far I have focused module development on realtime animation tools, as
+ this makes it simple to explain and engage creatively with the concept.
  It is not limited to animation though; any app or system that can be described
  by a data-flow graph can be made into a Meemoo app.
+ 
 \end_layout
 
 \begin_layout Abstract
-It has been designed with a few groups of people in mind: creators, hackers,
- and modders.
+Meemoo has been designed with a few groups of people in mind: creators,
+ hackers, and modders.
  Creators will use Meemoo apps to make audio-visual media and share them
  online.
  Hackers will explore how the apps work, and rewire them to work differently.
- Modders will use web technologies to create new modules which will allow
- different kinds of apps.
+ Modders will use web technologies to modify modules and create new modules
+ which will be used in different kinds of apps.
  It is designed in a way that each of these levels leads to the next, encouragin
 g people 
 \begin_inset Quotes eld
@@ -148,6 +150,7 @@ down the rabbit hole
 
 \begin_layout Abstract
 In this thesis I describe...
+ 
 \end_layout
 
 \begin_layout Standard
@@ -160,17 +163,267 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Section
-Intro
+Introduction
 \end_layout
 
 \begin_layout Standard
-Learning by example.
- How I learned HTML.
- Social constructionism?
+My first memory of interacting with a personal computer was with an Apple
+ Macintosh that my father brought home from work.
+ I have a strong visual memory of using the mouse to connect numbered dots
+ to draw a star (Figure 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Connecting-the-dots"
+
+\end_inset
+
+).
+ This interaction was part of an introductory program to teach mouse skills,
+ called 
+\begin_inset Quotes eld
+\end_inset
+
+Mousing Around.
+\begin_inset Quotes erd
+\end_inset
+
+ Seeing this graphic, however simple, react to my input captured my imagination.
+ We only had that computer for a few days, but I was hooked.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/mac-connect-dots-2.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Connecting-the-dots"
+
+\end_inset
+
+Connecting the dots to draw a star in 
+\begin_inset Quotes eld
+\end_inset
+
+Mousing Around
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wichary2012"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because of timing or school priorities, I wasn't part of the generation
+ that was exposed to BASIC or LOGO programming in elementary school.
+ I remained interested in computers, spending any time that I could get
+ my hands on them on shareware games and paint programs.
+ I didn't get into programming until high school, in two very different
+ ways: the TI-8x series of graphing calculators and web programming.
+ 
+\end_layout
+
+\begin_layout Standard
+My higher-level math classes used TI-81 and TI-83 graphing calculators.
+ These have the ability to write and run programs with a BASIC-like syntax.
+ I taught myself how to script complicated graph drawing.
+ It was satisfying to see the calculator slowly render geometric patterns
+ from my scripts.
+ This was my first experience with programming.
+ I never managed to make the program draw what I originally had in mind,
+ but this wasn't discouraging.
+ The serendipitous images that emerged from my programming encouraged me
+ to explore different directions, and create new challenges for myself.
+\end_layout
+
+\begin_layout Standard
+The availability of the Internet in my home spurred this interest.
+ It was empowering to publish my first website.
+ It was a place where I could freely express myself, and anybody in the
+ world that was interested could see.
+ I learned web programming by example, mostly thanks to the 
+\begin_inset Quotes eld
+\end_inset
+
+view source
+\begin_inset Quotes erd
+\end_inset
+
+ command on the browser.
 \end_layout
 
 \begin_layout Subsection
-Hackability
+Hackers and Hackability
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+The Jargon File,
+\begin_inset Quotes erd
+\end_inset
+
+ a reference and glossary started in 1973, gives eight definitions for 
+\begin_inset Quotes eld
+\end_inset
+
+hacker.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+hacker: n.
+ [originally, someone who makes furniture with an axe]
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A person who enjoys exploring the details of programmable systems and how
+ to stretch their capabilities, as opposed to most users, who prefer to
+ learn only the minimum necessary.
+ RFC1392, the Internet Users' Glossary, usefully amplifies this as: A person
+ who delights in having an intimate understanding of the internal workings
+ of a system, computers and computer networks in particular.
+\end_layout
+
+\begin_layout Enumerate
+One who programs enthusiastically (even obsessively) or who enjoys programming
+ rather than just theorizing about programming.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A person capable of appreciating hack value.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A person who is good at programming quickly.
+ 
+\end_layout
+
+\begin_layout Enumerate
+An expert at a particular program, or one who frequently does work using
+ it or on it; as in ‘a Unix hacker’.
+ (Definitions 1 through 5 are correlated, and people who fit them congregate.)
+ 
+\end_layout
+
+\begin_layout Enumerate
+An expert or enthusiast of any kind.
+ One might be an astronomy hacker, for example.
+ 
+\end_layout
+
+\begin_layout Enumerate
+One who enjoys the intellectual challenge of creatively overcoming or circumvent
+ing limitations.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[deprecated] A malicious meddler who tries to discover sensitive information
+ by poking around.
+ Hence password hacker, network hacker.
+ The correct term for this sense is cracker.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The eighth definition, though deprecated by the Jargon File, has become
+ the popular understanding of 
+\begin_inset Quotes eld
+\end_inset
+
+hacker.
+\begin_inset Quotes erd
+\end_inset
+
+ For the purpose of this thesis, I will use 
+\begin_inset Quotes eld
+\end_inset
+
+hacker
+\begin_inset Quotes erd
+\end_inset
+
+ to mean the first definition.
+ In this context, 
+\begin_inset Quotes eld
+\end_inset
+
+hackability
+\begin_inset Quotes erd
+\end_inset
+
+ refers to design that encourages understanding of the workings of a system,
+ in a addition to the ability to modify said system.
+\end_layout
+
+\begin_layout Standard
+It might be a lost cause to reclaim this term from its common cultural understan
+ding.
+ The Maker Movement, which also places value in understanding and modifying
+ systems and things, does not have such negative baggage with their moniker,
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+make
+\begin_inset Quotes erd
+\end_inset
+
+ is a benign term.
+ I will stick to the term 
+\begin_inset Quotes eld
+\end_inset
+
+hackability,
+\begin_inset Quotes erd
+\end_inset
+
+ as I think that it encompasses the spirit that I want to promote with regards
+ to software.
 \end_layout
 
 \begin_layout Standard
@@ -634,7 +887,101 @@ Live animation visuals for dance party
 \end_layout
 
 \begin_layout Standard
-http://www.youtube.com/watch?v=x1L-2jRVyhk
+http://www.youtube.com/watch?v=T_tCyYGLWKM
+\end_layout
+
+\begin_layout Standard
+I was invited to do visuals for a Zodiak's Side-Step dance festival club
+ night.
+ I used the gig as an opportunity to push Meemoo development and pressure-test
+ the live-animation features.
+ 
+\end_layout
+
+\begin_layout Standard
+For the gig I made some special modules for creating a "world" into which
+ I could insert animated sprites.
+ On the software development side, I'm happy that I decided to make two
+ modules (Controller and World) share the same Backbone model.
+ Each module has its own view of the same model, so the data passed through
+ the wire will be the same on both sides.
+\end_layout
+
+\begin_layout Standard
+As the party started and I was still coding furiously, adding features to
+ the world module.
+ Thirty minutes later the music tempo picked up, inviting people to the
+ dance floor, and I made myself declare the coding done for the night.
+ It was a thrill to see the first sprite hit the dance floor: multicolored
+ glitter swirling in water.
+\end_layout
+
+\begin_layout Standard
+We used clay and construction paper (and some glitter) as the basic building
+ blocks of the visuals.
+ I'm attracted to the textures and imperfections that come from using materials
+ like these.
+ Using the taptempo module, I synced the sprites' animation to the rhythm.
+ It was fun to build these tiny animations and then throw them onto the
+ screens around the dance floor.
+ 
+\end_layout
+
+\begin_layout Standard
+There are lots of improvements and ideas that came up in the evening:
+\end_layout
+
+\begin_layout Itemize
+Camera: I used a Sony Eyetoy webcam, and the color was pretty bad.
+ I chose kid's art supplies with rich colors, but most of the color was
+ washed out in the first step.
+ Next time I'll do some tests to find a better webcam, or use the camera
+ on my phone, or a real digital camera somehow.
+ 
+\end_layout
+
+\begin_layout Itemize
+Audience participation: I planned to use Kinect to get silhouettes of people
+ dancing into the world, but ran out of time.
+ I was imagining using different animated textures for specified depth ranges.
+ 
+\end_layout
+
+\begin_layout Itemize
+Flocking: I only had time to implement the tiled animation.
+ The original concept was that sprites could be individual or flocks that
+ would move around the screens.
+ 
+\end_layout
+
+\begin_layout Itemize
+UX tweaks: Confirm dialog on every delete got annoying when juggling around
+ modules.
+ Directly un/replugging wires is a suggestion that is now high on the to-do
+ list.
+ 
+\end_layout
+
+\begin_layout Itemize
+I made a hack to open the World module in a new window to view it fullscreen
+ on the projectors.
+ I plan on making this a built-in feature for any module.
+\end_layout
+
+\begin_layout Standard
+Despite these limitations, I got a lot of good feedback about the visuals.
+ People were interested in what I was doing, and came around to play with
+ the art supplies.
+ Doing dance party visuals powered by a web browser was a fun experiment,
+ and with a few more display options I think that the limitations would
+ have been less aesthetically obvious.
+ Performing under pressure was a good way to test the system.
+\end_layout
+
+\begin_layout Standard
+Only *once* in the evening did a JavaScript warning pop up on the dance
+ floor.
+ I consider that a victory, and it made me laugh a lot when it happened.
 \end_layout
 
 \begin_layout Section
@@ -679,8 +1026,19 @@ Twenty Apps to Build With Meemoo
 \end_layout
 
 \begin_layout Standard
-In the spirit of Seymour Papert and Cynthia Solomon's 1971 memo, Twenty
- Things to Do With a Computer, I present this list of potential Meemoo apps:
+In the spirit of Seymour Papert and Cynthia Solomon's 1971 memo, 
+\begin_inset Quotes eld
+\end_inset
+
+Twenty Things to Do With a Computer,
+\begin_inset Quotes erd
+\end_inset
+
+ I present this list of potential Meemoo apps:
+\end_layout
+
+\begin_layout Enumerate
+Instructional puzzle game based on rewiring modules
 \end_layout
 
 \begin_layout Enumerate
@@ -704,7 +1062,54 @@ Beatbox control of video mashup (sCrAmBlEd?HaCkZ!)
 \end_layout
 
 \begin_layout Enumerate
-...
+Hourglass module that flows virtual sand to other modules through the wires
+\end_layout
+
+\begin_layout Enumerate
+TI-83 emulator 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Proof-of-concept by Cemetech & Kerm Martian: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.cemetech.net/projects/jstified/jstified.php"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ to draw animations
+\end_layout
+
+\begin_layout Enumerate
+LOGO emulator 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Proof-of-concept by Joshua Bell: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.calormen.com/Logo/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ to draw animations
+\end_layout
+
+\begin_layout Enumerate
+A Scratch game that draws different scenery based on location, time, and
+ weather data
 \end_layout
 
 \begin_layout Section
@@ -716,7 +1121,7 @@ I contacted Ze Frank to ask if he would be a project advisor.
  He gave me some good things to think about:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Quotes eld
 \end_inset
 
@@ -765,9 +1170,8 @@ beforebibskip}}
  
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-btprint "btPrintAll"
-bibfiles "../Bibliography"
-options "bibtotoc,plain"
+bibfiles "MeemooReferences"
+options "bibtotoc,plainnat"
 
 \end_inset
 
@@ -807,6 +1211,53 @@ name "Defining Inputs and Outputs"
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
 filename "children/define-inputs-outputs-example.js"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Meemoo App Source Code
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Meemoo-App-Source"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "children/meemoo-graph-source.js"
 
 \end_inset
 
