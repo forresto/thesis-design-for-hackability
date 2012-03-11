@@ -91,7 +91,7 @@ Forrest Oliphant
 \end_layout
 
 \begin_layout Abstract
-The main objective of this project is to design a modular flow-based visual
+The main objective of this project is to design a modular dataflow visual
  programming environment using web technologies.
  The environment should empower non-coders to 
 \begin_inset Quotes eld
@@ -102,14 +102,22 @@ hack
 \end_inset
 
  creative web apps by configuring wires that represent how modules communicate.
+ There should be a simple syntax to define the inputs and outputs of a module.
  Apps created with the environment should have source code that is easy
  to read and share.
 \end_layout
 
 \begin_layout Abstract
 I have named the framework Meemoo.
- Within this framework, an app is a graph of modules and the wires that
- connect them.
+ Within this framework, an 
+\begin_inset Quotes eld
+\end_inset
+
+app
+\begin_inset Quotes erd
+\end_inset
+
+ is a graph of modules and the wires that connect them.
  A module is a web page that can live anywhere online, and use any web technolog
 y.
  This web page includes JavaScript that defines the module's inputs and
@@ -124,7 +132,7 @@ y.
 So far I have focused module development on realtime animation tools, as
  this makes it simple to explain and engage creatively with the concept.
  It is not limited to animation though; any app or system that can be described
- by a data-flow graph can be made into a Meemoo app.
+ by a dataflow graph can be made into a Meemoo app.
  
 \end_layout
 
@@ -181,40 +189,17 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-My first memory of interacting with a personal computer was with an Apple
- Macintosh that my father brought home from work in the mid-1980s.
- I have a strong visual memory of using the mouse to connect numbered dots
- to draw a star (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Connecting-the-dots"
-
-\end_inset
-
-).
- This interaction was part of an introductory program to teach mouse skills,
- called 
-\begin_inset Quotes eld
-\end_inset
-
-Mousing Around.
-\begin_inset Quotes erd
-\end_inset
-
- Seeing this graphic, however simple, react to my input captured my imagination.
- We only had that computer for a few days, but I was hooked.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 15text%
+width "50col%"
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/mac-connect-dots-2.png
-	width 100col%
+	width 50text%
 
 \end_inset
 
@@ -239,13 +224,6 @@ Mousing Around
 \begin_inset Quotes erd
 \end_inset
 
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Wichary2012"
-
-\end_inset
-
 
 \end_layout
 
@@ -254,13 +232,30 @@ key "Wichary2012"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
+ My first memory of interacting with a computer was with an Apple Macintosh
+ that my father brought home from work in the mid-1980s.
+ I have a strong visual memory of using the mouse to connect numbered dots
+ to draw a star (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Connecting-the-dots"
 
 \end_inset
 
+).
+ This interaction was part of an introductory program to teach mouse skills,
+ called 
+\begin_inset Quotes eld
+\end_inset
 
+Mousing Around.
+\begin_inset Quotes erd
+\end_inset
+
+ Seeing this graphic, however simple, react to my input captured my imagination.
+ We only had that computer for a few days, but I was hooked.
 \end_layout
 
 \begin_layout Standard
@@ -348,14 +343,12 @@ Hackers and Hackability
 \end_layout
 
 \begin_layout Standard
-\begin_inset Quotes eld
-\end_inset
 
-The Jargon File,
-\begin_inset Quotes erd
-\end_inset
-
- a reference and glossary started in 1973, gives eight definitions for 
+\emph on
+The Jargon File
+\emph default
+, a reference and glossary started in 1973, gives eight definitions for
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -504,9 +497,9 @@ hackability,
 \begin_layout Standard
 Designing for hackability implies respect.
  The designer of a hackable thing acknowledges that they can't imagine every
- potential use, so they enable people to hack, bend, mod, or fork it to
- their will, and connect it to other things.
- This quality can apply to software, electronics, and other 
+ potential use, so they enable people to modify it to their will and connect
+ it to other things.
+ This quality can apply to software, physical artifacts, and services.
 \end_layout
 
 \begin_layout Subsection
@@ -554,6 +547,16 @@ D.
  Rushkoff argues (Program or Be Programmed) that learning to code opens
  people's eyes to the design of all systems.
  They see that bad design can be fixed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kay1977"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -610,6 +613,43 @@ priesthood
 \end_inset
 
  of mainframe admins to all people, especially children.
+\end_layout
+
+\begin_layout Quote
+One of the phrases that he [Engelbart] used that I particularly liked was
+ “thought vectors in concept space”.
+ I’m not sure I understand what he meant, but what I think is that you are
+ creating an extension of the kinds of spaces that you think in terms of
+ inside of your head.
+ So, you are creating an augmentation of the ways of thinking, the ways
+ of representing, the ways of associating that was now going to be extended
+ in a way somewhat analogous to the way writing has extended us but somewhat
+ more like the way we actually think.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Simpson1996"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kay credited Rand Corporation's GRAIL (GRAphical Input Language) Project
+ 
+\end_layout
+
+\begin_layout Quote
+It was direct manipulation, it was analogical, it was modeless, it was beautiful.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kay1996"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1455,33 +1495,16 @@ Making a creative tool maker is pointless if, in the end, nothing creative
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-% bib stuff
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addtocontents{toc}{
-\backslash
-protect
-\backslash
-vspace{
-\backslash
-beforebibskip}}
-\end_layout
-
+\begin_inset Newpage pagebreak
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "MeemooReferences"
+bibfiles "library"
 options "bibtotoc,plainnat"
 
 \end_inset
@@ -1489,7 +1512,14 @@ options "bibtotoc,plainnat"
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addsec
 Appendix
 \end_layout
 
@@ -1497,6 +1527,7 @@ Appendix
 
 \size small
 \begin_inset Float algorithm
+placement h
 wide false
 sideways false
 status open
@@ -1544,6 +1575,7 @@ filename "children/define-inputs-outputs-example.js"
 
 \size small
 \begin_inset Float algorithm
+placement h
 wide false
 sideways false
 status open
