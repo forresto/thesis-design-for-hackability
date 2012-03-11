@@ -153,10 +153,24 @@ In this thesis I describe...
  
 \end_layout
 
+\begin_layout Abstract
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -168,11 +182,11 @@ Introduction
 
 \begin_layout Standard
 My first memory of interacting with a personal computer was with an Apple
- Macintosh that my father brought home from work.
+ Macintosh that my father brought home from work in the mid-1980s.
  I have a strong visual memory of using the mouse to connect numbered dots
  to draw a star (Figure 
 \begin_inset CommandInset ref
-LatexCommand formatted
+LatexCommand ref
 reference "fig:Connecting-the-dots"
 
 \end_inset
@@ -195,7 +209,7 @@ Mousing Around.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -217,7 +231,7 @@ name "fig:Connecting-the-dots"
 
 \end_inset
 
-Connecting the dots to draw a star in 
+
 \begin_inset Quotes eld
 \end_inset
 
@@ -250,34 +264,70 @@ key "Wichary2012"
 \end_layout
 
 \begin_layout Standard
-Because of timing or school priorities, I wasn't part of the generation
- that was exposed to BASIC or LOGO programming in elementary school.
+Because of timing or school priorities, I wasn't part of the small generation
+ of students that was exposed to BASIC or LOGO programming in elementary
+ school.
  I remained interested in computers, spending any time that I could get
  my hands on them on shareware games and paint programs.
  I didn't get into programming until high school, in two very different
- ways: the TI-8x series of graphing calculators and web programming.
+ ways: the Texas Instruments graphing calculators and web programming.
  
 \end_layout
 
 \begin_layout Standard
-My higher-level math classes used TI-81 and TI-83 graphing calculators.
+My higher-level math classes used TI-83 graphing calculators.
  These have the ability to write and run programs with a BASIC-like syntax.
- I taught myself how to script complicated graph drawing.
- It was satisfying to see the calculator slowly render geometric patterns
- from my scripts.
- This was my first experience with programming.
- I never managed to make the program draw what I originally had in mind,
- but this wasn't discouraging.
- The serendipitous images that emerged from my programming encouraged me
- to explore different directions, and create new challenges for myself.
+ My first program mirrored a game played by many children on standard calculator
+s: the 
+\begin_inset Quotes eld
+\end_inset
+
++1 game.
+\begin_inset Quotes erd
+\end_inset
+
+ This game is played by pressing the buttons [1] [+] [1] [=], and then pressing
+ [=] as fast as possible.
+ This makes the calculator into a counter, and we would have races to see
+ who could press [=] the most times in one minute.
+ Pressing buttons seems to be a common interest for children.
+ When a system reacts to the button press, it gives the child a sense of
+ control.
+ The program that I wrote was just a few lines of code.
+ It counted from zero, adding one and displaying the result in an infinite
+ loop as fast as the calculator could go.
+ I had automated the +1 game, taking out the button-pressing dynamic.
+ It was satisfying to see the numbers flying by on the screen.
 \end_layout
 
 \begin_layout Standard
-The availability of the Internet in my home spurred this interest.
- It was empowering to publish my first website.
- It was a place where I could freely express myself, and anybody in the
- world that was interested could see.
- I learned web programming by example, mostly thanks to the 
+I then figured out how to script complicated graphic drawings with these
+ small machines.
+ It was satisfying to see the calculator slowly render geometric patterns
+ from my scripts.
+ This was my first experience with programming graphics.
+ I never managed to make the program draw what I originally had in mind,
+ but this wasn't discouraging.
+ The serendipitous monochrome images that emerged from my experiments encouraged
+ me to explore different directions, and create new challenges for myself.
+ I believe that I learned a lot about geometry, algebra, and logic from
+ these code explorations, but not in a way that was applicable to math tests.
+\end_layout
+
+\begin_layout Standard
+The availability of the Internet in my home spurred the second programming
+ interest.
+ It was empowering to publish my first web site.
+ It was a place where I could freely express myself in many different ways.
+ Anybody in the world could see it, through the same window and at the same
+ size and resolution as the websites of corporations, governments, and universit
+ies.
+ Learning how to create and post webpages gave me a level of participation
+ that other media had not offered me.
+\end_layout
+
+\begin_layout Standard
+I learned web programming by example, mostly thanks to the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -286,6 +336,11 @@ view source
 \end_inset
 
  command on the browser.
+ I would take a little bit of code from a tutorial, some code from another
+ page's source, and tinker and experiment with the combination in an editor
+ that showed both the code and output in the same window.
+ These web programming experiments continued from this time and have culminated
+ in this thesis project.
 \end_layout
 
 \begin_layout Subsection
@@ -316,7 +371,6 @@ hacker: n.
  [originally, someone who makes furniture with an axe]
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 A person who enjoys exploring the details of programmable systems and how
  to stretch their capabilities, as opposed to most users, who prefer to
@@ -368,10 +422,19 @@ ing limitations.
  The correct term for this sense is cracker.
 \end_layout
 
-\end_deeper
+\begin_layout Quote
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Raymond2003"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-The eighth definition, though deprecated by the Jargon File, has become
- the popular understanding of 
+The eighth definition, despite being deprecated in the Jargon File, has
+ become the popular understanding of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -379,15 +442,19 @@ hacker.
 \begin_inset Quotes erd
 \end_inset
 
- For the purpose of this thesis, I will use 
-\begin_inset Quotes eld
+ For the purpose of this thesis and project I will use and promote the first
+ definition.
+ 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Hackability: adj.
+ the ability to understand and modify the workings of a system.
+\end_layout
+
 \end_inset
 
-hacker
-\begin_inset Quotes erd
-\end_inset
-
- to mean the first definition.
  In this context, 
 \begin_inset Quotes eld
 \end_inset
@@ -401,8 +468,8 @@ hackability
 \end_layout
 
 \begin_layout Standard
-It might be a lost cause to reclaim this term from its common cultural understan
-ding.
+It might be a lost cause to try to reclaim this term from its common cultural
+ understanding.
  The Maker Movement, which also places value in understanding and modifying
  systems and things, does not have such negative baggage with their moniker,
  as 
@@ -413,8 +480,16 @@ make
 \begin_inset Quotes erd
 \end_inset
 
- is a benign term.
- I will stick to the term 
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+maker
+\begin_inset Quotes erd
+\end_inset
+
+ seem like more constructive terms.
+ Although it isn't perfect, I will stick to the term 
 \begin_inset Quotes eld
 \end_inset
 
@@ -428,16 +503,10 @@ hackability,
 
 \begin_layout Standard
 Designing for hackability implies respect.
- The designer acknowledges that they can't imagine every use of their thing,
- so they enable people to hack, bend, mod, or fork it to their will.
-\end_layout
-
-\begin_layout Standard
-Meemoo is designed for hackability on all levels.
- On the highest level, people can add and remove modules and wires without
- coding knowledge.
- On the lowest level, the entire project is Free software.
- https://github.com/meemoo
+ The designer of a hackable thing acknowledges that they can't imagine every
+ potential use, so they enable people to hack, bend, mod, or fork it to
+ their will, and connect it to other things.
+ This quality can apply to software, electronics, and other 
 \end_layout
 
 \begin_layout Subsection
@@ -707,6 +776,16 @@ Development on Meemoo's ancestor project began in January 2011.
  In October 2011 Meemoo became a Mozilla WebFWD fellow project.
 \end_layout
 
+\begin_layout Standard
+Meemoo is designed for hackability on all levels.
+ On the highest level, people can add and remove modules and reconfigure
+ wires without coding knowledge.
+ On the lowest level, the entire project is Free software under the MIT
+ and AGPL licenses, which guarantee the right to fork the project and change
+ how it works at any level.
+ 
+\end_layout
+
 \begin_layout Subsection
 Software design for hackability
 \end_layout
@@ -733,19 +812,12 @@ reference "Defining Inputs and Outputs"
 \end_layout
 
 \begin_layout Subsubsection
-Sharable app 
-\begin_inset Quotes eld
-\end_inset
-
-source code
-\begin_inset Quotes erd
-\end_inset
-
-
+Readable, sharable app source code
 \end_layout
 
 \begin_layout Standard
-The graph format is JSON, like graph={nodes:[],edges:[]}.
+The source code format for a Meemoo app is JSON (JavaScript Object Notation)
+ which is fairly easy to read.
  This 
 \begin_inset Quotes eld
 \end_inset
@@ -755,9 +827,16 @@ text blob
 \end_inset
 
  stores the position, connections, and state of all of the modules in the
- graph, which can be considered the source code of the app.
+ graph (Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Meemoo-App-Source"
+
+\end_inset
+
+).
  Because it is a small amount of text, it is easy to share the app source
- code in forums, image descriptions, comments...
+ code in email, forums, image descriptions, comments, etc.
 \end_layout
 
 \begin_layout Subsection
@@ -769,7 +848,14 @@ Direct manipulation
 \end_layout
 
 \begin_layout Standard
-Ben Shneiderman
+Ben Shneiderman 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shneiderman1986"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -891,6 +977,43 @@ http://www.youtube.com/watch?v=T_tCyYGLWKM
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/meemoo-at-zodiak.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Meemoo at Zodiak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 I was invited to do visuals for a Zodiak's Side-Step dance festival club
  night.
  I used the gig as an opportunity to push Meemoo development and pressure-test
@@ -1000,7 +1123,181 @@ Community for sharing apps
 
 \begin_layout Standard
 Meemoo was designed for sharing.
+ Because of the small amount of source code to describe a Meemoo app (Algorithm
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Meemoo-App-Source"
+
+\end_inset
+
+) it will be easy to build a scalable platform for sharing and forking apps.
+\end_layout
+
+\begin_layout Subsection
+Touchscreen support
+\end_layout
+
+\begin_layout Standard
+Some media observers, myself included, saw the rise of touchscreen devices
+ like the iPhone and iPad as a step backwards for participatory media.
+ As originally marketed, these devices seemed to be designed primarily for
+ media consumption.
+ When Apple later opened up the App Store they took a timid step towards
+ hackability by allowing third party developers to create apps that extend
+ the functionality of the device.
+ I say 
+\begin_inset Quotes eld
+\end_inset
+
+timid
+\begin_inset Quotes erd
+\end_inset
+
+ because only developers that pay for the privilege can write apps for these
+ devices, and only apps that pass an opaque curation process are allowed
+ in the App Store.
+\end_layout
+
+\begin_layout Standard
+Because of this closed ecosystem and technical limitations, the design of
+ apps for iOS tend to have low to no hackability.
+ In general, an app is designed to do one thing.
+ The designer decides what the app does, how it communicates, where things
+ can be shared.
+ The user then uses the app.
+ The designer/user roles tend to be well-defined in this way.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 15text%
+width "30text%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/appstore-icon.png
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:App-Icon"
+
+\end_inset
+
+App Icon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ The standard icon for an app looks like a shiny glass object (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:App-Icon"
+
+\end_inset
+
+), which mirrors the aesthetics of the device itself.
+ It symbolizes something highly designed and polished, not to be opened.
+\end_layout
+
+\begin_layout Standard
+There are some notable exceptions: apps that encourage coding and exploration.
+ These include Codea by Two Lives Left 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://twolivesleft.com/Codea/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ for Lua coding, Processing.js Mini-IDE by Brian Jepson 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.jepstone.net/blog/2010/04/16/processing-js-mini-ide-for-ipad-iphone-android-chrome/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, and GLSL Studio by kode80 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://glslstudio.com/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ for OpenGL shaders.
+ These three apps are development environments that deal with the affordances
+ and constraints of writing code on touchscreen devices in different ways.
+ For example, Codea includes some well-designed features for touch-screen
+ interaction with widgets embedded in the code, like popup number sliders
+ and color pickers.
+ However, without an external keyboard, any kind of extended writing on
+ touchscreen devices is a difficult task.
+ It is also against Apple's regulations to load external scripts in native
+ apps, which makes it hard to share code.
+\end_layout
+
+\begin_layout Standard
+Meemoo has the potential to become a powerful tool for creative programming
+ on touchscreen devices.
+ Gestures for zooming, panning, and dragging are common in touchscreen interacti
+on, and should be tested to make work with Meemoo.
+ Zooming and panning already work smoothly, thanks to running in the browser.
+ 
+\end_layout
+
+\begin_layout Standard
+There will be a library of modules that will reduce the need to write code.
+ 
+\end_layout
+
+\begin_layout Standard
+Meemoo runs in browser, and JavaScript runs slower than native code.
+ However, as the power of these devices increases, the kinds of apps that
+ can be built with Meemoo will likewise increase.
 \end_layout
 
 \begin_layout Subsection
@@ -1109,7 +1406,21 @@ target "http://www.calormen.com/Logo/"
 
 \begin_layout Enumerate
 A Scratch game that draws different scenery based on location, time, and
- weather data
+ weather data.
+ 
+\end_layout
+
+\begin_layout Enumerate
+...
+\end_layout
+
+\begin_layout Standard
+These examples show how—in the same way that the Internet encompasses all
+ past and future media—a hackable creative coding environment that runs
+ in the browser can encompass and interact with all other creative coding
+ environments.
+ The educational philosophies that developed these systems can be hacked,
+ updated, and incorporated into new educational goals.
 \end_layout
 
 \begin_layout Section
@@ -1183,16 +1494,21 @@ Appendix
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Float algorithm
 wide false
 sideways false
 status open
 
 \begin_layout LyX-Code
+
+\family roman
+\size small
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Defining Inputs and Outputs
+Defining Inputs and Outputs (JavaScript)
 \begin_inset CommandInset label
 LatexCommand label
 name "Defining Inputs and Outputs"
@@ -1208,6 +1524,7 @@ name "Defining Inputs and Outputs"
 \end_layout
 
 \begin_layout LyX-Code
+\noindent
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
 filename "children/define-inputs-outputs-example.js"
@@ -1217,26 +1534,27 @@ filename "children/define-inputs-outputs-example.js"
 
 \end_layout
 
-\begin_layout LyX-Code
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\noindent
+
+\size small
 \begin_inset Float algorithm
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Meemoo App Source Code
+Meemoo App Source Code (JSON)
 \begin_inset CommandInset label
 LatexCommand label
 name "alg:Meemoo-App-Source"
@@ -1252,6 +1570,7 @@ name "alg:Meemoo-App-Source"
 \end_layout
 
 \begin_layout Plain Layout
+\noindent
 
 \family typewriter
 \size small
