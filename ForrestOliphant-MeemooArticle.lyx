@@ -108,32 +108,8 @@ hack
 \end_layout
 
 \begin_layout Abstract
-I have named the framework Meemoo.
- Within this framework, an 
-\begin_inset Quotes eld
-\end_inset
-
-app
-\begin_inset Quotes erd
-\end_inset
-
- is a graph of modules and the wires that connect them.
- A module is a web page that can live anywhere online, and use any web technolog
-y.
- This web page includes JavaScript that defines the module's inputs and
- outputs: what data is accepted and what kind of data will be sent.
- The wires define where each module sends data.
- The source code of the graph that defines an app's layout, routing, and
- state can be saved and shared with a small amount of text.
- 
-\end_layout
-
-\begin_layout Abstract
-So far I have focused module development on realtime animation tools, as
- this makes it simple to explain and engage creatively with the concept.
- It is not limited to animation though; any app or system that can be described
- by a dataflow graph can be made into a Meemoo app.
- 
+To this end, I have designed and created a web-based framework called Meemoo.
+ It is a toolmaker for the kinds of creative tools that I enjoy making.
 \end_layout
 
 \begin_layout Abstract
@@ -157,11 +133,62 @@ down the rabbit hole
 \end_layout
 
 \begin_layout Abstract
-In this thesis I describe...
+So far I have focused module development on realtime animation tools, as
+ this makes it simple to explain and engage creatively with the concept.
+ It is not limited to animation though; any app or system that can be described
+ by a dataflow graph can be made into a Meemoo app.
  
 \end_layout
 
 \begin_layout Abstract
+I didn't start making Meemoo as an educational tool, but I have since been
+ influenced by software projects inspired by Constructionist learning theory:
+ Logo, Smalltalk, and Scratch.
+ As I have read texts on Constructionism, I have seen many parallels to
+ my own experiences as a learner.
+ I think that Meemoo has the potential to be a good tool for learning by
+ making.
+ 
+\end_layout
+
+\begin_layout Abstract
+The people that created the vision of the personal computer wanted everybody
+ to be able to create their own tools.
+ The levels of abstraction and social foundation required for this to actually
+ happen have not been ready until now.
+ The abstraction required is in the modern browser, and the social foundation
+ is the Internet.
+\end_layout
+
+\begin_layout Abstract
+In this thesis I describe...
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+LeGroup (Learning Environments research group) in Media Lab Helsinki.
+\end_layout
+
+\begin_layout Standard
+Finland.
+\end_layout
+
+\begin_layout Standard
+Mozilla WebFWD.
+\end_layout
+
+\begin_layout Standard
+Aino and Ilo.
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -265,12 +292,12 @@ Because of timing or school priorities, I wasn't part of the small generation
  I remained interested in computers, spending any time that I could get
  my hands on them on shareware games and paint programs.
  I didn't get into programming until high school, in two very different
- ways: the Texas Instruments graphing calculators and web programming.
+ ways: Texas Instruments graphing calculators and web programming.
  
 \end_layout
 
 \begin_layout Standard
-My higher-level math classes used TI-83 graphing calculators.
+My higher-level math classes used TI-8x series of graphing calculators.
  These have the ability to write and run programs with a BASIC-like syntax.
  My first program mirrored a game played by many children on standard calculator
 s: the 
@@ -298,15 +325,15 @@ s: the
 \begin_layout Standard
 I then figured out how to script complicated graphic drawings with these
  small machines.
- It was satisfying to see the calculator slowly render geometric patterns
- from my scripts.
+ I would watch with interest as the calculator slowly rendered patterns
+ from my scripts, one stroke at a time.
  This was my first experience with programming graphics.
- I never managed to make the program draw what I originally had in mind,
- but this wasn't discouraging.
+ I never managed to make a program draw what I originally had in mind, but
+ this wasn't discouraging.
  The serendipitous monochrome images that emerged from my experiments encouraged
  me to explore different directions, and create new challenges for myself.
- I believe that I learned a lot about geometry, algebra, and logic from
- these code explorations, but not in a way that was applicable to math tests.
+ I learned a lot about cartesian geometry, algebra, and logic from these
+ code explorations.
 \end_layout
 
 \begin_layout Standard
@@ -317,8 +344,9 @@ The availability of the Internet in my home spurred the second programming
  Anybody in the world could see it, through the same window and at the same
  size and resolution as the websites of corporations, governments, and universit
 ies.
- Learning how to create and post webpages gave me a level of participation
- that other media had not offered me.
+ Learning how to create and post webpages gave me a level of active participatio
+n that other media had not offered me.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -507,6 +535,66 @@ Metamedia
 \end_layout
 
 \begin_layout Standard
+The Dynabook was a research project of Xerox Palo Alto Research Center that
+ envisioned and designed the personal computer almost as we know it today.
+\end_layout
+
+\begin_layout Standard
+Alan Kay and Adele Goldberg coined the term 
+\begin_inset Quotes eld
+\end_inset
+
+metamedium
+\begin_inset Quotes erd
+\end_inset
+
+ to describe their vision of the computer as a medium that can be all other
+ media.
+ Unlike broadcast media which is passively consumed, computer media can
+ also be participatory and active.
+ This means that people can create and consume media on the same tool.
+ 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "Kay1977"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A fundamental requirement for the DynaBook research project was to create
+ things that could be 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+Web 2.0
+\begin_inset Quotes erd
+\end_inset
+
+ is used to describe the rise of online services that facilitate publishing
+ content.
+ This began with blogging services like LiveJournal in 1999, photo sharing
+ sites like Flickr in 2004, and video sharing sites like Youtube in 2005.
+ These services helped make the web more participatory, giving any person
+ with internet access the ability to publish text, images, and video without
+ knowledge of HTML or web servers.
+\end_layout
+
+\begin_layout Standard
+While these services enable publishing of content, they don't enable people
+ to create 
+\end_layout
+
+\begin_layout Standard
+Participatory vs active media
+\end_layout
+
+\begin_layout Standard
 Kay: computer can be all other media, and is also active.
  Internet makes all media available everywhere.
  Web 2.0 made it participatory for publishing text, photos, videos.
@@ -543,16 +631,19 @@ the medium is the message,
 \end_layout
 
 \begin_layout Standard
-D.
- Rushkoff argues (Program or Be Programmed) that learning to code opens
- people's eyes to the design of all systems.
- They see that bad design can be fixed.
-\end_layout
-
-\begin_layout Standard
+Douglas Rushkoff argues in 
+\emph on
+Program or Be Programmed
+\emph default
+ that learning to code opens people's eyes to the design of all systems.
+ They see that bad design isn't a force of nature, that it has been designed
+ by somebody, and it could be designed better.
+ As software becomes ubiquitous, the ability to think programmatically should
+ be considered a basic literacy.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Kay1977"
+key "Rushkoff2010"
 
 \end_inset
 
@@ -561,6 +652,28 @@ key "Kay1977"
 
 \begin_layout Subsection
 Tools
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+The ability to 'read' a medium means that you can access materials and tools
+ generated by others.
+ The ability to 'write' a medium means you can generate materials and tools
+ for others.
+ You must have both to be literate.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kay1990"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -593,6 +706,20 @@ Programming skills distinct from coding skills.
 
 \begin_layout Section
 Context
+\end_layout
+
+\begin_layout Standard
+Meemoo has many influences and precedents in the way that it has been designed.
+ Some have been direct inspiration and influences.
+ Some have been 
+\end_layout
+
+\begin_layout Subsection
+Constructionism
+\end_layout
+
+\begin_layout Standard
+ConstruSeymour Papert is
 \end_layout
 
 \begin_layout Subsection
@@ -635,25 +762,8 @@ key "Simpson1996"
 
 \end_layout
 
-\begin_layout Standard
-Kay credited Rand Corporation's GRAIL (GRAphical Input Language) Project
- 
-\end_layout
-
-\begin_layout Quote
-It was direct manipulation, it was analogical, it was modeless, it was beautiful.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Kay1996"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
-Programming for kids: Smalltalk, Logo, Scratch, Alice
+Programming for kids: Smalltalk, Logo, Scratch
 \end_layout
 
 \begin_layout Standard
@@ -668,6 +778,55 @@ Visual programming languages
 \begin_layout Standard
 Meemoo is a kind of dataflow visual programming environment.
  This means that on a programming 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 15text%
+width "30text%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/rand-grail-visual-dataflow.jpg
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+GRAIL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+GRAIL (GRAphical Input Language) was a dataflow environment developed by
+ the Rand Corporation from 1967 to 1969.
+ Kay credited the project with directly inspiring some of the user interface
+ elements in the DynaBook system, like windows that were resizable by the
+ corner.
+ It was direct manipulation, it was analogical, it was modeless, it was
+ beautiful.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kay1996"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -718,15 +877,72 @@ Previous work and motivation
 \end_layout
 
 \begin_layout Standard
+My motivation to make this project comes from years of experimenting with
+ digital technologies.
+ I have worked in different languages and environments, but the ability
+ to share my work online has always brought me back to working with web
+ technologies.
+ I make my experiments into online creative tools (web apps) in order to
+ see how other people use my creations.
+\end_layout
+
+\begin_layout Standard
+I have experience with two dataflow visual programming environments: Quartz
+ Composer and Pure Data.
+ The feeling of direct manipulation and immediate feedback in working with
+ these environments appealed to me.
+ They were able to do graphics and audio processing beyond my coding ability
+ at the time, so I was able to explore new kinds of audio/visual experiments.
+ They are great tools for interactive installations, but it is impossible
+ to use them for creating web apps.
+\end_layout
+
+\begin_layout Standard
+In the past two years browser capabilities have increased and JavaScript
+ engines have been made fast enough that audio/visual programming is now
+ possible with web standards.
+ I realized that I could make my own visual programming environment with
+ features that appealed to me from different paradigms: modularity, reconfigurab
+ility, instant feedback, and shareability.
+ Creating a new creative tool is just a matter of wiring some modules together.
+ I can write new modules in code that I'm already comfortable with.
+ Things made with this toolmaker are easily shared online.
+ 
+\end_layout
+
+\begin_layout Standard
+I have named the framework Meemoo.
+ Within this framework, an 
+\begin_inset Quotes eld
+\end_inset
+
+app
+\begin_inset Quotes erd
+\end_inset
+
+ is a graph of modules and the wires that connect them.
+ A module is a web page that can live anywhere online, and use any web technolog
+y.
+ This web page includes JavaScript that defines the module's inputs and
+ outputs: what data is accepted and what kind of data will be sent.
+ The wires define where each module sends data.
+ The source code of the graph that defines an app's layout, routing, and
+ state can be saved and shared with a small amount of text.
+ 
+\end_layout
+
+\begin_layout Standard
+I hope that Meemoo might enable somebody to explore creative programming
+ in the same way that my capabilities and imagination were extended with
+ Quartz Composer.
+ 
+\end_layout
+
+\begin_layout Standard
 In a way, Meemoo is an abstraction of all of my earlier digital creative
  experiments.
  I plan on rebuilding them in Meemoo to make it easier for me (and others)
  to modify how they work.
- I call it my 
-\shape italic
-opus sink
-\shape default
-.
 \end_layout
 
 \begin_layout Subsection
@@ -951,9 +1167,7 @@ What is abstracted
 \end_layout
 
 \begin_layout Standard
-As a programmer, working in Puredata and Quartz Composer can be frustrating.
- Certain logical constructions that would be easy to describe in code become
- a jumbled mess of boxes and wires.
+
 \end_layout
 
 \begin_layout Section
@@ -1163,6 +1377,8 @@ Community for sharing apps
 
 \begin_layout Standard
 Meemoo was designed for sharing.
+ I'd like to take elements of App Store, Reddit, and Github to create a
+ community for sharing and forking Meemoo apps.
  Because of the small amount of source code to describe a Meemoo app (Algorithm
  
 \begin_inset CommandInset ref
@@ -1171,7 +1387,7 @@ reference "alg:Meemoo-App-Source"
 
 \end_inset
 
-) it will be easy to build a scalable platform for sharing and forking apps.
+) it will be relatively easy to make the community scalable.
 \end_layout
 
 \begin_layout Subsection
@@ -1338,6 +1554,60 @@ There will be a library of modules that will reduce the need to write code.
 Meemoo runs in browser, and JavaScript runs slower than native code.
  However, as the power of these devices increases, the kinds of apps that
  can be built with Meemoo will likewise increase.
+\end_layout
+
+\begin_layout Subsection
+Code editing
+\end_layout
+
+\begin_layout Standard
+Scratch has inspired some open-source libraries that use a codeblock programming
+ metaphor.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/DesignBlocksJS.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+DesignBlocksJS
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DesignBlocksJS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
