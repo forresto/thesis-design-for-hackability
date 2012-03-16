@@ -83,7 +83,7 @@
 \begin_body
 
 \begin_layout Title
-Meemoo: Hackable Creative Web Apps
+Meemoo: Creative Hackable Web Apps
 \end_layout
 
 \begin_layout Author
@@ -92,8 +92,8 @@ Forrest Oliphant
 
 \begin_layout Abstract
 The main objective of this project is to design a modular dataflow visual
- programming environment using web technologies.
- The environment should empower non-coders to 
+ programming framework using web technologies.
+ The framework should empower non-coders to 
 \begin_inset Quotes eld
 \end_inset
 
@@ -103,33 +103,37 @@ hack
 
  creative web apps by configuring wires that represent how modules communicate.
  There should be a simple syntax to define the inputs and outputs of a module.
- Apps created with the environment should have source code that is easy
- to read and share.
+ Apps created with the framework should have source code that is easy to
+ read and share.
 \end_layout
 
 \begin_layout Abstract
 To this end, I have designed and created a web-based framework called Meemoo.
- It is a toolmaker for the kinds of creative tools that I enjoy making.
 \end_layout
 
 \begin_layout Abstract
-Meemoo has been designed with a few groups of people in mind: creators,
- hackers, and modders.
- Creators will use Meemoo apps to make audio-visual media and share them
- online.
- Hackers will explore how the apps work, and rewire them to work differently.
- Modders will use web technologies to modify modules and create new modules
- which will be used in different kinds of apps.
- It is designed in a way that each of these levels leads to the next, encouragin
-g people 
+Within this framework, an 
 \begin_inset Quotes eld
 \end_inset
 
-down the rabbit hole
+app
 \begin_inset Quotes erd
 \end_inset
 
- towards learning coding.
+ is a collection of modules and the wires that connect them.
+ A module is a web page that can live anywhere online, and use any web technolog
+y.
+ This web page includes JavaScript that defines the module's inputs and
+ outputs: what data is accepted and what kind of data will be sent.
+ The wires define where each module sends data.
+ The source code of the app that defines an its layout, routing, and state
+ can be saved and shared with a small amount of text.
+ 
+\end_layout
+
+\begin_layout Abstract
+Meemoo is programmed by connecting boxes with wires, putting programming
+ within reach of non-coders.
 \end_layout
 
 \begin_layout Abstract
@@ -154,10 +158,12 @@ I didn't start making Meemoo as an educational tool, but I have since been
 \begin_layout Abstract
 The people that created the vision of the personal computer wanted everybody
  to be able to create their own tools.
- The levels of abstraction and social foundation required for this to actually
- happen have not been ready until now.
- The abstraction required is in the modern browser, and the social foundation
- is the Internet.
+ Learning traditional computer programming takes a major commitment, and
+ most people are satisfied with the tools that come with the computer or
+ are offered as services online.
+ Meemoo is a toolmaker that makes it easier for people to create and modify
+ their own tools.
+ 
 \end_layout
 
 \begin_layout Abstract
@@ -213,6 +219,12 @@ LatexCommand tableofcontents
 
 \begin_layout Section
 Introduction
+\end_layout
+
+\begin_layout Standard
+I will start with an abridged history of my relationship with digital media.
+ Three anecdotes will illustrate the three most important aspects of this
+ thesis project: creative, hackable, web.
 \end_layout
 
 \begin_layout Standard
@@ -272,6 +284,10 @@ reference "fig:Connecting-the-dots"
 \end_inset
 
 ).
+ Once the star was complete it briefly became animated.
+ Seeing this graphic, however simple, react to my input and then come alive
+ captured my imagination.
+ We only had that computer for a few days, but I was hooked.
  This interaction was part of an introductory program to teach mouse skills,
  called 
 \begin_inset Quotes eld
@@ -281,8 +297,7 @@ Mousing Around.
 \begin_inset Quotes erd
 \end_inset
 
- Seeing this graphic, however simple, react to my input captured my imagination.
- We only had that computer for a few days, but I was hooked.
+
 \end_layout
 
 \begin_layout Standard
@@ -320,6 +335,8 @@ s: the
  loop as fast as the calculator could go.
  I had automated the +1 game, taking out the button-pressing dynamic.
  It was satisfying to see the numbers flying by on the screen.
+ I then made a new version of the script that printed the Fibonacci sequence
+ in the same manner.
 \end_layout
 
 \begin_layout Standard
@@ -530,13 +547,31 @@ Designing for hackability implies respect.
  This quality can apply to software, physical artifacts, and services.
 \end_layout
 
-\begin_layout Subsection
-Metamedia
+\begin_layout Standard
+For software to be hackable the source code should be available under a
+ Free license.
+ While this enables other people with coding skills to modify a software
+ project, I would like to expand the affordances of software hackability
+ non-coders
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In the course of this thesis I will refer to programming and coding as distinct
+ skills.
+ Learning to program is a process of learning to manipulate logical structures.
+ Learning to code puts those structures into a linear-textual format that
+ computers can parse.
+ Different programmable systems emphasize and abstract these aspects differently.
 \end_layout
 
-\begin_layout Standard
-The Dynabook was a research project of Xerox Palo Alto Research Center that
- envisioned and designed the personal computer almost as we know it today.
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Metamedia
 \end_layout
 
 \begin_layout Standard
@@ -564,11 +599,6 @@ key "Kay1977"
 \end_layout
 
 \begin_layout Standard
-A fundamental requirement for the DynaBook research project was to create
- things that could be 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Quotes eld
 \end_inset
 
@@ -586,8 +616,14 @@ Web 2.0
 \end_layout
 
 \begin_layout Standard
-While these services enable publishing of content, they don't enable people
- to create 
+While these services enable publishing of content, they tend to be quite
+ unsophisticated in the .
+ Some people have worked within these constraints to create interactive
+ media using hyper.
+ the content is usually created offline, with digital tools that mimic tradition
+al analog tools.
+ The implications are interesting in terms of the kinds of communities that
+ have formed around these services, but
 \end_layout
 
 \begin_layout Standard
@@ -709,53 +745,233 @@ Context
 \end_layout
 
 \begin_layout Standard
-Meemoo has many influences and precedents in the way that it has been designed.
- Some have been direct inspiration and influences.
- Some have been 
+Meemoo has many influences and precedents in the way that it has been designed,
+ some direct and others indirect.
 \end_layout
 
 \begin_layout Subsection
-Constructionism
+The personal computer
 \end_layout
 
 \begin_layout Standard
-ConstruSeymour Papert is
-\end_layout
-
-\begin_layout Subsection
-Computers as abstraction
-\end_layout
-
-\begin_layout Subsubsection
-Mainframe to PC: Dynabook
-\end_layout
-
-\begin_layout Standard
-Kay: Promethian effort to bring computation from 
-\begin_inset Quotes eld
-\end_inset
-
-priesthood
-\begin_inset Quotes erd
-\end_inset
-
- of mainframe admins to all people, especially children.
+The Dynabook was a research project of Xerox Palo Alto Research Center that
+ envisioned and designed the personal computer, more or less as we know
+ it today.
+ Alan Kay outlines some of the goals and philosophical influences of the
+ project:
 \end_layout
 
 \begin_layout Quote
-One of the phrases that he [Engelbart] used that I particularly liked was
- “thought vectors in concept space”.
- I’m not sure I understand what he meant, but what I think is that you are
- creating an extension of the kinds of spaces that you think in terms of
- inside of your head.
- So, you are creating an augmentation of the ways of thinking, the ways
- of representing, the ways of associating that was now going to be extended
- in a way somewhat analogous to the way writing has extended us but somewhat
- more like the way we actually think.
+\begin_inset Quotes eld
+\end_inset
+
+Putting all this together, we want an apparently free environment in which
+ exploration causes desired sequences to happen (Montessori); one that allows
+ kinesthetic, iconic, and symbolic learning–"doing with images makes symbols"
+ (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic
+ is embedded in the familiar (Negroponte); and which acts as a magnifying
+ mirror for the user's own intelligence (Coleridge).
+\begin_inset Quotes erd
+\end_inset
+
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Simpson1996"
+key "Kay1996"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Programming for kids
+\end_layout
+
+\begin_layout Standard
+While Meemoo was not designed for children, it shares with these projects
+ the goal of lowering the barrier to entry to programming.
+\end_layout
+
+\begin_layout Subsubsection
+Logo
+\end_layout
+
+\begin_layout Standard
+Seymour Papert studied under Jean Piaget, an educational philosopher who
+ outlined stages of mental development into a model of learning called 
+\begin_inset Quotes eld
+\end_inset
+
+constructivism.
+\begin_inset Quotes erd
+\end_inset
+
+ The basic idea is that people build knowledge structures through experiences.
+ Papert added to this model, proposing that this happens best when 
+\begin_inset Quotes eld
+\end_inset
+
+the learner is consciously engaged in constructing a public entity, whether
+ it's a sand castle on the beach or a theory of the universe.
+\begin_inset Quotes erd
+\end_inset
+
+ He called this idea 
+\begin_inset Quotes eld
+\end_inset
+
+constructionism.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Papert1991"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Papert realized that the computer, as a metamedium, could be a powerful
+ learning tool if students were able to create their own programs.
+ Logo was designed as a simplified programming language for exploring mathematic
+s.
+ The first tests of Logo in the classroom predated the personal computer,
+ sending code from a teletype terminal in the classroom to a remote mainframe
+ computer 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Papert1991"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 15text%
+width "35text%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/logo-star.png
+	width 35text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Logo-star"
+
+\end_inset
+
+ Logo turtle drawing a star
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As computers became smaller and more common in classrooms, the signature
+ Logo turtle was added to the system.
+ This was a graphical representation of a turtle that would draw lines on
+ the screen based on the instructions given by the child.
+ For example, 
+\begin_inset Quotes erd
+\end_inset
+
+
+\family typewriter
+repeat 5 [ fd 100 rt 144 ]
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ tells the turtle 
+\begin_inset Quotes eld
+\end_inset
+
+do this five times: walk forward 100 units, then turn 144 degrees to the
+ right.
+\begin_inset Quotes erd
+\end_inset
+
+ This small program draws a star (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Logo-star"
+
+\end_inset
+
+).
+ By making the commands relative to the current position of the turtle,
+ the language is easier to learn than a graphical drawing system based on
+ cartesian coordinates 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Papert1993"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Smalltalk
+\end_layout
+
+\begin_layout Standard
+A fundamental requirement for the DynaBook research project was to create
+ a system that could be programmed by the user.
+ Kay invented Smalltalk and object-oriented programming for the Dynabook
+ prototype system to lower the barrier to entry for coding.
+ Object-oriented programming splits code into logical classes that define
+ the data for the object and the methods that access or modify that data.
+ In tests some children even programmed their own tools, like a twelve-year-old
+ girl's painting system and a fifteen-year-old boy's circuit design system.
+ Kay later referred to these impressive results as "early success syndrome."
+ 
+\begin_inset Quotes eld
+\end_inset
+
+The successes were real, but they weren't as general as we thought.
+\begin_inset Quotes erd
+\end_inset
+
+ Kay later decided that learning to program might be as difficult as learning
+ to write, and take years to build up the mental models necessary to do
+ it correctly.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kay1996"
 
 \end_inset
 
@@ -763,12 +979,236 @@ key "Simpson1996"
 \end_layout
 
 \begin_layout Subsubsection
-Programming for kids: Smalltalk, Logo, Scratch
+Scratch
 \end_layout
 
 \begin_layout Standard
-Constructionism: getting kids programming gets them to think about thinking.
- The metamedium gives them control.
+Text-based programming languages have different requirements for syntax,
+ punctuation, and indentation that if not followed perfectly will result
+ in programs that don't run as expected (or at all).
+ This can be frustrating for beginners and experienced coders alike–most
+ of my programming errors are just missing semicolons.
+ The creators of Scratch designed a system that takes the frustration of
+ syntax errors out of coding.
+\end_layout
+
+\begin_layout Standard
+Scratch uses drag-and-drop 
+\begin_inset Quotes eld
+\end_inset
+
+code blocks
+\begin_inset Quotes erd
+\end_inset
+
+ instead of a text-based syntax, which makes coding less error-prone for
+ beginners.
+ These code blocks snap together only in ways that make syntactic sense.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Control structures (like 
+\family typewriter
+forever
+\family default
+ and 
+\family typewriter
+repeat
+\family default
+) are C-shaped to suggest that blocks should be placed inside them.
+ Blocks that output values are shaped according to the types of values they
+ return: ovals for numbers and hexagons for Booleans.
+ Conditional blocks (like 
+\family typewriter
+if
+\family default
+ and 
+\family typewriter
+repeat-until
+\family default
+) have hexagon-shaped voids, indicating a Boolean is required.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Resnick2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Although creating a script with code blocks is more like snapping Legos
+ together than writing code, it is still coding.
+ The shape of the control structures is a direct metaphor to how code works,
+ and more visually obvious than brackets or indentation.
+ I imagine those logical structures are transferable to textual coding.
+\end_layout
+
+\begin_layout Standard
+I feel a little cheated to not have had Scratch when I was a child.
+ I would have loved it.
+ I extended my graphing calculator scripting experiments from high school
+ with an absurdist animation of a cat running into walls and reciting Fibonacci
+ numbers 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://scratch.mit.edu/projects/forresto/2398409"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fibonacci-Cat"
+
+\end_inset
+
+).
+ I didn't have this final output planned from the start.
+ The available blocks influenced the direction of my exploration.
+ For example, the last change was adding the drum sound when I saw that
+ it was as easy as adding one more block to the script.
+ Making something with comparable collision detection, color cycling, and
+ audio triggering in Flash or Processing would have taken much longer.
+\end_layout
+
+\begin_layout Standard
+This was my first Scratch project, and from launching the environment for
+ the first time it only took about thirty minutes to snap it together.
+ Granted, I'm an experienced coder, but I try new languages and coding systems
+ on occasion, and Scratch was by far the fastest and easiest to get up to
+ speed.
+ I look forward to playing with it more.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/fibonacci-cat-script.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Script
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/fibonacci-cat-program.png
+	width 55text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fibonacci Cat! Scratch program by the author 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fibonacci-Cat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One nice software design feature of Scratch is that each element on the
+ screen is a 
+\begin_inset Quotes eld
+\end_inset
+
+sprite
+\begin_inset Quotes erd
+\end_inset
+
+ with its own variables and scripts.
+ This makes Scratch compositions object-oriented by default, as it would
+ be hard to do it any other way.
 \end_layout
 
 \begin_layout Subsection
@@ -812,13 +1252,36 @@ GRAIL
 
 \end_inset
 
-GRAIL (GRAphical Input Language) was a dataflow environment developed by
- the Rand Corporation from 1967 to 1969.
- Kay credited the project with directly inspiring some of the user interface
- elements in the DynaBook system, like windows that were resizable by the
- corner.
- It was direct manipulation, it was analogical, it was modeless, it was
- beautiful.
+GRAIL (GRAphical Input Language) was an experimental dataflow environment
+ developed by the Rand Corporation from 1967 to 1969.
+ This interface was driven by a graphics tablet, so everything could be
+ done without a keyboard.
+ Nodes were added by drawing a box in place.
+ Edges were drawn from node to node.
+ Labels were added to the nodes with handwriting recognition.
+ Edges were disconnected by scribbling over them.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ellis1969b"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Kay credited the project with directly inspiring some of the user interface
+ elements in the DynaBook system, like windows that were resizable by dragging
+ the corner.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+It was direct manipulation, it was analogical, it was modeless, it was beautiful.
+\begin_inset Quotes erd
+\end_inset
+
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -827,6 +1290,24 @@ key "Kay1996"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Visual programming is used most in the domain of real-time audio processing
+ and synthesis (Pure Data and Max/MSP), visual effects (Quartz Composer
+ and vvvv), and 3D material and shading design (Softimage Interactive Creative
+ Environment) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Morrison2010"
+
+\end_inset
+
+.
+ This is probably due to the fact that people involved in audio/visual productio
+n tend to be comfortable with connecting equipment with cables, so it is
+ much easier to learn a system based on this metaphor than making the leap
+ to linear-textual coding.
 \end_layout
 
 \begin_layout Subsection
@@ -911,27 +1392,6 @@ ility, instant feedback, and shareability.
 \end_layout
 
 \begin_layout Standard
-I have named the framework Meemoo.
- Within this framework, an 
-\begin_inset Quotes eld
-\end_inset
-
-app
-\begin_inset Quotes erd
-\end_inset
-
- is a graph of modules and the wires that connect them.
- A module is a web page that can live anywhere online, and use any web technolog
-y.
- This web page includes JavaScript that defines the module's inputs and
- outputs: what data is accepted and what kind of data will be sent.
- The wires define where each module sends data.
- The source code of the graph that defines an app's layout, routing, and
- state can be saved and shared with a small amount of text.
- 
-\end_layout
-
-\begin_layout Standard
 I hope that Meemoo might enable somebody to explore creative programming
  in the same way that my capabilities and imagination were extended with
  Quartz Composer.
@@ -941,8 +1401,8 @@ I hope that Meemoo might enable somebody to explore creative programming
 \begin_layout Standard
 In a way, Meemoo is an abstraction of all of my earlier digital creative
  experiments.
- I plan on rebuilding them in Meemoo to make it easier for me (and others)
- to modify how they work.
+ I plan on rebuilding some of them in Meemoo to make it easier for me (and
+ others) to modify how they work.
 \end_layout
 
 \begin_layout Subsection
@@ -1175,7 +1635,74 @@ Tests/Results
 \end_layout
 
 \begin_layout Subsection
+Persona
+\end_layout
+
+\begin_layout Standard
+One design research methodology that I used to think about potential audience
+ for Meemoo was 
+\begin_inset Quotes eld
+\end_inset
+
+persona
+\begin_inset Quotes erd
+\end_inset
+
+ profiles.
+ I defined three 
+\begin_inset Quotes eld
+\end_inset
+
+persona
+\begin_inset Quotes erd
+\end_inset
+
+ profiles to describe typical people at different levels of engagement with
+ Meemoo: the creator, the hacker, and the modder.
+ It is designed in a way that each of these levels leads to the next, encouragin
+g people 
+\begin_inset Quotes eld
+\end_inset
+
+down the rabbit hole
+\begin_inset Quotes erd
+\end_inset
+
+ towards learning coding.
+\end_layout
+
+\begin_layout Standard
+Creators will use Meemoo apps to make audio-visual media and share them
+ online.
+ Hackers will explore how the apps work, and rewire them to work differently.
+ Modders will use web technologies to modify modules and create new modules
+ which will be used in different kinds of apps.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Creator 
+\end_layout
+
+\begin_layout Subsubsection
+Hacker 
+\end_layout
+
+\begin_layout Subsubsection
+Modder
+\end_layout
+
+\begin_layout Subsection
 User testing and feedback
+\end_layout
+
+\begin_layout Standard
+In order to test the user experience of the framework, I did in-person talk-alou
+d sessions.
+ I had people interact with Meemoo, sometimes freely, and sometimes with
+ prompts or goals to accomplish.
+ As they interacted with the system, I asked them to speak aloud their thought
+ process as much as possible.
 \end_layout
 
 \begin_layout Standard
@@ -1540,7 +2067,7 @@ target "http://glslstudio.com/"
 Meemoo has the potential to become a powerful tool for creative programming
  on touchscreen devices.
  Gestures for zooming, panning, and dragging are common in touchscreen interacti
-on, and should be tested to make work with Meemoo.
+on, and should be tested to make them work with Meemoo.
  Zooming and panning already work smoothly, thanks to running in the browser.
  
 \end_layout
@@ -1790,6 +2317,7 @@ options "bibtotoc,plainnat"
 \end_layout
 
 \begin_layout Addsec
+\start_of_appendix
 Appendix
 \end_layout
 
