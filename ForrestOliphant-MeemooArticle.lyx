@@ -540,6 +540,43 @@ hackability,
 \end_layout
 
 \begin_layout Standard
+There are other projects that are embracing this meaning as well, such as
+ Hackity Hack!
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://hackety.com/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and Mozilla Hackasaurus
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://hackasaurus.org/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, both aimed at getting children hacking.
+\end_layout
+
+\begin_layout Standard
 Designing for hackability implies respect.
  The designer of a hackable thing acknowledges that they can't imagine every
  potential use, so they enable people to modify it to their will and connect
@@ -598,7 +635,32 @@ key "Kay1977"
 
 \end_layout
 
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+I suggest that Kay and others aimed to create a particular kind of new media—rat
+her than merely simulating the appearances of old ones.
+ These new media use already existing representational formats as their
+ building blocks, while adding many new previously nonexistent properties.
+ At the same time, as envisioned by Kay, these media are expandable—that
+ is, users themselves should be able to easily add new properties, as well
+ as to invent new media.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Manovich2008"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+The term 
 \begin_inset Quotes eld
 \end_inset
 
@@ -611,79 +673,336 @@ Web 2.0
  This began with blogging services like LiveJournal in 1999, photo sharing
  sites like Flickr in 2004, and video sharing sites like Youtube in 2005.
  These services helped make the web more participatory, giving any person
- with internet access the ability to publish text, images, and video without
- knowledge of HTML or web servers.
+ with internet access the ability to publish text, images, and video.
+ Web 2.0 makes media distribution easier by abstracting away the need to
+ learn about web servers and HTML.
 \end_layout
 
 \begin_layout Standard
-While these services enable publishing of content, they tend to be quite
- unsophisticated in the .
- Some people have worked within these constraints to create interactive
- media using hyper.
- the content is usually created offline, with digital tools that mimic tradition
-al analog tools.
- The implications are interesting in terms of the kinds of communities that
- have formed around these services, but
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 15text%
+width "40text%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/choose-your-own-youtube.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Gilady Land Interactive Story
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-Gilady-Land"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Participatory vs active media
+While these services enable publishing of content, they are limited in how
+ they can be used.
+ The typical service presents a form with input fields for title, media
+ file, description, and tags.
+ This information then creates a single web page.
 \end_layout
 
 \begin_layout Standard
-Kay: computer can be all other media, and is also active.
- Internet makes all media available everywhere.
- Web 2.0 made it participatory for publishing text, photos, videos.
- Twitter, Flickr, Youtube: one solution per media, no coding needed.
+Some people have worked within these constraints to create interactive media
+ using hyperlinks.
+ For example, Youtube user TimsPuppetPals make a collection of videos called
  
-\end_layout
-
-\begin_layout Standard
-Web 2.0 makes media distribution easier by abstracting away FTP, HTML, etc.
-\end_layout
-
-\begin_layout Standard
-Maybe Web 2.5 is creative apps online, like Picnik photo editor and TinkerCAD
- 3D design software.
- Media creation without desktop software.
-\end_layout
-
-\begin_layout Standard
-Meemoo makes the modes of production also participatory.
- This makes it possible for people to invent and share new media.
- Web 3.0: web software creation without desktop software (or code)?
-\end_layout
-
-\begin_layout Standard
-If, as McLuhan proposed, 
 \begin_inset Quotes eld
 \end_inset
 
-the medium is the message,
+The Gilady Land Interactive Story.
 \begin_inset Quotes erd
 \end_inset
 
- then what kinds of messages are implied by the metamedium? 
-\end_layout
 
-\begin_layout Standard
-Douglas Rushkoff argues in 
-\emph on
-Program or Be Programmed
-\emph default
- that learning to code opens people's eyes to the design of all systems.
- They see that bad design isn't a force of nature, that it has been designed
- by somebody, and it could be designed better.
- As software becomes ubiquitous, the ability to think programmatically should
- be considered a basic literacy.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+The Gilady Land Interactive Story
+\begin_inset Quotes erd
+\end_inset
+
  
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Rushkoff2010"
+\begin_inset CommandInset href
+LatexCommand href
+target "http://youtu.be/spVMyoUcuR4"
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+ One video is the entry into the story, and the rest of the videos are unlisted
+ within the Youtube sytem.
+ In the end of each section of the story, viewers are presented with two
+ choices as hyperlinks within the video (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-Gilady-Land"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Interactive stories based on hyperlinking are limited to this kind of choose-you
+r-own-adventure branching storyline.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 15col%
+width "40col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/play-the-piano.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Play the Piano
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Play-the-Piano"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another example of simple interactivity with hyperlinks is 
+\begin_inset Quotes eld
+\end_inset
+
+Play the piano
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Play the piano
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://youtu.be/oD-sSolVDiY"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ from Youtube user kokokaka3000.
+ This interactive video uses hyperlinks overlaid on each key of piano keyboard.
+ As you click on the links above each key, the video skips to a finger playing
+ that key (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Play-the-Piano"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+In order to create interactivity more complex than these two examples, some
+ form of programming is needed, and it must be hosted outside of the service.
+\end_layout
+
+\begin_layout Standard
+An example of a project with more complex interactivity is Darren Solomon's
+ 
+\begin_inset Quotes eld
+\end_inset
+
+In B Flat.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+In B Flat
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.inbflat.net/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ To create this project, Solomon solicited videos of people making simple
+ music in the same key.
+ He then embedded twenty of these videos in a grid in one HTML page (Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:In-B-Flat"
+
+\end_inset
+
+).
+ To interact with the piece, you press play on any or all of the videos
+ in any order.
+ Because of the floating nature of the music in all of the samples, they
+ tend to sound good together no matter how they are mixed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/in-b-flat.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+In B Flat
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:In-B-Flat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The structure of 
+\begin_inset Quotes eld
+\end_inset
+
+In B Flat
+\begin_inset Quotes erd
+\end_inset
+
+—multiple videos that can be independently controlled in one HTML page—can
+ be considered a new media afforded by the participatory nature of Youtube,
+ and the ease of embedding videos.
+ The ability to create this new media required HTML coding knowledge.
+ 
+\end_layout
+
+\begin_layout Standard
+Youtube's embeddable player has a JavaScript Player API
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+YouTube JavaScript Player API https://developers.google.com/youtube/js_api_referen
+ce
+\end_layout
+
+\end_inset
+
+ which makes more complex interactivity possible.
+ This increases Youtube's hackability, but again, only for people with coding
+ skills.
 \end_layout
 
 \begin_layout Subsection
@@ -713,31 +1032,12 @@ key "Kay1990"
 \end_layout
 
 \begin_layout Standard
-From making tools to making toolmakers.
- Tool designer thinks: 
-\begin_inset Quotes eld
-\end_inset
-
-How will people use this tool?
-\begin_inset Quotes erd
-\end_inset
-
- Toolmaker designer thinks: how will tool designers use this tool (to think
- about how people will use their tool)? Thinking about thinking about thinking
- (about thinking?).
- Metaconstructionism? 
+The content is usually created offline, with digital tools like Photoshop
+ that mimic traditional analog tools.
 \end_layout
 
 \begin_layout Standard
-Meemoo will enable people to become tool designers before learning coding
- skills.
-\end_layout
-
-\begin_layout Standard
-Programming skills distinct from coding skills.
- Visual programming makes the dataflow logic visual.
- With text-based coding you need to keep track of these relationships in
- another way.
+...
 \end_layout
 
 \begin_layout Section
@@ -767,7 +1067,7 @@ The Dynabook was a research project of Xerox Palo Alto Research Center that
 
 Putting all this together, we want an apparently free environment in which
  exploration causes desired sequences to happen (Montessori); one that allows
- kinesthetic, iconic, and symbolic learning–"doing with images makes symbols"
+ kinesthetic, iconic, and symbolic learning—"doing with images makes symbols"
  (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic
  is embedded in the familiar (Negroponte); and which acts as a magnifying
  mirror for the user's own intelligence (Coleridge).
@@ -785,12 +1085,13 @@ key "Kay1996"
 \end_layout
 
 \begin_layout Subsection
-Programming for kids
+Programming for children
 \end_layout
 
 \begin_layout Standard
-While Meemoo was not designed for children, it shares with these projects
- the goal of lowering the barrier to entry to programming.
+While Meemoo was not designed specifically for children, it shares with
+ these projects the goal of lowering the barrier to entry to programming.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -986,7 +1287,7 @@ Scratch
 Text-based programming languages have different requirements for syntax,
  punctuation, and indentation that if not followed perfectly will result
  in programs that don't run as expected (or at all).
- This can be frustrating for beginners and experienced coders alike–most
+ This can be frustrating for beginners and experienced coders alike—most
  of my programming errors are just missing semicolons.
  The creators of Scratch designed a system that takes the frustration of
  syntax errors out of coding.
@@ -1306,8 +1607,8 @@ key "Morrison2010"
 .
  This is probably due to the fact that people involved in audio/visual productio
 n tend to be comfortable with connecting equipment with cables, so it is
- much easier to learn a system based on this metaphor than making the leap
- to linear-textual coding.
+ much easier to learn a system based on this metaphor than to learn a system
+ based on linear-textual coding.
 \end_layout
 
 \begin_layout Subsection
@@ -1470,7 +1771,7 @@ n mapping.
 
 \begin_layout Standard
 Meemoo will make it possible for people to not only share such modules online,
- but also wire them together, experiement, and save output instantly online.
+ but also wire them together, experiment, and save output instantly online.
  This will lower the barrier to entry and increase collaboration potential.
 \end_layout
 
@@ -1597,26 +1898,9 @@ patching
 \end_inset
 
 The use of flexible cords with plugs at their ends and sockets (jacks) to
- make temporary connections dates back to cord-type manually operated telephone
- switchboards (if not even earlier, possibly for telegraph circuits).
- Cords with plugs at both ends had been used for many decades before the
- advent of Dr.
- Moog's synthesizers to make temporary connections ("patches") in such places
- as radio and recording studios.
- These came to be known as "patch cords", and that term was also used for
- Moog modular systems.
- As familiarity developed, a given setup of the synthesizer (both cord connectio
-ns and knob settings) came to be referred to as a "patch", and the term
- has persisted, applying to systems that do not use patch cords.
+ make temporary connections dates back to manually operated telephone switchboar
+ds.
 \begin_inset Quotes erd
-\end_inset
-
- - 
-\begin_inset CommandInset href
-LatexCommand href
-name "Wikipedia on Moog"
-target "http://en.wikipedia.org/wiki/Moog_synthesizer#Early_history"
-
 \end_inset
 
 
@@ -1624,10 +1908,6 @@ target "http://en.wikipedia.org/wiki/Moog_synthesizer#Early_history"
 
 \begin_layout Subsection
 What is abstracted
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section
