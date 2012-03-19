@@ -2,7 +2,7 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass scrartcl
+\textclass classicthesis
 \begin_preamble
 % article example for classicthesis.sty
  % KOMA-Script article 
@@ -16,6 +16,7 @@
 \end_preamble
 \options paper=a4,fontsize=10pt
 \use_default_options false
+\master ForrestOliphant-MeemooThesis.lyx
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -36,7 +37,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 10
+\paperfontsize default
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
@@ -82,15 +83,31 @@
 
 \begin_body
 
-\begin_layout Title
-Meemoo: Creative Hackable Web Apps
+\begin_layout Chapter
+Introduction
 \end_layout
 
-\begin_layout Author
-Forrest Oliphant
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+The power to understand and predict the quantities of the world should not
+ be restricted to those with a freakish knack for manipulating abstract
+ symbols.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Victor2011"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 The main objective of this project is to design a modular dataflow visual
  programming framework using web technologies.
  The framework should empower non-coders to 
@@ -107,36 +124,39 @@ hack
  read and share.
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 To this end, I have designed and created a web-based framework called Meemoo.
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 Within this framework, an 
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 app
-\begin_inset Quotes erd
-\end_inset
-
+\emph default
  is a collection of modules and the wires that connect them.
- A module is a web page that can live anywhere online, and use any web technolog
-y.
+ A 
+\emph on
+module
+\emph default
+ is a web page that can live anywhere online, and use any web technology.
  This web page includes JavaScript that defines the module's inputs and
  outputs: what data is accepted and what kind of data will be sent.
- The wires define where each module sends data.
+ The 
+\emph on
+wires
+\emph default
+ define where each module sends data.
  The source code of the app that defines an its layout, routing, and state
  can be saved and shared with a small amount of text.
  
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 Meemoo is programmed by connecting boxes with wires, putting programming
  within reach of non-coders.
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 So far I have focused module development on realtime animation tools, as
  this makes it simple to explain and engage creatively with the concept.
  It is not limited to animation though; any app or system that can be described
@@ -144,8 +164,8 @@ So far I have focused module development on realtime animation tools, as
  
 \end_layout
 
-\begin_layout Abstract
-I didn't start making Meemoo as an educational tool, but I have since been
+\begin_layout Standard
+I did not start making Meemoo as an educational tool, but I have since been
  influenced by software projects inspired by Constructionist learning theory:
  Logo, Smalltalk, and Scratch.
  As I have read texts on Constructionism, I have seen many parallels to
@@ -155,235 +175,27 @@ I didn't start making Meemoo as an educational tool, but I have since been
  
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 The people that created the vision of the personal computer wanted everybody
  to be able to create their own tools.
  Learning traditional computer programming takes a major commitment, and
  most people are satisfied with the tools that come with the computer or
  are offered as services online.
  Meemoo is a toolmaker that makes it easier for people to create and modify
- their own tools.
+ their own digital tools and therefore to invent new media.
  
 \end_layout
 
-\begin_layout Abstract
-In this thesis I describe...
-\end_layout
-
-\begin_layout Abstract
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Acknowledgements
+\begin_layout Chapter
+Context
 \end_layout
 
 \begin_layout Standard
-LeGroup (Learning Environments research group) in Media Lab Helsinki.
-\end_layout
-
-\begin_layout Standard
-Finland.
-\end_layout
-
-\begin_layout Standard
-Mozilla WebFWD.
-\end_layout
-
-\begin_layout Standard
-Aino and Ilo.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+Meemoo has many influences and precedents in the way that it has been designed,
+ some direct and others indirect.
 \end_layout
 
 \begin_layout Section
-Introduction
-\end_layout
-
-\begin_layout Standard
-I will start with an abridged history of my relationship with digital media.
- Three anecdotes will illustrate the three most important aspects of this
- thesis project: creative, hackable, web.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 15text%
-width "50col%"
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/mac-connect-dots-2.png
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Connecting-the-dots"
-
-\end_inset
-
-
-\begin_inset Quotes eld
-\end_inset
-
-Mousing Around
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- My first memory of interacting with a computer was with an Apple Macintosh
- that my father brought home from work in the mid-1980s.
- I have a strong visual memory of using the mouse to connect numbered dots
- to draw a star (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Connecting-the-dots"
-
-\end_inset
-
-).
- Once the star was complete it briefly became animated.
- Seeing this graphic, however simple, react to my input and then come alive
- captured my imagination.
- We only had that computer for a few days, but I was hooked.
- This interaction was part of an introductory program to teach mouse skills,
- called 
-\begin_inset Quotes eld
-\end_inset
-
-Mousing Around.
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Because of timing or school priorities, I wasn't part of the small generation
- of students that was exposed to BASIC or LOGO programming in elementary
- school.
- I remained interested in computers, spending any time that I could get
- my hands on them on shareware games and paint programs.
- I didn't get into programming until high school, in two very different
- ways: Texas Instruments graphing calculators and web programming.
- 
-\end_layout
-
-\begin_layout Standard
-My higher-level math classes used TI-8x series of graphing calculators.
- These have the ability to write and run programs with a BASIC-like syntax.
- My first program mirrored a game played by many children on standard calculator
-s: the 
-\begin_inset Quotes eld
-\end_inset
-
-+1 game.
-\begin_inset Quotes erd
-\end_inset
-
- This game is played by pressing the buttons [1] [+] [1] [=], and then pressing
- [=] as fast as possible.
- This makes the calculator into a counter, and we would have races to see
- who could press [=] the most times in one minute.
- Pressing buttons seems to be a common interest for children.
- When a system reacts to the button press, it gives the child a sense of
- control.
- The program that I wrote was just a few lines of code.
- It counted from zero, adding one and displaying the result in an infinite
- loop as fast as the calculator could go.
- I had automated the +1 game, taking out the button-pressing dynamic.
- It was satisfying to see the numbers flying by on the screen.
- I then made a new version of the script that printed the Fibonacci sequence
- in the same manner.
-\end_layout
-
-\begin_layout Standard
-I then figured out how to script complicated graphic drawings with these
- small machines.
- I would watch with interest as the calculator slowly rendered patterns
- from my scripts, one stroke at a time.
- This was my first experience with programming graphics.
- I never managed to make a program draw what I originally had in mind, but
- this wasn't discouraging.
- The serendipitous monochrome images that emerged from my experiments encouraged
- me to explore different directions, and create new challenges for myself.
- I learned a lot about cartesian geometry, algebra, and logic from these
- code explorations.
-\end_layout
-
-\begin_layout Standard
-The availability of the Internet in my home spurred the second programming
- interest.
- It was empowering to publish my first web site.
- It was a place where I could freely express myself in many different ways.
- Anybody in the world could see it, through the same window and at the same
- size and resolution as the websites of corporations, governments, and universit
-ies.
- Learning how to create and post webpages gave me a level of active participatio
-n that other media had not offered me.
- 
-\end_layout
-
-\begin_layout Standard
-I learned web programming by example, mostly thanks to the 
-\begin_inset Quotes eld
-\end_inset
-
-view source
-\begin_inset Quotes erd
-\end_inset
-
- command on the browser.
- I would take a little bit of code from a tutorial, some code from another
- page's source, and tinker and experiment with the combination in an editor
- that showed both the code and output in the same window.
- These web programming experiments continued from this time and have culminated
- in this thesis project.
-\end_layout
-
-\begin_layout Subsection
 Hackers and Hackability
 \end_layout
 
@@ -409,8 +221,9 @@ hacker: n.
  [originally, someone who makes furniture with an axe]
 \end_layout
 
-\begin_layout Enumerate
-A person who enjoys exploring the details of programmable systems and how
+\begin_layout Quote
+1.
+ A person who enjoys exploring the details of programmable systems and how
  to stretch their capabilities, as opposed to most users, who prefer to
  learn only the minimum necessary.
  RFC1392, the Internet Users' Glossary, usefully amplifies this as: A person
@@ -418,43 +231,13 @@ A person who enjoys exploring the details of programmable systems and how
  of a system, computers and computer networks in particular.
 \end_layout
 
-\begin_layout Enumerate
-One who programs enthusiastically (even obsessively) or who enjoys programming
- rather than just theorizing about programming.
- 
+\begin_layout Quote
+...
 \end_layout
 
-\begin_layout Enumerate
-A person capable of appreciating hack value.
- 
-\end_layout
-
-\begin_layout Enumerate
-A person who is good at programming quickly.
- 
-\end_layout
-
-\begin_layout Enumerate
-An expert at a particular program, or one who frequently does work using
- it or on it; as in ‘a Unix hacker’.
- (Definitions 1 through 5 are correlated, and people who fit them congregate.)
- 
-\end_layout
-
-\begin_layout Enumerate
-An expert or enthusiast of any kind.
- One might be an astronomy hacker, for example.
- 
-\end_layout
-
-\begin_layout Enumerate
-One who enjoys the intellectual challenge of creatively overcoming or circumvent
-ing limitations.
- 
-\end_layout
-
-\begin_layout Enumerate
-[deprecated] A malicious meddler who tries to discover sensitive information
+\begin_layout Quote
+8.
+ [deprecated] A malicious meddler who tries to discover sensitive information
  by poking around.
  Hence password hacker, network hacker.
  The correct term for this sense is cracker.
@@ -487,8 +270,8 @@ hacker.
 status open
 
 \begin_layout Plain Layout
-Hackability: adj.
- the ability to understand and modify the workings of a system.
+Hackability: n.
+ design that encourages understanding and modification.
 \end_layout
 
 \end_inset
@@ -527,7 +310,7 @@ maker
 \end_inset
 
  seem like more constructive terms.
- Although it isn't perfect, I will stick to the term 
+ Although it is not perfect, I will stick to the term 
 \begin_inset Quotes eld
 \end_inset
 
@@ -543,7 +326,7 @@ hackability,
 There are other projects that are embracing this meaning as well, such as
  Hackity Hack!
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset href
@@ -559,7 +342,7 @@ target "http://hackety.com/"
 
  and Mozilla Hackasaurus
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset href
@@ -573,14 +356,14 @@ target "http://hackasaurus.org/"
 
 \end_inset
 
-, both aimed at getting children hacking.
+, both aimed at getting children coding.
 \end_layout
 
 \begin_layout Standard
 Designing for hackability implies respect.
- The designer of a hackable thing acknowledges that they can't imagine every
- potential use, so they enable people to modify it to their will and connect
- it to other things.
+ The designer of a hackable thing acknowledges that they cannot imagine
+ every potential use, so they enable people to modify it to their will and
+ connect it to other things.
  This quality can apply to software, physical artifacts, and services.
 \end_layout
 
@@ -591,7 +374,7 @@ For software to be hackable the source code should be available under a
  project, I would like to expand the affordances of software hackability
  non-coders
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 In the course of this thesis I will refer to programming and coding as distinct
@@ -607,7 +390,7 @@ In the course of this thesis I will refer to programming and coding as distinct
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Metamedia
 \end_layout
 
@@ -639,11 +422,11 @@ key "Kay1977"
 \begin_inset Quotes eld
 \end_inset
 
-I suggest that Kay and others aimed to create a particular kind of new media—rat
-her than merely simulating the appearances of old ones.
+I suggest that Kay and others aimed to create a particular kind of new media--ra
+ther than merely simulating the appearances of old ones.
  These new media use already existing representational formats as their
  building blocks, while adding many new previously nonexistent properties.
- At the same time, as envisioned by Kay, these media are expandable—that
+ At the same time, as envisioned by Kay, these media are expandable--that
  is, users themselves should be able to easily add new properties, as well
  as to invent new media.
 \begin_inset Quotes erd
@@ -657,6 +440,10 @@ key "Manovich2008"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Web 2.0
 \end_layout
 
 \begin_layout Standard
@@ -682,14 +469,14 @@ Web 2.0
 \begin_inset Wrap figure
 lines 0
 placement o
-overhang 15text%
-width "40text%"
+overhang 4cm
+width "6cm"
 status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/choose-your-own-youtube.png
-	width 40text%
+	width 6cm
 
 \end_inset
 
@@ -775,12 +562,8 @@ reference "fig:The-Gilady-Land"
 \end_inset
 
 ).
- 
-\end_layout
-
-\begin_layout Standard
-Interactive stories based on hyperlinking are limited to this kind of choose-you
-r-own-adventure branching storyline.
+ Interactive stories based on hyperlinking are limited to this kind of choose-yo
+ur-own-adventure branching storyline.
  
 \end_layout
 
@@ -788,14 +571,14 @@ r-own-adventure branching storyline.
 \begin_inset Wrap figure
 lines 0
 placement o
-overhang 15col%
-width "40col%"
+overhang 4cm
+width "6cm"
 status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/play-the-piano.png
-	width 40text%
+	width 6cm
 
 \end_inset
 
@@ -963,10 +746,6 @@ name "fig:In-B-Flat"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -981,7 +760,7 @@ In B Flat
 \begin_inset Quotes erd
 \end_inset
 
-—multiple videos that can be independently controlled in one HTML page—can
+--multiple videos that can be independently controlled in one HTML page--can
  be considered a new media afforded by the participatory nature of Youtube,
  and the ease of embedding videos.
  The ability to create this new media required HTML coding knowledge.
@@ -989,23 +768,163 @@ In B Flat
 \end_layout
 
 \begin_layout Standard
-Youtube's embeddable player has a JavaScript Player API
+Youtube's embeddable player has a JavaScript Player API (Application Programming
+ Interface)
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-YouTube JavaScript Player API https://developers.google.com/youtube/js_api_referen
-ce
+YouTube JavaScript Player API 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://developers.google.com/youtube/js_api_reference"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
  which makes more complex interactivity possible.
- This increases Youtube's hackability, but again, only for people with coding
+ Flickr's API
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Flickr's API: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.flickr.com/services/api/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ has enabled developers to create applications that can access and edit
+ Flickr's massive database of photos and metadata
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+An example Flickr application by the author: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://taggraph.com/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ These APIs increase the web's hackability, but only for people with coding
  skills.
 \end_layout
 
 \begin_layout Subsection
+iOS
+\end_layout
+
+\begin_layout Standard
+Some media observers, myself included, saw the rise of touchscreen devices
+ like the iPhone and iPad as a step backwards for participatory media.
+ As originally marketed, these devices seemed to be designed primarily for
+ media consumption.
+ When Apple later opened up the App Store they took a timid step towards
+ hackability by allowing third party developers to create apps that extend
+ the functionality of the device.
+ I say 
+\begin_inset Quotes eld
+\end_inset
+
+timid
+\begin_inset Quotes erd
+\end_inset
+
+ because only developers that pay for the privilege can write apps for these
+ devices, and only apps that pass an opaque curation process are allowed
+ in the App Store.
+\end_layout
+
+\begin_layout Standard
+Because of this closed ecosystem and technical limitations, the design of
+ apps for iOS tend to have low to no hackability.
+ In general, an app is designed to do one thing.
+ The designer decides what the app does, how it communicates, where things
+ can be shared.
+ The user then uses the app.
+ The designer/user roles tend to be well-defined in this way.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 3.5cm
+width "3.5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/appstore-icon.png
+	width 3.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:App-Icon"
+
+\end_inset
+
+App Icon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The standard icon for an app looks like a shiny glass object (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:App-Icon"
+
+\end_inset
+
+), which mirrors the aesthetics of the device itself.
+ It symbolizes something highly designed and polished, not to be opened.
+ For both the device and the apps that run on it, the design implies 
+\begin_inset Quotes eld
+\end_inset
+
+no user serviceable parts inside.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Tools
 \end_layout
 
@@ -1037,19 +956,28 @@ The content is usually created offline, with digital tools like Photoshop
 \end_layout
 
 \begin_layout Standard
-...
-\end_layout
-
-\begin_layout Section
-Context
+Word processing made text more hackable.
+ Nonlinear audio editing made music more hackable.
+ Both had avantgarde tools and methods as precursors: Burroughs' cut-ups
+ and turntablism.
 \end_layout
 
 \begin_layout Standard
-Meemoo has many influences and precedents in the way that it has been designed,
- some direct and others indirect.
+Digital media is hackable by programmers.
+ Meemoo wants to 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+Burroughs and DJ Kool Herc were 
+\end_layout
+
+\begin_layout Standard
+took and avantgarde art form (William Burroughs, cut-ups) and turned it
+ into a tool that brought text hackability to the masses.
+ Non-linear audio 
+\end_layout
+
+\begin_layout Section
 The personal computer
 \end_layout
 
@@ -1067,7 +995,7 @@ The Dynabook was a research project of Xerox Palo Alto Research Center that
 
 Putting all this together, we want an apparently free environment in which
  exploration causes desired sequences to happen (Montessori); one that allows
- kinesthetic, iconic, and symbolic learning—"doing with images makes symbols"
+ kinesthetic, iconic, and symbolic learning--"doing with images makes symbols"
  (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic
  is embedded in the familiar (Negroponte); and which acts as a magnifying
  mirror for the user's own intelligence (Coleridge).
@@ -1084,7 +1012,134 @@ key "Kay1996"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
+Direct manipulation
+\end_layout
+
+\begin_layout Standard
+Bret Victor gave a talk called 
+\begin_inset Quotes eld
+\end_inset
+
+Inventing on Principle
+\begin_inset Quotes erd
+\end_inset
+
+ at the 2012 Canadian University Software Engineering Conference in which
+ he demonstrated an experimental code editor 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Victor2012"
+
+\end_inset
+
+.
+ His editor shows the output of the code in real-time, without needing to
+ change windows, compile, or save and refresh.
+ Any number or color in the source code opens a slider or color picker,
+ which immediately changes the visual output (Figure ).
+ As somebody with experience coding visual applications in JavaScript, Flash,
+ and Processing, this demonstration was like seeing the light.
+ Suddenly I could see that my normal workflow--the need to save or recompile,
+ change modes, and refresh between changing code and seeing the result--is
+ a huge waste of time and mental energy.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/bret-victor-tree-tall.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/bret-victor-tree-small.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Bret Victor's direct manipulation of code 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Direct-manipulation-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Programming for children
 \end_layout
 
@@ -1094,7 +1149,7 @@ While Meemoo was not designed specifically for children, it shares with
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Logo
 \end_layout
 
@@ -1157,14 +1212,14 @@ key "Papert1991"
 \begin_inset Wrap figure
 lines 0
 placement o
-overhang 15text%
-width "35text%"
+overhang 3.5cm
+width "3.5cm"
 status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/logo-star.png
-	width 35text%
+	width 3.5cm
 
 \end_inset
 
@@ -1234,7 +1289,7 @@ reference "fig:Logo-star"
 ).
  By making the commands relative to the current position of the turtle,
  the language is easier to learn than a graphical drawing system based on
- cartesian coordinates 
+ Cartesian coordinates 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Papert1993"
@@ -1244,7 +1299,7 @@ key "Papert1993"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Smalltalk
 \end_layout
 
@@ -1255,8 +1310,13 @@ A fundamental requirement for the DynaBook research project was to create
  prototype system to lower the barrier to entry for coding.
  Object-oriented programming splits code into logical classes that define
  the data for the object and the methods that access or modify that data.
- In tests some children even programmed their own tools, like a twelve-year-old
- girl's painting system and a fifteen-year-old boy's circuit design system.
+ 
+\end_layout
+
+\begin_layout Standard
+In tests some children programmed their own tools, like a twelve-year-old
+ girl's painting application and a fifteen-year-old boy's circuit design
+ application.
  Kay later referred to these impressive results as "early success syndrome."
  
 \begin_inset Quotes eld
@@ -1279,18 +1339,18 @@ key "Kay1996"
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Scratch
 \end_layout
 
 \begin_layout Standard
 Text-based programming languages have different requirements for syntax,
  punctuation, and indentation that if not followed perfectly will result
- in programs that don't run as expected (or at all).
- This can be frustrating for beginners and experienced coders alike—most
- of my programming errors are just missing semicolons.
- The creators of Scratch designed a system that takes the frustration of
- syntax errors out of coding.
+ in programs that do not run as expected (or at all).
+ This can be frustrating for beginners and experienced coders alike--most
+ of my programming errors are missing semicolons or mismatched brackets.
+ The creators of Scratch designed a coding system that works around syntax
+ and the frustration of syntax errors.
 \end_layout
 
 \begin_layout Standard
@@ -1379,7 +1439,7 @@ reference "fig:Fibonacci-Cat"
 \end_inset
 
 ).
- I didn't have this final output planned from the start.
+ I did not have this final output planned from the start.
  The available blocks influenced the direction of my exploration.
  For example, the last change was adding the drum sound when I saw that
  it was as easy as adding one more block to the script.
@@ -1390,9 +1450,9 @@ reference "fig:Fibonacci-Cat"
 \begin_layout Standard
 This was my first Scratch project, and from launching the environment for
  the first time it only took about thirty minutes to snap it together.
- Granted, I'm an experienced coder, but I try new languages and coding systems
- on occasion, and Scratch was by far the fastest and easiest to get up to
- speed.
+ Granted, I am an experienced coder, but I try new languages and coding
+ systems on occasion, and Scratch was by far the fastest and easiest to
+ create something interesting.
  I look forward to playing with it more.
 \end_layout
 
@@ -1512,7 +1572,7 @@ sprite
  be hard to do it any other way.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Visual programming languages
 \end_layout
 
@@ -1525,14 +1585,14 @@ Meemoo is a kind of dataflow visual programming environment.
 \begin_inset Wrap figure
 lines 0
 placement O
-overhang 15text%
-width "30text%"
-status collapsed
+overhang 4cm
+width "6cm"
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/rand-grail-visual-dataflow.jpg
-	width 30text%
+	width 6cm
 
 \end_inset
 
@@ -1544,7 +1604,9 @@ status collapsed
 
 \begin_layout Plain Layout
 GRAIL
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GRAIL"
 
 \end_inset
 
@@ -1553,8 +1615,24 @@ GRAIL
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 GRAIL (GRAphical Input Language) was an experimental dataflow environment
- developed by the Rand Corporation from 1967 to 1969.
+ developed by the Rand Corporation from 1967 to 1969 (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GRAIL"
+
+\end_inset
+
+).
  This interface was driven by a graphics tablet, so everything could be
  done without a keyboard.
  Nodes were added by drawing a box in place.
@@ -1611,7 +1689,7 @@ n tend to be comfortable with connecting equipment with cables, so it is
  based on linear-textual coding.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Free Software movement
 \end_layout
 
@@ -1620,7 +1698,7 @@ Can't own ideas.
  Why do people give away their work?
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Open hardware and maker movement
 \end_layout
 
@@ -1640,7 +1718,7 @@ If you can't open it you don't own it.
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 JQuery Plugins
 \end_layout
 
@@ -1654,7 +1732,7 @@ Large community sharing plugins.
  
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Previous work and motivation
 \end_layout
 
@@ -1687,7 +1765,7 @@ In the past two years browser capabilities have increased and JavaScript
  features that appealed to me from different paradigms: modularity, reconfigurab
 ility, instant feedback, and shareability.
  Creating a new creative tool is just a matter of wiring some modules together.
- I can write new modules in code that I'm already comfortable with.
+ I can write new modules in code that I am already comfortable with.
  Things made with this toolmaker are easily shared online.
  
 \end_layout
@@ -1704,6 +1782,176 @@ In a way, Meemoo is an abstraction of all of my earlier digital creative
  experiments.
  I plan on rebuilding some of them in Meemoo to make it easier for me (and
  others) to modify how they work.
+\end_layout
+
+\begin_layout Section
+Early experiences
+\end_layout
+
+\begin_layout Standard
+I will start with an abridged history of my relationship with digital media.
+ Three anecdotes will illustrate the three most important aspects of this
+ thesis project: creative, hackable, web.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 4cm
+width "6cm"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/mac-connect-dots-2.png
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Connecting-the-dots"
+
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+Mousing Around
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+My first memory of interacting with a computer was with an Apple Macintosh
+ that my father brought home from work in the mid-1980s.
+ I have a strong visual memory of using the mouse to connect numbered dots
+ to draw a star (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Connecting-the-dots"
+
+\end_inset
+
+).
+ Once the star was complete it briefly became animated.
+ Seeing this graphic, however simple, react to my input and then come alive
+ captured my imagination.
+ We only had that computer for a few days, but I was hooked.
+ This interaction was part of an introductory program to teach mouse skills,
+ called 
+\begin_inset Quotes eld
+\end_inset
+
+Mousing Around.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because of timing or school priorities, I was not part of the small generation
+ of students that was exposed to BASIC or LOGO programming in elementary
+ school.
+ I remained interested in computers, spending any time that I could get
+ my hands on them on shareware games and paint programs.
+ I did not get into programming until high school, in two very different
+ ways: Texas Instruments graphing calculators and web programming.
+ 
+\end_layout
+
+\begin_layout Standard
+My higher-level math classes used TI-8x series of graphing calculators.
+ These have the ability to write and run programs with a BASIC-like syntax.
+ My first program mirrored a game played by many children on standard calculator
+s: the 
+\begin_inset Quotes eld
+\end_inset
+
++1 game.
+\begin_inset Quotes erd
+\end_inset
+
+ This game is played by pressing the buttons [1] [+] [1] [=], and then pressing
+ [=] as fast as possible.
+ This makes the calculator into a counter, and we would have races to see
+ who could press [=] the most times in one minute.
+ Pressing buttons seems to be a common interest for children.
+ When a system reacts to the button press, it gives the child a sense of
+ control.
+ The program that I wrote was just a few lines of code.
+ It counted from zero, adding one and displaying the result in an infinite
+ loop as fast as the calculator could go.
+ I had automated the +1 game, taking out the button-pressing dynamic.
+ It was satisfying to see the numbers flying by on the screen.
+ I then made a new version of the script that printed the Fibonacci sequence
+ in the same manner.
+\end_layout
+
+\begin_layout Standard
+I then figured out how to script complicated graphic drawings with these
+ small machines.
+ I would watch with interest as the calculator slowly rendered patterns
+ from my scripts, one stroke at a time.
+ This was my first experience with programming graphics.
+ I never managed to make a program draw what I originally had in mind, but
+ this was not discouraging.
+ The serendipitous monochrome images that emerged from my experiments encouraged
+ me to explore different directions, and create new challenges for myself.
+ I learned a lot about cartesian geometry, algebra, and logic from these
+ code explorations.
+\end_layout
+
+\begin_layout Standard
+The availability of the Internet in my home spurred the second programming
+ interest.
+ It was empowering to publish my first web site.
+ It was a place where I could freely express myself in many different ways.
+ Anybody in the world could see it, through the same window and at the same
+ size and resolution as the websites of corporations, governments, and universit
+ies.
+ Learning how to create and post webpages gave me a level of active participatio
+n that other media had not offered me.
+ 
+\end_layout
+
+\begin_layout Standard
+I learned web programming by example, mostly thanks to the 
+\begin_inset Quotes eld
+\end_inset
+
+view source
+\begin_inset Quotes erd
+\end_inset
+
+ command on the browser.
+ I would take a little bit of code from a tutorial, some code from another
+ page's source, and tinker and experiment with the combination in an editor
+ that showed both the code and output in the same window.
+ These web programming experiments continued from this time and have culminated
+ in this thesis project.
 \end_layout
 
 \begin_layout Subsection
@@ -1784,7 +2032,7 @@ This is the direct parent project of Meemoo, where I figured out how to
  communicate between web pages in iframes.
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Development
 \end_layout
 
@@ -1803,7 +2051,7 @@ Meemoo is designed for hackability on all levels.
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Software design for hackability
 \end_layout
 
@@ -1812,8 +2060,13 @@ One of the goals for the project is that it is hackable on all levels.
  On the lowest level, this means that the code is open source.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Common communication library for modules
+\end_layout
+
+\begin_layout Standard
+In order to design Meemoo for hackability, it must be easy for other developers
+ to create modules.
 \end_layout
 
 \begin_layout Standard
@@ -1828,7 +2081,7 @@ reference "Defining Inputs and Outputs"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Readable, sharable app source code
 \end_layout
 
@@ -1856,11 +2109,11 @@ reference "alg:Meemoo-App-Source"
  code in email, forums, image descriptions, comments, etc.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 User experience design for hackability
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Direct manipulation
 \end_layout
 
@@ -1881,7 +2134,7 @@ Visual indication of what is happening in each module.
  Dragging to change variables.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Visual programming 
 \begin_inset Quotes eld
 \end_inset
@@ -1906,39 +2159,27 @@ ds.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 What is abstracted
 \end_layout
 
 \begin_layout Section
-Tests/Results
-\end_layout
-
-\begin_layout Subsection
 Persona
 \end_layout
 
 \begin_layout Standard
 One design research methodology that I used to think about potential audience
- for Meemoo was 
-\begin_inset Quotes eld
-\end_inset
+ for Meemoo was personas.
+ I defined three persona profiles to describe typical people at different
+ levels of engagement with Meemoo: the creator, the hacker, and the modder.
+\end_layout
 
-persona
-\begin_inset Quotes erd
-\end_inset
-
- profiles.
- I defined three 
-\begin_inset Quotes eld
-\end_inset
-
-persona
-\begin_inset Quotes erd
-\end_inset
-
- profiles to describe typical people at different levels of engagement with
- Meemoo: the creator, the hacker, and the modder.
+\begin_layout Standard
+Creators will use Meemoo apps to make audio-visual media and share them
+ online.
+ Hackers will explore how the apps work, and rewire them to work differently.
+ Modders will use web technologies to modify modules and create new modules
+ which will be used in different kinds of apps.
  It is designed in a way that each of these levels leads to the next, encouragin
 g people 
 \begin_inset Quotes eld
@@ -1949,40 +2190,97 @@ down the rabbit hole
 \end_inset
 
  towards learning coding.
-\end_layout
-
-\begin_layout Standard
-Creators will use Meemoo apps to make audio-visual media and share them
- online.
- Hackers will explore how the apps work, and rewire them to work differently.
- Modders will use web technologies to modify modules and create new modules
- which will be used in different kinds of apps.
- 
-\end_layout
-
-\begin_layout Subsubsection
-Creator 
-\end_layout
-
-\begin_layout Subsubsection
-Hacker 
-\end_layout
-
-\begin_layout Subsubsection
-Modder
+ I wrote a short description of an imaginary person at each level of engagement,
+ and how they would interact with the project.
 \end_layout
 
 \begin_layout Subsection
+Cate the Creator 
+\end_layout
+
+\begin_layout Standard
+Cate is a nine-year-old girl who lives in the suburbs with her parents and
+ thirteen-year-old brother.
+ She likes using the video camera in her iPod to create movies starring
+ her toys, narrating the story as she makes it up.
+\end_layout
+
+\begin_layout Standard
+Her brother uses the Internet and Facebook every evening.
+ Sometimes he shows her funny animated GIFs and videos that his friends
+ link to.
+ One of his friends linked to an animated GIF made with LEGO bricks.
+ In the description for the animation's page was a link to the Meemoo app
+ for stop-motion animation that made it.
+\end_layout
+
+\begin_layout Standard
+They click on the link and see a Meemoo app with three modules wired together.
+ The first module shows the image from their webcam.
+ She clicks 
+\begin_inset Quotes eld
+\end_inset
+
+capture
+\begin_inset Quotes erd
+\end_inset
+
+ and a still capture jumps to the second module.
+ She clicks 
+\begin_inset Quotes eld
+\end_inset
+
+capture
+\begin_inset Quotes erd
+\end_inset
+
+ again and the second module shows a two-frame looping animation of the
+ two of them shifting a little bit back-and-forth, looped.
+ They laugh at it, because her brother was making a funny face in one of
+ the frames.
+ They understand how it works now, so they clear the image and start over.
+ They make a longer animation, making funny faces and jumping around the
+ room.
+\end_layout
+
+\begin_layout Standard
+Cate decides that it would be fun to make a short story with stop-motion
+ animation.
+ She gathers some toys and starts to plan the story.
+ 
+\end_layout
+
+\begin_layout Subsection
+Henry the Hacker 
+\end_layout
+
+\begin_layout Standard
+Henry is Cate's older brother.
+ 
+\end_layout
+
+\begin_layout Subsection
+Molly the Modder
+\end_layout
+
+\begin_layout Chapter
+Tests and Results
+\end_layout
+
+\begin_layout Section
 User testing and feedback
 \end_layout
 
 \begin_layout Standard
 In order to test the user experience of the framework, I did in-person talk-alou
 d sessions.
- I had people interact with Meemoo, sometimes freely, and sometimes with
+ I had people interact with Meemoo, sometimes freely and sometimes with
  prompts or goals to accomplish.
- As they interacted with the system, I asked them to speak aloud their thought
- process as much as possible.
+ As they interacted with the system, I asked them to speak their thought
+ process aloud as much as possible.
+ This method of user testing allows the tester to listen in to the thought
+ process of the person using the system, making it easy to identify points
+ of frustration.
 \end_layout
 
 \begin_layout Standard
@@ -2021,7 +2319,7 @@ Can I use this in my class?
 Facebook Beta group
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Economic model illustrated with Meemoo
 \end_layout
 
@@ -2029,12 +2327,85 @@ Economic model illustrated with Meemoo
 http://meemoo.org/blog/2012-01-24-friction-free-post-scarcity-creative-economies/
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Live animation visuals for dance party
 \end_layout
 
 \begin_layout Standard
-http://www.youtube.com/watch?v=T_tCyYGLWKM
+I contacted Ze Frank to ask if he would be a project advisor.
+ He gave me some good things to think about:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+Creating 'possibility spaces' can be exciting for a number of reasons...
+ but also can be a false God.
+ It can be an excuse to never to actually grapple with whether there is
+ value in the output itself, whether beauty is enough, whether people actually
+ want what you are making, etc...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Partially thanks to this provocation, I decided to find a venue to perform
+ with Meemoo in a live setting.
+ I was invited to do visuals for a Zodiak's Side-Step dance festival club
+ night.
+ I used the gig as an opportunity to push Meemoo development and pressure-test
+ the live-animation features.
+ 
+\end_layout
+
+\begin_layout Standard
+For the gig I made some special modules for creating a "world" into which
+ I could insert animated sprites.
+ On the software development side, I am happy that I decided to make two
+ modules (Controller and World) share the same Backbone model.
+ Each module has its own view of the same model, so the data passed through
+ the wire will be the same on both sides.
+\end_layout
+
+\begin_layout Standard
+As the party started and I was still coding furiously, adding features to
+ the world module.
+ Thirty minutes later the music tempo picked up, inviting people to the
+ dance floor, and I made myself declare the coding done for the night.
+ It was a thrill to see the first sprite hit the dance floor: multicolored
+ glitter swirling in water.
+\end_layout
+
+\begin_layout Standard
+We used clay and construction paper (and some glitter) as the basic building
+ blocks of the visuals.
+ I am attracted to the textures and imperfections that come from using materials
+ like these.
+ Using the taptempo module, I synced the sprites' animation to the music's
+ beat.
+ It was fun to build these tiny animations and then throw them onto the
+ screens around the dance floor.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Video documentation of evening: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://youtu.be/T_tCyYGLWKM"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2065,50 +2436,9 @@ Meemoo at Zodiak
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-I was invited to do visuals for a Zodiak's Side-Step dance festival club
- night.
- I used the gig as an opportunity to push Meemoo development and pressure-test
- the live-animation features.
- 
-\end_layout
-
-\begin_layout Standard
-For the gig I made some special modules for creating a "world" into which
- I could insert animated sprites.
- On the software development side, I'm happy that I decided to make two
- modules (Controller and World) share the same Backbone model.
- Each module has its own view of the same model, so the data passed through
- the wire will be the same on both sides.
-\end_layout
-
-\begin_layout Standard
-As the party started and I was still coding furiously, adding features to
- the world module.
- Thirty minutes later the music tempo picked up, inviting people to the
- dance floor, and I made myself declare the coding done for the night.
- It was a thrill to see the first sprite hit the dance floor: multicolored
- glitter swirling in water.
-\end_layout
-
-\begin_layout Standard
-We used clay and construction paper (and some glitter) as the basic building
- blocks of the visuals.
- I'm attracted to the textures and imperfections that come from using materials
- like these.
- Using the taptempo module, I synced the sprites' animation to the rhythm.
- It was fun to build these tiny animations and then throw them onto the
- screens around the dance floor.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2116,12 +2446,10 @@ There are lots of improvements and ideas that came up in the evening:
 \end_layout
 
 \begin_layout Itemize
-Camera: I used a Sony Eyetoy webcam, and the color was pretty bad.
- I chose kid's art supplies with rich colors, but most of the color was
- washed out in the first step.
- Next time I'll do some tests to find a better webcam, or use the camera
- on my phone, or a real digital camera somehow.
- 
+Camera: I used a Sony Eyetoy webcam, which had unsatisfactory color reproduction.
+ I chose art supplies with rich colors, but most of the color was washed
+ out in the first step.
+ Next time I will do some tests to find a better camera.
 \end_layout
 
 \begin_layout Itemize
@@ -2141,8 +2469,8 @@ Flocking: I only had time to implement the tiled animation.
 \begin_layout Itemize
 UX tweaks: Confirm dialog on every delete got annoying when juggling around
  modules.
- Directly un/replugging wires is a suggestion that is now high on the to-do
- list.
+ A method for un/replugging wires that is more direct would make it quicker
+ and easier to change the workings of the app.
  
 \end_layout
 
@@ -2163,12 +2491,15 @@ Despite these limitations, I got a lot of good feedback about the visuals.
 \end_layout
 
 \begin_layout Standard
-Only *once* in the evening did a JavaScript warning pop up on the dance
- floor.
+Only 
+\emph on
+once
+\emph default
+ in the evening did a JavaScript warning pop up on the dance floor.
  I consider that a victory, and it made me laugh a lot when it happened.
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Future Development
 \end_layout
 
@@ -2178,14 +2509,14 @@ This idea is bigger than one developer and one master's thesis.
  with varied talents into the project.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Community for sharing apps
 \end_layout
 
 \begin_layout Standard
 Meemoo was designed for sharing.
- I'd like to take elements of App Store, Reddit, and Github to create a
- community for sharing and forking Meemoo apps.
+ I would like to take elements of an App Store, Reddit, and Github to create
+ a community for sharing and forking Meemoo apps.
  Because of the small amount of source code to describe a Meemoo app (Algorithm
  
 \begin_inset CommandInset ref
@@ -2197,97 +2528,22 @@ reference "alg:Meemoo-App-Source"
 ) it will be relatively easy to make the community scalable.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Touchscreen support
 \end_layout
 
 \begin_layout Standard
-Some media observers, myself included, saw the rise of touchscreen devices
- like the iPhone and iPad as a step backwards for participatory media.
- As originally marketed, these devices seemed to be designed primarily for
- media consumption.
- When Apple later opened up the App Store they took a timid step towards
- hackability by allowing third party developers to create apps that extend
- the functionality of the device.
- I say 
-\begin_inset Quotes eld
-\end_inset
 
-timid
-\begin_inset Quotes erd
-\end_inset
-
- because only developers that pay for the privilege can write apps for these
- devices, and only apps that pass an opaque curation process are allowed
- in the App Store.
-\end_layout
-
-\begin_layout Standard
-Because of this closed ecosystem and technical limitations, the design of
- apps for iOS tend to have low to no hackability.
- In general, an app is designed to do one thing.
- The designer decides what the app does, how it communicates, where things
- can be shared.
- The user then uses the app.
- The designer/user roles tend to be well-defined in this way.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement O
-overhang 15text%
-width "30text%"
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/appstore-icon.png
-	width 30text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:App-Icon"
-
-\end_inset
-
-App Icon
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- The standard icon for an app looks like a shiny glass object (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:App-Icon"
-
-\end_inset
-
-), which mirrors the aesthetics of the device itself.
- It symbolizes something highly designed and polished, not to be opened.
 \end_layout
 
 \begin_layout Standard
 There are some notable exceptions: apps that encourage coding and exploration.
- These include Codea by Two Lives Left 
+ These include Codea
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
+Codea: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://twolivesleft.com/Codea/"
@@ -2299,11 +2555,12 @@ target "http://twolivesleft.com/Codea/"
 
 \end_inset
 
- for Lua coding, Processing.js Mini-IDE by Brian Jepson 
+ by Two Lives Left for Lua, Processing.js Mini-IDE
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
+Processing.js Mini-IDE: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.jepstone.net/blog/2010/04/16/processing-js-mini-ide-for-ipad-iphone-android-chrome/"
@@ -2315,11 +2572,12 @@ target "http://www.jepstone.net/blog/2010/04/16/processing-js-mini-ide-for-ipad-
 
 \end_inset
 
-, and GLSL Studio by kode80 
+ by Brian Jepson, and GLSL Studio
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
+GLSL Studio: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://glslstudio.com/"
@@ -2331,7 +2589,7 @@ target "http://glslstudio.com/"
 
 \end_inset
 
- for OpenGL shaders.
+ by kode80 for OpenGL shaders.
  These three apps are development environments that deal with the affordances
  and constraints of writing code on touchscreen devices in different ways.
  For example, Codea includes some well-designed features for touch-screen
@@ -2363,13 +2621,117 @@ Meemoo runs in browser, and JavaScript runs slower than native code.
  can be built with Meemoo will likewise increase.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Code editing
 \end_layout
 
 \begin_layout Standard
-Scratch has inspired some open-source libraries that use a codeblock programming
- metaphor.
+Websites such as 
+\begin_inset CommandInset href
+LatexCommand href
+name "jsFiddle.net"
+target "http://jsfiddle.net/"
+
+\end_inset
+
+ are designed to streamline the experience of editing and sharing HTML experimen
+ts and examples.
+ The first screen of the site presents three text areas for HTML, CSS, and
+ JavaScript, and an output frame that runs the resulting web page (Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:jsFiddle"
+
+\end_inset
+
+).
+ This site is used by JavaScript library developers to demonstrate bugs,
+ as well as to make demonstrations for web programming questions and answers
+ in forums such as StackOverflow.
+ The immediacy of editing, saving, running, and sharing code in the browser
+ makes this a time-saving tool for these communities.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/jsfiddle.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+jsFiddle 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:jsFiddle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I have been developing the first Meemoo modules using a traditional desktop
+ code editor.
+ I am used to switching between code editor and browser to test changes,
+ and I probably make this mode switch hundreds of times per day.
+ A code editor similar to jsFiddle that runs within Meemoo would eliminate
+ the need to constantly switch applications to develop and test modules.
+ Pressing 
+\begin_inset Quotes eld
+\end_inset
+
+view source
+\begin_inset Quotes erd
+\end_inset
+
+ on a module would open an editor showing the source code of the module.
+ From this view, there would be options to edit the current module (if you
+ have access to it) or fork the module into a new one.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Scratch has inspired some open-source libraries like DesignBlocksJS (Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DesignBlocksJS"
+
+\end_inset
+
+) that use a codeblock programming metaphor.
  
 \end_layout
 
@@ -2417,7 +2779,7 @@ name "fig:DesignBlocksJS"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Socket communication
 \end_layout
 
@@ -2426,7 +2788,7 @@ UX and server for sending arbitrary data from Meemoo on my smartphone to
  my laptop to your tablet (and back).
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Meemoo hardware
 \end_layout
 
@@ -2435,7 +2797,7 @@ Cheap computers (Raspberry Pi) + knobs + sliders + physical patch cables
  for performative interaction.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Twenty Apps to Build With Meemoo
 \end_layout
 
@@ -2472,7 +2834,7 @@ Artistic visualization of data from bio-sensors
 \end_layout
 
 \begin_layout Enumerate
-Beatbox control of video mashup (sCrAmBlEd?HaCkZ!)
+Beatbox control of video mashup (sCrAmBlEd?HaCkZ!) 
 \end_layout
 
 \begin_layout Enumerate
@@ -2485,7 +2847,7 @@ TI-83 emulator
 status open
 
 \begin_layout Plain Layout
-Proof-of-concept by Cemetech & Kerm Martian: 
+TI-83 in JavaScript by Cemetech & Kerm Martian: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.cemetech.net/projects/jstified/jstified.php"
@@ -2501,12 +2863,12 @@ target "http://www.cemetech.net/projects/jstified/jstified.php"
 \end_layout
 
 \begin_layout Enumerate
-LOGO emulator 
+Logo emulator 
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Proof-of-concept by Joshua Bell: 
+Logo in JavaScript by Joshua Bell: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.calormen.com/Logo/"
@@ -2532,170 +2894,20 @@ A Scratch game that draws different scenery based on location, time, and
 \end_layout
 
 \begin_layout Standard
-These examples show how—in the same way that the Internet encompasses all
- past and future media—a hackable creative coding environment that runs
+These examples show how--in the same way that the Internet encompasses all
+ past and future media--a hackable creative coding environment that runs
  in the browser can encompass and interact with all other creative coding
  environments.
  The educational philosophies that developed these systems can be hacked,
  updated, and incorporated into new educational goals.
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Conclusions
 \end_layout
 
 \begin_layout Standard
-I contacted Ze Frank to ask if he would be a project advisor.
- He gave me some good things to think about:
-\end_layout
-
-\begin_layout Quote
-\begin_inset Quotes eld
-\end_inset
-
-Creating 'possibility spaces' can be exciting for a number of reasons...
- but also can be a false God.
- It can be an excuse to never to actually grapple with whether there is
- value in the output itself, whether beauty is enough, whether people actually
- want what you are making, etc...
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Making a creative tool maker is pointless if, in the end, nothing creative
- is made.
- My dream is that somebody will make something beautiful with it.
- Shouldn't that somebody be me? If I don't do it, why would anybody else?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "library"
-options "bibtotoc,plainnat"
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Addsec
-\start_of_appendix
-Appendix
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset Float algorithm
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout LyX-Code
-
-\family roman
-\size small
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Defining Inputs and Outputs (JavaScript)
-\begin_inset CommandInset label
-LatexCommand label
-name "Defining Inputs and Outputs"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-\noindent
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "children/define-inputs-outputs-example.js"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\size small
-\begin_inset Float algorithm
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\size small
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Meemoo App Source Code (JSON)
-\begin_inset CommandInset label
-LatexCommand label
-name "alg:Meemoo-App-Source"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-
-\family typewriter
-\size small
-\begin_inset CommandInset include
-LatexCommand lstinputlisting
-filename "children/meemoo-graph-source.js"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Call to action.
 \end_layout
 
 \end_body
