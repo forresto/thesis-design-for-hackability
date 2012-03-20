@@ -390,6 +390,225 @@ In the course of this thesis I will refer to programming and coding as distinct
 .
 \end_layout
 
+\begin_layout Subsection
+iOS
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 3.5cm
+width "3.5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/appstore-icon.png
+	width 3.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:App-Icon"
+
+\end_inset
+
+App Icon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Some media observers, myself included, saw the rise of touchscreen devices
+ like the iPhone and iPad as a step backwards for participatory media.
+ As originally marketed, these devices were designed primarily for media
+ consumption.
+ When Apple later opened up the App Store they took a timid step towards
+ hackability by allowing third party developers to create apps that extend
+ the functionality of the device.
+ I say 
+\begin_inset Quotes eld
+\end_inset
+
+timid
+\begin_inset Quotes erd
+\end_inset
+
+ because only developers that pay for the privilege can write apps for these
+ devices, and only apps that pass an opaque curation process are allowed
+ in the App Store.
+\end_layout
+
+\begin_layout Standard
+Because of this closed ecosystem and technical limitations, the design of
+ apps for iOS tend to have low to no hackability.
+ In general, an app is designed to do one thing.
+ The designer decides what the app does, how it communicates, where things
+ can be shared.
+ The user then uses the app.
+ The designer/user roles tend to be well-defined in this way.
+\end_layout
+
+\begin_layout Standard
+The standard icon for an app looks like a shiny glass object (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:App-Icon"
+
+\end_inset
+
+), which mirrors the aesthetics of the device itself.
+ It symbolizes something highly designed and polished, not to be opened.
+ For both the device and the apps that run on it, the design implies 
+\begin_inset Quotes eld
+\end_inset
+
+no user serviceable parts inside.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are some apps designed for media creation.
+ Garageband
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Garageband: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.apple.com/ipad/from-the-app-store/apps-by-apple/garageband.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and Photoshop Touch
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Photoshop Touch: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.adobe.com/products/photoshop-touch.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ for iOS are tools for music creation and image manipulation designed for
+ touchscreens.
+ These tools are each highly designed for one kind of media creation.
+ These apps don't afford any scripting-based hackability, and can only communica
+te with services that the designers have chosen.
+\end_layout
+
+\begin_layout Standard
+There are some apps that do allow some programming-based hackability: apps
+ that are code editors.
+ These include Codea
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Codea: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://twolivesleft.com/Codea/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ by Two Lives Left for Lua, Processing.js Mini-IDE
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Processing.js Mini-IDE: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.jepstone.net/blog/2010/04/16/processing-js-mini-ide-for-ipad-iphone-android-chrome/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ by Brian Jepson, and GLSL Studio
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+GLSL Studio: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://glslstudio.com/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ by kode80 for OpenGL shaders.
+ These three apps are development environments that deal with the affordances
+ and constraints of writing code on touchscreen devices in different ways.
+ For example, Codea uses the affordances of touch-screen interaction to
+ manipulate variables with widgets embedded in the code, like popup number
+ sliders and color pickers.
+ 
+\end_layout
+
+\begin_layout Standard
+However, without an external keyboard, any kind of extended writing on touchscre
+en devices is a difficult task.
+ It is also against Apple's regulations to load external scripts in native
+ apps, which makes it hard to share code.
+ Programs that you code in these apps can only run in the 
+\begin_inset Quotes eld
+\end_inset
+
+walled garden
+\begin_inset Quotes erd
+\end_inset
+
+ of the app itself.
+\end_layout
+
 \begin_layout Section
 Metamedia
 \end_layout
@@ -825,103 +1044,6 @@ target "http://taggraph.com/"
 .
  These APIs increase the web's hackability, but only for people with coding
  skills.
-\end_layout
-
-\begin_layout Subsection
-iOS
-\end_layout
-
-\begin_layout Standard
-Some media observers, myself included, saw the rise of touchscreen devices
- like the iPhone and iPad as a step backwards for participatory media.
- As originally marketed, these devices seemed to be designed primarily for
- media consumption.
- When Apple later opened up the App Store they took a timid step towards
- hackability by allowing third party developers to create apps that extend
- the functionality of the device.
- I say 
-\begin_inset Quotes eld
-\end_inset
-
-timid
-\begin_inset Quotes erd
-\end_inset
-
- because only developers that pay for the privilege can write apps for these
- devices, and only apps that pass an opaque curation process are allowed
- in the App Store.
-\end_layout
-
-\begin_layout Standard
-Because of this closed ecosystem and technical limitations, the design of
- apps for iOS tend to have low to no hackability.
- In general, an app is designed to do one thing.
- The designer decides what the app does, how it communicates, where things
- can be shared.
- The user then uses the app.
- The designer/user roles tend to be well-defined in this way.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement O
-overhang 3.5cm
-width "3.5cm"
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/appstore-icon.png
-	width 3.5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:App-Icon"
-
-\end_inset
-
-App Icon
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-The standard icon for an app looks like a shiny glass object (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:App-Icon"
-
-\end_inset
-
-), which mirrors the aesthetics of the device itself.
- It symbolizes something highly designed and polished, not to be opened.
- For both the device and the apps that run on it, the design implies 
-\begin_inset Quotes eld
-\end_inset
-
-no user serviceable parts inside.
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1558,8 +1680,7 @@ name "fig:Fibonacci-Cat"
 \end_layout
 
 \begin_layout Standard
-One nice software design feature of Scratch is that each element on the
- screen is a 
+In Scratch each element on the screen is a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1570,6 +1691,28 @@ sprite
  with its own variables and scripts.
  This makes Scratch compositions object-oriented by default, as it would
  be hard to do it any other way.
+\end_layout
+
+\begin_layout Standard
+Code can be changed as the project is running, and the results change immediatel
+y
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This works best with some kinds of code edits, like changing variables or
+ colors.
+ Moving larger blocks might cause the project to stop, but it can be started
+ again.
+\end_layout
+
+\end_inset
+
+.
+ This brings direct manipulation to coding, in that changes in the code
+ can be seen in real-time, without recompiling or refreshing.
+ This would be a valuable feature for any programming environment, and it
+ is especially helpful for beginning programmers.
 \end_layout
 
 \begin_layout Section
@@ -2164,7 +2307,14 @@ What is abstracted
 \end_layout
 
 \begin_layout Section
-Persona
+Persona 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Persona"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2215,7 +2365,7 @@ Her brother uses the Internet and Facebook every evening.
 \end_layout
 
 \begin_layout Standard
-They click on the link and see a Meemoo app with three modules wired together.
+They click on the link and see a Meemoo app with two modules wired together.
  The first module shows the image from their webcam.
  She clicks 
 \begin_inset Quotes eld
@@ -2239,8 +2389,9 @@ capture
  They laugh at it, because her brother was making a funny face in one of
  the frames.
  They understand how it works now, so they clear the image and start over.
- They make a longer animation, making funny faces and jumping around the
- room.
+ They make an animation with more frames, making funny faces and jumping
+ around the room.
+ They save the resulting animated GIF image file.
 \end_layout
 
 \begin_layout Standard
@@ -2256,7 +2407,29 @@ Henry the Hacker
 
 \begin_layout Standard
 Henry is Cate's older brother.
- 
+ His communication with his friends at school is peppered with references
+ to Internet memes and inside jokes.
+ He enjoys drawing comic book heroes in his notebooks.
+\end_layout
+
+\begin_layout Standard
+After playing with Meemoo with his sister, Henry notices the 
+\begin_inset Quotes eld
+\end_inset
+
+Add Module
+\begin_inset Quotes erd
+\end_inset
+
+ feature.
+ He activates it and sees a list of modules that can be added to the app.
+ He adds the paint module and sees that it is a simple version of a familiar
+ paint application interface.
+ He discovers how to add a connections between modules and wires the webcam
+ module to the paint module.
+ He takes a picture of one of his sister's stuffed animal cats, and then
+ paints a helmet on the cat's image.
+ He does this a couple more times
 \end_layout
 
 \begin_layout Subsection
@@ -2529,94 +2702,37 @@ reference "alg:Meemoo-App-Source"
 \end_layout
 
 \begin_layout Section
-Touchscreen support
+Touchscreen support 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Touchscreen-support"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 
-\end_layout
-
-\begin_layout Standard
-There are some notable exceptions: apps that encourage coding and exploration.
- These include Codea
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Codea: 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://twolivesleft.com/Codea/"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- by Two Lives Left for Lua, Processing.js Mini-IDE
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Processing.js Mini-IDE: 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://www.jepstone.net/blog/2010/04/16/processing-js-mini-ide-for-ipad-iphone-android-chrome/"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- by Brian Jepson, and GLSL Studio
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-GLSL Studio: 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://glslstudio.com/"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- by kode80 for OpenGL shaders.
- These three apps are development environments that deal with the affordances
- and constraints of writing code on touchscreen devices in different ways.
- For example, Codea includes some well-designed features for touch-screen
- interaction with widgets embedded in the code, like popup number sliders
- and color pickers.
- However, without an external keyboard, any kind of extended writing on
- touchscreen devices is a difficult task.
- It is also against Apple's regulations to load external scripts in native
- apps, which makes it hard to share code.
 \end_layout
 
 \begin_layout Standard
 Meemoo has the potential to become a powerful tool for creative programming
  on touchscreen devices.
- Gestures for zooming, panning, and dragging are common in touchscreen interacti
-on, and should be tested to make them work with Meemoo.
- Zooming and panning already work smoothly, thanks to running in the browser.
+ The library of modules reduces the need to write code in a text editor.
  
 \end_layout
 
 \begin_layout Standard
-There will be a library of modules that will reduce the need to write code.
- 
+Gestures for zooming and panning are common in touchscreen interaction,
+ and could be an intuitive way of navigating a Meemoo application.
+ Since Meemoo runs in the browser, zooming and panning already work smoothly.
+ Module dragging and wire connecting will take some more development time.
 \end_layout
 
 \begin_layout Standard
-Meemoo runs in browser, and JavaScript runs slower than native code.
+Meemoo runs in browser, and in general JavaScript is slower than native
+ code.
  However, as the power of these devices increases, the kinds of apps that
  can be built with Meemoo will likewise increase.
 \end_layout
@@ -2719,20 +2835,42 @@ view source
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-Scratch has inspired some open-source libraries like DesignBlocksJS (Figure
- 
+The open-source programming environment DesignBlocksJS (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:DesignBlocksJS"
 
 \end_inset
 
-) that use a codeblock programming metaphor.
+) uses Scratch's codeblock programming metaphor.
+ Combining these concepts, you could have the higher-level wiring hackability
+ of Meemoo, and the lower-level hackability of codeblocks to edit the source
+ of a Meemoo module.
+ Programming modules with codeblocks would be a good transitional step between
  
+\begin_inset Quotes eld
+\end_inset
+
+hacker
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+modder
+\begin_inset Quotes erd
+\end_inset
+
+ (See 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Persona"
+
+\end_inset
+
+) for people that want to make their own modules but do not know web programming.
 \end_layout
 
 \begin_layout Standard
