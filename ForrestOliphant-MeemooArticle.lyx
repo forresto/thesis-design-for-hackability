@@ -1833,12 +1833,136 @@ n tend to be comfortable with connecting equipment with cables, so it is
 \end_layout
 
 \begin_layout Section
-Free Software movement
+Free software movement
 \end_layout
 
 \begin_layout Standard
-Can't own ideas.
- Why do people give away their work?
+Richard Stallman wrote the 
+\begin_inset Quotes eld
+\end_inset
+
+The GNU Manifesto
+\begin_inset Quotes erd
+\end_inset
+
+ in 1985 at the start of the GNU project.
+ In it he explains that software should be free, meaning that the source
+ should be available to examine and modify.
+ He framed his argument in terms of personal honor, 
+\begin_inset Quotes eld
+\end_inset
+
+I consider that the Golden Rule requires that if I like a program I must
+ share it with other people who like it.
+\begin_inset Quotes erd
+\end_inset
+
+ He also advanced the practical argument that free software would prevent
+ 
+\begin_inset Quotes eld
+\end_inset
+
+wasteful duplication
+\begin_inset Quotes erd
+\end_inset
+
+ of programming effort which could instead be used 
+\begin_inset Quotes eld
+\end_inset
+
+advancing the state of the art.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stallman1985"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In my programming experience, this has proven to be one huge benefit of
+ free software.
+ Meemoo relies heavily on two JavaScript libraries that are free software,
+ JQuery
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+JQuery: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://jquery.com/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and Backbone.js
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Backbone.js: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://documentcloud.github.com/backbone/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Both of these libraries are written by communities of people, many of whom
+ are much better programmers than me.
+ They design these libraries to be helpful for other programmers, and give
+ them away under open-source licenses.
+\end_layout
+
+\begin_layout Standard
+JQuery abstracts away many browser differences, making it much easier to
+ write code that runs the same on different browsers.
+ Backbone.js provides structure for the data models, views, and collections
+ that are required to make a complex maintainable web application.
+ This makes it easier to keep track of the data structures and state of
+ the apps, modules, and wires in Meemoo.
+ 
+\end_layout
+
+\begin_layout Standard
+I can confidently say that without these libraries Meemoo wouldn't be anywhere
+ close to where it is today.
+ It probably wouldn't exist at all.
+\end_layout
+
+\begin_layout Section
+JQuery plugins
+\end_layout
+
+\begin_layout Standard
+JQuery is hackable by virtue of its open-source license, but it is also
+ hackable it the sense that it allows programmers to write plugins.
+ There 
+\end_layout
+
+\begin_layout Standard
+JQuery : plugin :: Meemoo : module
+\end_layout
+
+\begin_layout Standard
+Large community sharing plugins.
+ I made this thing and it is useful to me.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1858,20 +1982,6 @@ If you can't open it you don't own it.
 \begin_inset Quotes erd
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Section
-JQuery Plugins
-\end_layout
-
-\begin_layout Standard
-JQuery : plugin :: Meemoo : module
-\end_layout
-
-\begin_layout Standard
-Large community sharing plugins.
- I made this thing and it is useful to me.
  
 \end_layout
 
@@ -2713,10 +2823,6 @@ name "sec:Touchscreen-support"
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 Meemoo has the potential to become a powerful tool for creative programming
  on touchscreen devices.
  The library of modules reduces the need to write code in a text editor.
@@ -2753,8 +2859,7 @@ target "http://jsfiddle.net/"
  are designed to streamline the experience of editing and sharing HTML experimen
 ts and examples.
  The first screen of the site presents three text areas for HTML, CSS, and
- JavaScript, and an output frame that runs the resulting web page (Figure
- 
+ JavaScript, and a result frame that runs the web page output (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:jsFiddle"
@@ -2844,8 +2949,8 @@ reference "fig:DesignBlocksJS"
 
 ) uses Scratch's codeblock programming metaphor.
  Combining these concepts, you could have the higher-level wiring hackability
- of Meemoo, and the lower-level hackability of codeblocks to edit the source
- of a Meemoo module.
+ of Meemoo, and the lower-level coding hackability of codeblocks to edit
+ the source of a Meemoo module.
  Programming modules with codeblocks would be a good transitional step between
  
 \begin_inset Quotes eld
@@ -2871,6 +2976,7 @@ reference "sec:Persona"
 \end_inset
 
 ) for people that want to make their own modules but do not know web programming.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2908,13 +3014,16 @@ name "fig:DesignBlocksJS"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+On touchscreens, coding with drag-and-drop codeblocks has the potential
+ to be much easier than text-based coding.
+ Some optimization would be required to account for the difference in mouse
+ pointer and finger size.
 \end_layout
 
 \begin_layout Section
@@ -2960,19 +3069,47 @@ Kaleidoscope with reconfigurable mirrors
 \end_layout
 
 \begin_layout Enumerate
-Experiment with video feedback with webcams pointed at screens
+Experiment with video feedback with webcam pointed at screen
 \end_layout
 
 \begin_layout Enumerate
-Text-to-song generator with computer generated voices singing in harmony
+Text-to-song generator
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Speech synthesizer in 1K of JavaScript by Mathieu 'p01' Henri: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.p01.org/releases/JS1K_Speech_Synthesizer/JS1K_Speech_Synthesizer.htm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ with computer-synthesized voices singing in harmony
 \end_layout
 
 \begin_layout Enumerate
-Artistic visualization of data from bio-sensors
+Artistic visualization of data from bio-sensors recorded while sleeping
 \end_layout
 
 \begin_layout Enumerate
-Beatbox control of video mashup (sCrAmBlEd?HaCkZ!) 
+Beatbox control of video mashup, where different sounds in the microphone
+ trigger different video clips
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Idea from sCrAmBlEd?HaCkZ! by Sven König: http://youtu.be/eRlhKaxcKpA
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -2980,9 +3117,25 @@ Hourglass module that flows virtual sand to other modules through the wires
 \end_layout
 
 \begin_layout Enumerate
-TI-83 emulator 
+Animated comic builder
+\end_layout
+
+\begin_layout Enumerate
+Parallax-based 2.5D diorama builder
+\end_layout
+
+\begin_layout Enumerate
+Arduino module to connect Meemoo apps to physical sensors
+\end_layout
+
+\begin_layout Enumerate
+...
+\end_layout
+
+\begin_layout Enumerate
+TI-83 emulator
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TI-83 in JavaScript by Cemetech & Kerm Martian: 
@@ -2997,13 +3150,13 @@ target "http://www.cemetech.net/projects/jstified/jstified.php"
 
 \end_inset
 
- to draw animations
+ to draw frames of geometric animation
 \end_layout
 
 \begin_layout Enumerate
-Logo emulator 
+Logo emulator
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Logo in JavaScript by Joshua Bell: 
@@ -3018,17 +3171,11 @@ target "http://www.calormen.com/Logo/"
 
 \end_inset
 
- to draw animations
+ that draws patterns with variables influenced by weather data
 \end_layout
 
 \begin_layout Enumerate
-A Scratch game that draws different scenery based on location, time, and
- weather data.
- 
-\end_layout
-
-\begin_layout Enumerate
-...
+A Scratch game that draws different scenery based on location data 
 \end_layout
 
 \begin_layout Standard
