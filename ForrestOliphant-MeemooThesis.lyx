@@ -253,7 +253,7 @@ Appendix
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "library"
-options "plainnat"
+options "mla-goodURL"
 
 \end_inset
 

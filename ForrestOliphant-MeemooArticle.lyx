@@ -88,18 +88,27 @@ Introduction
 \end_layout
 
 \begin_layout Quote
+
+\emph on
+The power to understand, modify, and create new media tools should not be
+ restricted to those with a freakish knack for manipulating abstract symbols.
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Quote
+--- Paraphrased from Bret Victor's 
 \begin_inset Quotes eld
 \end_inset
 
-The power to understand and predict the quantities of the world should not
- be restricted to those with a freakish knack for manipulating abstract
- symbols.
+Kill Math
 \begin_inset Quotes erd
 \end_inset
 
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citeyearpar
 key "Victor2011"
 
 \end_inset
@@ -108,24 +117,44 @@ key "Victor2011"
 \end_layout
 
 \begin_layout Standard
-The main objective of this project is to design a modular dataflow visual
- programming framework using web technologies.
- The framework should empower non-coders to 
-\begin_inset Quotes eld
-\end_inset
+The people that created the vision of the personal computer wanted everybody
+ to be able to create their own tools.
+ Learning traditional computer programming takes a major commitment, and
+ most people are satisfied with the tools that come with the computer or
+ are offered as services online.
+ The barrier to entry to learning traditional programming involves setting
+ up a programming environment, learning different systems for creating presentat
+ion and logic, and learning different programming and markup languages and
+ syntaxes.
+\end_layout
 
-hack
-\begin_inset Quotes erd
-\end_inset
+\begin_layout Standard
+People that overcome these barriers to entry are able to create software
+ tools for themselves and others.
+ People that create tools that are open to modification afford other people
+ the ability to learn from their tools and build new tools on the old.
+ 
+\end_layout
 
- creative web apps by configuring wires that represent how modules communicate.
- There should be a simple syntax to define the inputs and outputs of a module.
- Apps created with the framework should have source code that is easy to
- read and share.
+\begin_layout Standard
+I wanted to combine my programming experience with visual programming and
+ creative web applications to make a framework for my own web experiments.
+ I realized that by considering audiences for the framework other than myself
+ -- programmers and non-programmers alike -- that I could make something
+ that might have creative value to a wider audience.
+ Such a tool could invite people without coding experience to modify software
+ tools and create their own.
 \end_layout
 
 \begin_layout Standard
 To this end, I have designed and created a web-based framework called Meemoo.
+ The main objective of this project is to design a modular dataflow visual
+ programming framework using web technologies.
+ The framework should afford non-coders the ability to modify creative web
+ apps by configuring wires that represent how modules communicate.
+ There should be a simple syntax to define the inputs and outputs of a module.
+ Apps created with the framework should have source code that is easy to
+ read and share.
 \end_layout
 
 \begin_layout Standard
@@ -140,7 +169,8 @@ module
 \emph default
  is a web page that can live anywhere online, and use any web technology.
  This web page includes JavaScript that defines the module's inputs and
- outputs: what data is accepted and what kind of data will be sent.
+ outputs: what data is accepted, how the data is processed, and what kind
+ of data will be sent.
  The 
 \emph on
 wires
@@ -152,8 +182,28 @@ wires
 \end_layout
 
 \begin_layout Standard
+Meemoo apps run in the web browser, so they will be able to run the same
+ on PCs, smartphones, tablet computers, and soon TVs.
+ Modifying and making new apps is done in the same browser interface, so
+ no external developer tools are needed.
+\end_layout
+
+\begin_layout Standard
 Meemoo is programmed by connecting boxes with wires, putting programming
  within reach of non-coders.
+ In the course of this thesis I will refer to 
+\emph on
+programming
+\emph default
+ and 
+\emph on
+coding
+\emph default
+ as distinct skills.
+ Learning to program is a process of learning to manipulate logical structures.
+ Learning to code puts those structures into a linear-textual format that
+ computers can parse.
+ Different programmable systems emphasize and abstract these aspects differently.
 \end_layout
 
 \begin_layout Standard
@@ -172,17 +222,6 @@ I did not start making Meemoo as an educational tool, but I have since been
  my own experiences as a learner.
  I think that Meemoo has the potential to be a good tool for learning by
  making.
- 
-\end_layout
-
-\begin_layout Standard
-The people that created the vision of the personal computer wanted everybody
- to be able to create their own tools.
- Learning traditional computer programming takes a major commitment, and
- most people are satisfied with the tools that come with the computer or
- are offered as services online.
- Meemoo is a toolmaker that makes it easier for people to create and modify
- their own digital tools and therefore to invent new media.
  
 \end_layout
 
@@ -320,11 +359,8 @@ hackability,
 
  as I think that it encompasses the spirit that I want to promote with regards
  to software.
-\end_layout
-
-\begin_layout Standard
-There are other projects that are embracing this meaning as well, such as
- Hackity Hack!
+ There are other projects that are embracing this meaning as well, such
+ as Hackity Hack!
 \begin_inset Foot
 status collapsed
 
@@ -360,6 +396,31 @@ target "http://hackasaurus.org/"
 \end_layout
 
 \begin_layout Standard
+Pekka Himanen describes 
+\begin_inset Quotes eld
+\end_inset
+
+The Hacker Ethic
+\begin_inset Quotes erd
+\end_inset
+
+ as a work ethic based on passionate curiosity.
+ This drive to make and tinker is not limited to high tech systems; it manifests
+ itself in other interests such as carpentry or textile craft.
+ It stands in contrast to Max Weber's "Protestant work ethic," which is
+ based on a sense of duty and responsibility.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 3-8"
+key "Himanen2001"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Designing for hackability implies respect.
  The designer of a hackable thing acknowledges that they cannot imagine
  every potential use, so they enable people to modify it to their will and
@@ -372,22 +433,7 @@ For software to be hackable the source code should be available under a
  Free license.
  While this enables other people with coding skills to modify a software
  project, I would like to expand the affordances of software hackability
- non-coders
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-In the course of this thesis I will refer to programming and coding as distinct
- skills.
- Learning to program is a process of learning to manipulate logical structures.
- Learning to code puts those structures into a linear-textual format that
- computers can parse.
- Different programmable systems emphasize and abstract these aspects differently.
-\end_layout
-
-\end_inset
-
-.
+ to non-coders.
 \end_layout
 
 \begin_layout Subsection
@@ -398,7 +444,7 @@ iOS
 \begin_inset Wrap figure
 lines 0
 placement o
-overhang 3.5cm
+overhang 4cm
 width "3.5cm"
 status collapsed
 
@@ -436,10 +482,12 @@ App Icon
 \end_layout
 
 \begin_layout Standard
-Some media observers, myself included, saw the rise of touchscreen devices
- like the iPhone and iPad as a step backwards for participatory media.
+I saw the rise of touchscreen devices like the iPhone and iPad as a step
+ backwards for participatory media.
  As originally marketed, these devices were designed primarily for media
  consumption.
+ The only media production capabilities afforded by these devices was taking
+ and sharing photos.
  When Apple later opened up the App Store they took a timid step towards
  hackability by allowing third party developers to create apps that extend
  the functionality of the device.
@@ -462,8 +510,17 @@ Because of this closed ecosystem and technical limitations, the design of
  In general, an app is designed to do one thing.
  The designer decides what the app does, how it communicates, where things
  can be shared.
- The user then uses the app.
- The designer/user roles tend to be well-defined in this way.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+user
+\begin_inset Quotes erd
+\end_inset
+
+ then uses the app.
+ The demarcation between the designer and user roles are well-defined in
+ this way.
 \end_layout
 
 \begin_layout Standard
@@ -1073,30 +1130,58 @@ key "Kay1990"
 \end_layout
 
 \begin_layout Standard
-The content is usually created offline, with digital tools like Photoshop
- that mimic traditional analog tools.
+Many digital tools have precedents in avant-garde art practices.
+ In 1959 Brion Gysin manually 
+\begin_inset Quotes eld
+\end_inset
+
+hacked
+\begin_inset Quotes erd
+\end_inset
+
+ text with scissors, recombining the fragments to see what might be found
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Burroughs1961"
+
+\end_inset
+
+.
+ Word processing software can be seen as a tool that affords greater hackability
+ to text.
+ In 1972 DJ Kool Herc manually mixed two records to give partygoers a longer
+ percussive break to dance to 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hermes2006"
+
+\end_inset
+
+.
+ Non-linear audio editors afford greater hackability to music, which has
+ lead to different kinds of remixing.
+ Although the art practices did not directly lead to the software tool developme
+nt, both come from the same impulse to combine and recontextualize the world
+ around us.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 13"
+key "Manovich2003"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Word processing made text more hackable.
- Nonlinear audio editing made music more hackable.
- Both had avantgarde tools and methods as precursors: Burroughs' cut-ups
- and turntablism.
-\end_layout
-
-\begin_layout Standard
-Digital media is hackable by programmers.
- Meemoo wants to 
-\end_layout
-
-\begin_layout Standard
-Burroughs and DJ Kool Herc were 
-\end_layout
-
-\begin_layout Standard
-took and avantgarde art form (William Burroughs, cut-ups) and turned it
- into a tool that brought text hackability to the masses.
- Non-linear audio 
+These digital tools are designed to afford hackability to one particular
+ kind of media.
+ Meemoo is designed to afford hackability to the tools themselves.
+ Meemoo is a toolmaker that makes it easier for people to create and modify
+ their own digital tools and therefore to invent new media.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1291,23 +1376,25 @@ constructivism.
 \end_inset
 
 the learner is consciously engaged in constructing a public entity, whether
- it's a sand castle on the beach or a theory of the universe.
-\begin_inset Quotes erd
-\end_inset
-
- He called this idea 
-\begin_inset Quotes eld
-\end_inset
-
-constructionism.
+ it's a sand castle on the beach or a theory of the universe
 \begin_inset Quotes erd
 \end_inset
 
  
 \begin_inset CommandInset citation
 LatexCommand citep
+after "p. 1"
 key "Papert1991"
 
+\end_inset
+
+.
+ This idea is called 
+\begin_inset Quotes eld
+\end_inset
+
+constructionism.
+\begin_inset Quotes erd
 \end_inset
 
 
@@ -1323,6 +1410,7 @@ s.
  computer 
 \begin_inset CommandInset citation
 LatexCommand citep
+after "p. 6"
 key "Papert1991"
 
 \end_inset
@@ -1334,7 +1422,7 @@ key "Papert1991"
 \begin_inset Wrap figure
 lines 0
 placement o
-overhang 3.5cm
+overhang 4cm
 width "3.5cm"
 status collapsed
 
@@ -1414,6 +1502,7 @@ reference "fig:Logo-star"
  Cartesian coordinates 
 \begin_inset CommandInset citation
 LatexCommand citep
+after "p. 171"
 key "Papert1993"
 
 \end_inset
@@ -1432,7 +1521,8 @@ A fundamental requirement for the DynaBook research project was to create
  prototype system to lower the barrier to entry for coding.
  Object-oriented programming splits code into logical classes that define
  the data for the object and the methods that access or modify that data.
- 
+ By splitting the code like this it becomes easier to organize and navigate
+ more complex projects.
 \end_layout
 
 \begin_layout Standard
@@ -1466,9 +1556,9 @@ Scratch
 \end_layout
 
 \begin_layout Standard
-Text-based programming languages have different requirements for syntax,
- punctuation, and indentation that if not followed perfectly will result
- in programs that do not run as expected (or at all).
+Text-based programming languages have different requirements for syntax
+ and indentation that if not followed perfectly will result in programs
+ that do not run as expected (or at all).
  This can be frustrating for beginners and experienced coders alike -- most
  of my programming errors are missing semicolons or mismatched brackets.
  The creators of Scratch designed a coding system that works around syntax
@@ -1697,13 +1787,12 @@ sprite
 Code can be changed as the project is running, and the results change immediatel
 y
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 This works best with some kinds of code edits, like changing variables or
  colors.
- Moving larger blocks might cause the project to stop, but it can be started
- again.
+ Moving larger blocks might require restarting the project.
 \end_layout
 
 \end_inset
@@ -1721,7 +1810,9 @@ Visual programming languages
 
 \begin_layout Standard
 Meemoo is a kind of dataflow visual programming environment.
- This means that on a programming 
+ This means that programming is done by connecting modules with wires.
+ The modules can hold and process arbitrary data: text, audio, images.
+ The wires define where 
 \end_layout
 
 \begin_layout Standard
@@ -1730,7 +1821,7 @@ lines 0
 placement O
 overhang 4cm
 width "6cm"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1767,7 +1858,7 @@ name "fig:GRAIL"
 \end_layout
 
 \begin_layout Standard
-GRAIL (GRAphical Input Language) was an experimental dataflow environment
+GRAIL (GRAphical Input Language) was an early experimental dataflow environment
  developed by the Rand Corporation from 1967 to 1969 (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1785,6 +1876,7 @@ reference "fig:GRAIL"
  
 \begin_inset CommandInset citation
 LatexCommand citep
+after "p. 3"
 key "Ellis1969b"
 
 \end_inset
@@ -2227,8 +2319,8 @@ In the past two years browser capabilities have increased and JavaScript
  engines have been made fast enough that audio/visual programming is now
  possible with web standards.
  I realized that I could make my own visual programming environment with
- features that appealed to me from different paradigms: modularity, reconfigurab
-ility, instant feedback, and shareability.
+ features that appealed to me from different paradigms: modularity, hackability,
+ instant feedback, and shareability.
  Creating a new creative tool is just a matter of wiring some modules together.
  I can write new modules in code that I am already comfortable with.
  Things made with this toolmaker are easily shared online.
@@ -2245,8 +2337,8 @@ I hope that Meemoo might enable somebody to explore creative programming
 \begin_layout Standard
 In a way, Meemoo is an abstraction of all of my earlier digital creative
  experiments.
- I plan on rebuilding some of them in Meemoo to make it easier for me (and
- others) to modify how they work.
+ I plan on rebuilding some of these experiments in Meemoo to make it easier
+ for me (and others) to modify how they work.
 \end_layout
 
 \begin_layout Section
@@ -2338,8 +2430,7 @@ Mousing Around.
 
 \begin_layout Standard
 Because of timing or school priorities, I was not part of the small generation
- of students that was exposed to BASIC or LOGO programming in elementary
- school.
+ of students that was exposed to BASIC or LOGO programming in school.
  I remained interested in computers, spending any time that I could get
  my hands on them on shareware games and paint programs.
  I did not get into programming until high school, in two very different
@@ -2362,7 +2453,7 @@ s: the
  This game is played by pressing the buttons [1] [+] [1] [=], and then pressing
  [=] as fast as possible.
  This makes the calculator into a counter, and we would have races to see
- who could press [=] the most times in one minute.
+ who could press [=] fastest.
  Pressing buttons seems to be a common interest for children.
  When a system reacts to the button press, it gives the child a sense of
  control.
@@ -2376,15 +2467,15 @@ s: the
 \end_layout
 
 \begin_layout Standard
-I then figured out how to script complicated graphic drawings with these
- small machines.
+I then figured out how to script complicated graphic drawings on the small
+ monochromatic screen.
  I would watch with interest as the calculator slowly rendered patterns
  from my scripts, one stroke at a time.
  This was my first experience with programming graphics.
  I never managed to make a program draw what I originally had in mind, but
  this was not discouraging.
- The serendipitous monochrome images that emerged from my experiments encouraged
- me to explore different directions, and create new challenges for myself.
+ The serendipitous images that emerged from my experiments encouraged me
+ to explore different directions, and create new challenges for myself.
  I learned a lot about cartesian geometry, algebra, and logic from these
  code explorations.
 \end_layout
@@ -2393,7 +2484,15 @@ I then figured out how to script complicated graphic drawings with these
 The availability of the Internet in my home spurred the second programming
  interest.
  It was empowering to publish my first web site.
- It was a place where I could freely express myself in many different ways.
+ It was a 
+\begin_inset Quotes eld
+\end_inset
+
+place
+\begin_inset Quotes erd
+\end_inset
+
+ where I could freely express myself in many different ways.
  Anybody in the world could see it, through the same window and at the same
  size and resolution as the websites of corporations, governments, and universit
 ies.
@@ -2419,54 +2518,187 @@ view source
  in this thesis project.
 \end_layout
 
-\begin_layout Subsection
-Media Bitch (2002), Flash
+\begin_layout Section
+Voice Synthesizer (2002), Flash
 \end_layout
 
 \begin_layout Standard
-http://forresto.com/oldsite/interactive/mbx/mediabitch.html
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 4cm
+width "6cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2002-voice-synth.png
+	width 6cm
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Kaleidocam (2007), Quartz Composer
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Voice Synthesizer
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Voice-Synth"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-https://vimeo.com/387429
+This project was the ambitious programming that I had done at the time.
+ The result was a voice 
+\begin_inset Quotes eld
+\end_inset
+
+synthesizer
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Voice Synthesizer: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://forresto.com/oldsite/interactive/mbx/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ that used looped samples of me saying all of the basic English phonemes.
+ As you type on the keyboard, the audio for each phoneme plays and the image
+ changes to my mouth making that sound (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Voice-Synth"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
-Learning QC and dataflow programming.
+In the original concept, I imagined making different voices and faces of
+ newscasters and politicians as plug-ins to the system.
+ Because of lack of time and programming skill, this never happened.
+ It would be easy to make such a system in Meemoo, with the plug-ins as
+ modules containing web video and a listing of timecode triggers for each
+ phoneme.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Megacam (2010), Flash
 \end_layout
 
 \begin_layout Standard
-http://sembiki.com/megacam
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 4cm
+width "6cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2009-megacam.png
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Megacam
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Megacam"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Webcam apps inspired in part by Lomo cameras.
- I chose presets for each toy to make it simpler, but that also removed
- the possibility to experiment with the variables.
+Inspired in part by Lomo cameras, I made a series of webcam toys in Flash
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Megacam: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://sembiki.com/megacam"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Looplab (2010), Pure Data
+\end_inset
+
+.
+ In the early prototypes I had sliders for all of the variables.
+ I chose four presets for the variables to make the interface simpler (Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Megacam"
+
+\end_inset
+
+), but that also removed the possibility for me and other people to experiment
+ with the variables.
+ I designed away the hackability.
 \end_layout
 
 \begin_layout Standard
-https://vimeo.com/16956269 http://www.flickr.com/photos/forresto/5125930908/
+If Megacam were remade as a Meemoo app, it would be possible to keep the
+ simplicity of the presets, but also the hackability of exposing all variables.
+ People could also wire in image effects to change the kinds of photos that
+ the app makes.
 \end_layout
 
-\begin_layout Standard
-Learning Pure Data.
- Network communcation of identical apps, each passing data to the next.
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Section
 Opera stage projection mapping (2011), Quartz Composer
 \end_layout
 
@@ -2488,13 +2720,80 @@ Meemoo will make it possible for people to not only share such modules online,
  This will lower the barrier to entry and increase collaboration potential.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Web Video Remixer (2011), HTML
 \end_layout
 
 \begin_layout Standard
-This is the direct parent project of Meemoo, where I figured out how to
- communicate between web pages in iframes.
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 4cm
+width "6cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2011-web-video-remixer.jpg
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Web Video Remixer
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Web-Video-Remixer"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is the direct parent project of Meemoo.
+ I wanted to create a remixer for web video, including Youtube.
+ The interface was split between controller and player, which were in separate
+ HTML pages to allow the player page to be put on a separate monitor or
+ projector.
+ The controller page sent trigger signals as text to the player page using
+ the same mechanism as the current Meemoo uses to send data from module
+ to module.
+ In early 2011 this mechanism, 
+\family typewriter
+window.postMessage()
+\family default
+, was only able to send text data to another window.
+ Around the middle of the year this limitation was lifted, allowing arbitrary
+ data like images and audio to be sent.
+ This expansion of the capabilities of browsers was a big inspiration to
+ abstract this web video remixer into Meemoo, a web everything remixer.
+\end_layout
+
+\begin_layout Standard
+There were several types of controllers that could be used to remix the
+ video.
+ Each video had triggers that corresponded to the keys of the keyboard.
+ Patterns could be made by typing these trigger keys.
+ Then the patterns could be put in order in the sequencer.
+ It is a complex system, and I never got around to actually using it.
+ This is a pitfall of tool design that I would like to avoid in the future.
 \end_layout
 
 \begin_layout Chapter
