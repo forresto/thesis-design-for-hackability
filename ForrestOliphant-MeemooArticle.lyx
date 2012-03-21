@@ -641,11 +641,11 @@ key "Kay1977"
 \begin_inset Quotes eld
 \end_inset
 
-I suggest that Kay and others aimed to create a particular kind of new media--ra
-ther than merely simulating the appearances of old ones.
+I suggest that Kay and others aimed to create a particular kind of new media
+ -- rather than merely simulating the appearances of old ones.
  These new media use already existing representational formats as their
  building blocks, while adding many new previously nonexistent properties.
- At the same time, as envisioned by Kay, these media are expandable--that
+ At the same time, as envisioned by Kay, these media are expandable -- that
  is, users themselves should be able to easily add new properties, as well
  as to invent new media.
 \begin_inset Quotes erd
@@ -979,9 +979,9 @@ In B Flat
 \begin_inset Quotes erd
 \end_inset
 
---multiple videos that can be independently controlled in one HTML page--can
- be considered a new media afforded by the participatory nature of Youtube,
- and the ease of embedding videos.
+ -- multiple videos that can be independently controlled in one HTML page
+ -- can be considered a new media afforded by the participatory nature of
+ Youtube, and the ease of embedding videos.
  The ability to create this new media required HTML coding knowledge.
  
 \end_layout
@@ -1117,10 +1117,10 @@ The Dynabook was a research project of Xerox Palo Alto Research Center that
 
 Putting all this together, we want an apparently free environment in which
  exploration causes desired sequences to happen (Montessori); one that allows
- kinesthetic, iconic, and symbolic learning--"doing with images makes symbols"
- (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic
- is embedded in the familiar (Negroponte); and which acts as a magnifying
- mirror for the user's own intelligence (Coleridge).
+ kinesthetic, iconic, and symbolic learning -- "doing with images makes
+ symbols" (Piaget & Bruner); the user is never trapped in a mode (GRAIL);
+ the magic is embedded in the familiar (Negroponte); and which acts as a
+ magnifying mirror for the user's own intelligence (Coleridge).
 \begin_inset Quotes erd
 \end_inset
 
@@ -1162,9 +1162,9 @@ key "Victor2012"
  which immediately changes the visual output (Figure ).
  As somebody with experience coding visual applications in JavaScript, Flash,
  and Processing, this demonstration was like seeing the light.
- Suddenly I could see that my normal workflow--the need to save or recompile,
- change modes, and refresh between changing code and seeing the result--is
- a huge waste of time and mental energy.
+ Suddenly I could see that my normal workflow -- the need to save or recompile,
+ change modes, and refresh between changing code and seeing the result --
+ is a huge waste of time and mental energy.
  
 \end_layout
 
@@ -1469,7 +1469,7 @@ Scratch
 Text-based programming languages have different requirements for syntax,
  punctuation, and indentation that if not followed perfectly will result
  in programs that do not run as expected (or at all).
- This can be frustrating for beginners and experienced coders alike--most
+ This can be frustrating for beginners and experienced coders alike -- most
  of my programming errors are missing semicolons or mismatched brackets.
  The creators of Scratch designed a coding system that works around syntax
  and the frustration of syntax errors.
@@ -1833,7 +1833,7 @@ n tend to be comfortable with connecting equipment with cables, so it is
 \end_layout
 
 \begin_layout Section
-Free software movement
+Free Software Movement
 \end_layout
 
 \begin_layout Standard
@@ -1885,7 +1885,7 @@ key "Stallman1985"
 \end_layout
 
 \begin_layout Standard
-In my programming experience, this has proven to be one huge benefit of
+In my programming experience, this has proven to be the main benefit of
  free software.
  Meemoo relies heavily on two JavaScript libraries that are free software,
  JQuery
@@ -1923,8 +1923,8 @@ target "http://documentcloud.github.com/backbone/"
 \end_inset
 
 .
- Both of these libraries are written by communities of people, many of whom
- are much better programmers than me.
+ Both of these libraries are written by communities of people who are (collectiv
+ely) much better programmers than me.
  They design these libraries to be helpful for other programmers, and give
  them away under open-source licenses.
 \end_layout
@@ -1940,9 +1940,46 @@ JQuery abstracts away many browser differences, making it much easier to
 \end_layout
 
 \begin_layout Standard
-I can confidently say that without these libraries Meemoo wouldn't be anywhere
- close to where it is today.
- It probably wouldn't exist at all.
+I can confidently say that without these libraries Meemoo wouldn't exist.
+ My programming knowledge is built on viewing and using source code made
+ by other people.
+\end_layout
+
+\begin_layout Standard
+It isn't just the JavaScript libraries that Meemoo is built on that are
+ free and open-source.
+ Free software powers the majority of the web.
+ As of March 2012 65% of web servers run the free Apache HTTP Server, versus
+ 14% that run Microsoft's closed-source server software 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Netcraft2012"
+
+\end_inset
+
+.
+ There are several open-source languages (PHP, Ruby, Python) that run on
+ those servers and many open-source frameworks (Symfony, Rails, Django)
+ written in those languages.
+ There are two competitive free browser implementations that push web standards
+ and innovation: Gecko (Firefox) and Webkit (Safari and Chrome).
+ Firefox is 
+\begin_inset Quotes eld
+\end_inset
+
+the most widely used consumer-facing piece of free software ever
+\begin_inset Quotes erd
+\end_inset
+
+ and Webkit has the backing of two of the largest technology companies,
+ Apple and Google 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Villa2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -1951,18 +1988,51 @@ JQuery plugins
 
 \begin_layout Standard
 JQuery is hackable by virtue of its open-source license, but it is also
- hackable it the sense that it allows programmers to write plugins.
- There 
+ hackable because it provides mechanisms for programmers to extend it with
+ plugins.
+ There is no official repository of plugins, but one site dedicated to JQuery
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.jquery4u.com/plugins/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ claims to have over 2000 listed in their directory.
+ The only JQuery plugin that I'm using for Meemoo is the official JqueryUI
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+JqueryUI: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://jqueryui.com/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, which makes it simpler to implement drag-and-drop functionality and styled
+ buttons.
 \end_layout
 
 \begin_layout Standard
-JQuery : plugin :: Meemoo : module
-\end_layout
-
-\begin_layout Standard
-Large community sharing plugins.
- I made this thing and it is useful to me.
- 
+The way the Meemoo framework accepts modules is analogous to JQuery's plugin
+ architecture.
+ Anybody can extend the framework by making a module.
+ Meemoo provides the framework and a communication standard for the modules.
 \end_layout
 
 \begin_layout Section
@@ -1970,19 +2040,161 @@ Open hardware and maker movement
 \end_layout
 
 \begin_layout Standard
-Arduino modules: Gameduino, heart rate sensor, Lilypad...
- abstracting some of the electronics intricacies into modular components.
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 4cm
+width "8cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/MAKERS_RIGHTS.pdf
+	width 8cm
+	BoundingBox 40bp 40bp 590bp 780bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Maker's Bill of Rights 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-Maker's-Bill"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+The Open Hardware and Maker movements value hackability in electronics and
+ other physical objects.
+ The Maker's Bill of Rights (Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:The-Maker's-Bill"
+
+\end_inset
+
+) from Make Magazine lists several commandments for makers and hardware
+ manufactures to consider.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jalopy2005"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Arduino was designed to make it easier to work with electronics.
+ Programming can be done from a Mac or PC via a standard USB cable, where
+ earlier programmable electronics would require hardware.
+ They designed it to be affordable to start: $30 compared to $100 for earlier,
+ less powerful microcontrollers.
+ They released the schematics under a Creative Commons license.
+ The creators say that the most important impact of the Arduino is 
 \begin_inset Quotes eld
 \end_inset
 
-If you can't open it you don't own it.
+the democratization of engineering.
 \begin_inset Quotes erd
 \end_inset
 
  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kushner2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A cottage industry has spring up around Arduino.
+ In much the same way that any JavaScript developer can write a plugin for
+ JQuery, anybody with knowledge of electronics can make 
+\begin_inset Quotes eld
+\end_inset
+
+plugins
+\begin_inset Quotes erd
+\end_inset
+
+ for Arduino.
+ Two examples that recently did really well on Kickstarter are Gameduino
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Gameduino raised 11.5x their goal: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://kck.st/f44kHG"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and Pulse Sensor
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Pulse Sensor raised 6.1x their goal: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://kck.st/nae9lR"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Gameduino is a 
+\begin_inset Quotes eld
+\end_inset
+
+shield
+\begin_inset Quotes erd
+\end_inset
+
+ that plugs into Arduino and contains the needed electronics and software
+ libraries to create vintage-style video games.
+ Pulse Sensor is a simpler module that contains the electronics needed to
+ measure heart rate from a fingertip or ear lobe.
+ Plugging both of these modules into an Arduino would take a hacker a long
+ way towards crating a pulse-controlled video game.
 \end_layout
 
 \begin_layout Chapter
@@ -3179,10 +3391,10 @@ A Scratch game that draws different scenery based on location data
 \end_layout
 
 \begin_layout Standard
-These examples show how--in the same way that the Internet encompasses all
- past and future media--a hackable creative coding environment that runs
- in the browser can encompass and interact with all other creative coding
- environments.
+These examples show how -- in the same way that the Internet encompasses
+ all past and future media -- a hackable creative coding environment that
+ runs in the browser can encompass and interact with all other creative
+ coding environments.
  The educational philosophies that developed these systems can be hacked,
  updated, and incorporated into new educational goals.
 \end_layout
