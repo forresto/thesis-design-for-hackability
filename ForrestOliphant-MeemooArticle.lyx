@@ -737,8 +737,8 @@ Web 2.0
  sites like Flickr in 2004, and video sharing sites like Youtube in 2005.
  These services helped make the web more participatory, giving any person
  with internet access the ability to publish text, images, and video.
- Web 2.0 makes media distribution easier by abstracting away the need to
- learn about web servers and HTML.
+ These participatory platforms make media distribution easier by abstracting
+ away the need to learn about web servers and HTML.
 \end_layout
 
 \begin_layout Standard
@@ -2809,7 +2809,7 @@ Development on Meemoo's ancestor project began in January 2011.
 Meemoo is designed for hackability on all levels.
  On the highest level, people can add and remove modules and reconfigure
  wires without coding knowledge.
- On the lowest level, the entire project is Free software under the MIT
+ On the lowest level, the entire project is free software under the MIT
  and AGPL licenses, which guarantee the right to fork the project and change
  how it works at any level.
  
@@ -2835,10 +2835,10 @@ In order to design Meemoo for hackability, it must be easy for other developers
 
 \begin_layout Standard
 Each Meemoo module needs to include meemoo.js, which handles message routing.
- The inputs and outputs are then specified as in Algorithm 
+ The inputs and outputs are then specified as in code sample  
 \begin_inset CommandInset ref
 LatexCommand vref
-reference "Defining Inputs and Outputs"
+reference "sub:Defining-Inputs-and"
 
 \end_inset
 
@@ -2861,10 +2861,10 @@ text blob
 \end_inset
 
  stores the position, connections, and state of all of the modules in the
- graph (Algorithm 
+ graph (code sample 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "alg:Meemoo-App-Source"
+LatexCommand vref
+reference "sub:Meemoo-App-Source"
 
 \end_inset
 
@@ -2923,12 +2923,12 @@ ds.
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 What is abstracted
 \end_layout
 
 \begin_layout Section
-Persona 
+Persona and scenario-based design 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Persona"
@@ -2939,10 +2939,19 @@ name "sec:Persona"
 \end_layout
 
 \begin_layout Standard
-One design research methodology that I used to think about potential audience
- for Meemoo was personas.
- I defined three persona profiles to describe typical people at different
- levels of engagement with Meemoo: the creator, the hacker, and the modder.
+I used persona profiles and scenario-based design research methodologies
+ to think about the potential audience for Meemoo.
+ I used these methods as presented by Firefox user experience designer Jennifer
+ 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "Boriss2011"
+
+\end_inset
+
+ at the Mozilla WebFWD Summit in December of 2011.
+ I defined three persona profiles to describe people at different levels
+ of engagement with Meemoo: the creator, the hacker, and the modder.
 \end_layout
 
 \begin_layout Standard
@@ -2962,99 +2971,14 @@ down the rabbit hole
 
  towards learning coding.
  I wrote a short description of an imaginary person at each level of engagement,
- and how they would interact with the project.
-\end_layout
+ and how they would interact with the project (see Appendix 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Persona-Profiles"
 
-\begin_layout Subsection
-Cate the Creator 
-\end_layout
-
-\begin_layout Standard
-Cate is a nine-year-old girl who lives in the suburbs with her parents and
- thirteen-year-old brother.
- She likes using the video camera in her iPod to create movies starring
- her toys, narrating the story as she makes it up.
-\end_layout
-
-\begin_layout Standard
-Her brother uses the Internet and Facebook every evening.
- Sometimes he shows her funny animated GIFs and videos that his friends
- link to.
- One of his friends linked to an animated GIF made with LEGO bricks.
- In the description for the animation's page was a link to the Meemoo app
- for stop-motion animation that made it.
-\end_layout
-
-\begin_layout Standard
-They click on the link and see a Meemoo app with two modules wired together.
- The first module shows the image from their webcam.
- She clicks 
-\begin_inset Quotes eld
 \end_inset
 
-capture
-\begin_inset Quotes erd
-\end_inset
-
- and a still capture jumps to the second module.
- She clicks 
-\begin_inset Quotes eld
-\end_inset
-
-capture
-\begin_inset Quotes erd
-\end_inset
-
- again and the second module shows a two-frame looping animation of the
- two of them shifting a little bit back-and-forth, looped.
- They laugh at it, because her brother was making a funny face in one of
- the frames.
- They understand how it works now, so they clear the image and start over.
- They make an animation with more frames, making funny faces and jumping
- around the room.
- They save the resulting animated GIF image file.
-\end_layout
-
-\begin_layout Standard
-Cate decides that it would be fun to make a short story with stop-motion
- animation.
- She gathers some toys and starts to plan the story.
- 
-\end_layout
-
-\begin_layout Subsection
-Henry the Hacker 
-\end_layout
-
-\begin_layout Standard
-Henry is Cate's older brother.
- His communication with his friends at school is peppered with references
- to Internet memes and inside jokes.
- He enjoys drawing comic book heroes in his notebooks.
-\end_layout
-
-\begin_layout Standard
-After playing with Meemoo with his sister, Henry notices the 
-\begin_inset Quotes eld
-\end_inset
-
-Add Module
-\begin_inset Quotes erd
-\end_inset
-
- feature.
- He activates it and sees a list of modules that can be added to the app.
- He adds the paint module and sees that it is a simple version of a familiar
- paint application interface.
- He discovers how to add a connections between modules and wires the webcam
- module to the paint module.
- He takes a picture of one of his sister's stuffed animal cats, and then
- paints a helmet on the cat's image.
- He does this a couple more times
-\end_layout
-
-\begin_layout Subsection
-Molly the Modder
+).
 \end_layout
 
 \begin_layout Chapter
@@ -3068,13 +2992,17 @@ User testing and feedback
 \begin_layout Standard
 In order to test the user experience of the framework, I did in-person talk-alou
 d sessions.
- I had people interact with Meemoo, sometimes freely and sometimes with
- prompts or goals to accomplish.
+ This methology was presented  I had people interact with Meemoo, sometimes
+ freely and sometimes with prompts or goals to accomplish.
  As they interacted with the system, I asked them to speak their thought
  process aloud as much as possible.
  This method of user testing allows the tester to listen in to the thought
  process of the person using the system, making it easy to identify points
  of frustration.
+\end_layout
+
+\begin_layout Standard
+Some of the points of 
 \end_layout
 
 \begin_layout Standard

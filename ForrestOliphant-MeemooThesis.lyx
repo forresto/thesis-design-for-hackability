@@ -242,31 +242,22 @@ pagestyle{plain}
 
 \end_layout
 
-\begin_layout Part*
-\start_of_appendix
-Appendix
-\end_layout
-
 \begin_layout Standard
 
 \lang english
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "library"
-options "mla-goodURL"
+options "bibtotoc,mla-goodURL"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-
-\lang english
-\begin_inset Newpage clearpage
-\end_inset
-
-
+\begin_layout Part*
+\start_of_appendix
+Appendix
 \end_layout
 
 \begin_layout Standard
