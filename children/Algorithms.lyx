@@ -179,15 +179,15 @@ Molly is a 28-year-old programmer.
  She got interested in an on-line challenge to make a demo that runs in
  the web browser using less than four kilobytes of JavaScript.
  Her entry was a flock of polygonal birds that moved around the screen according
- to flocking algorithms.
+ to a flocking algorithm.
 \end_layout
 
 \begin_layout Standard
-Another entry in the contest made 
-\end_layout
-
-\begin_layout Standard
-...
+Another entry in the contest made a simple drum synth sequencer.
+ Molly thought it would be cool if the her birds could change the direction
+ of their flight in rhythm with the drum demo.
+ She added a little JavaScript to both demos to make them Meemoo modules
+ and wired them together in the framework.
 \end_layout
 
 \begin_layout Standard

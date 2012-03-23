@@ -117,11 +117,11 @@ key "Victor2011"
 \end_layout
 
 \begin_layout Standard
-The people that created the vision of the personal computer wanted everybody
- to be able to create their own tools.
- Learning traditional computer programming takes a major commitment, and
- most people are satisfied with the tools that come with the computer or
- are offered as services online.
+The people that created the vision of the personal computer in the late
+ 1960s wanted everybody to be able to create their own tools.
+ Learning traditional computer programming still takes a major commitment,
+ and most people are satisfied with the tools that come with the computer
+ or are offered as services online.
  The barrier to entry to learning traditional programming involves setting
  up a programming environment, learning different systems for creating presentat
 ion and logic, and learning different programming and markup languages and
@@ -139,22 +139,39 @@ People that overcome these barriers to entry are able to create software
 \begin_layout Standard
 I wanted to combine my programming experience with visual programming and
  creative web applications to make a framework for my own web experiments.
- I realized that by considering audiences for the framework other than myself
- -- programmers and non-programmers alike -- that I could make something
- that might have creative value to a wider audience.
+ I realized that I could make something with creative value to a wider audience
+ by considering audiences for the framework other than myself -- programmers
+ and non-programmers alike.
  Such a tool could invite people without coding experience to modify software
  tools and create their own.
+ To this end, I have designed and created a web-based framework called Meemoo.
+ 
 \end_layout
 
 \begin_layout Standard
-To this end, I have designed and created a web-based framework called Meemoo.
- The main objective of this project is to design a modular dataflow visual
- programming framework using web technologies.
- The framework should afford non-coders the ability to modify creative web
+The main objectives of this project are:
+\end_layout
+
+\begin_layout Itemize
+Design a modular dataflow visual programming framework using web technologies.
+ 
+\end_layout
+
+\begin_layout Itemize
+The framework should afford non-coders the ability to modify creative web
  apps by configuring wires that represent how modules communicate.
  There should be a simple syntax to define the inputs and outputs of a module.
- Apps created with the framework should have source code that is easy to
+ 
+\end_layout
+
+\begin_layout Itemize
+Apps created with the framework should have source code that is easy to
  read and share.
+\end_layout
+
+\begin_layout Itemize
+Web developers should be able create new modules for the framework using
+ a simple standard.
 \end_layout
 
 \begin_layout Standard
@@ -189,8 +206,14 @@ Meemoo apps run in the web browser, so they will be able to run the same
 \end_layout
 
 \begin_layout Standard
-Meemoo is programmed by connecting boxes with wires, putting programming
- within reach of non-coders.
+Meemoo is programmed by connecting boxes with wires (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Meemoo-screen-shot"
+
+\end_inset
+
+), putting programming within reach of non-coders.
  In the course of this thesis I will refer to 
 \emph on
 programming
@@ -204,6 +227,46 @@ coding
  Learning to code puts those structures into a linear-textual format that
  computers can parse.
  Different programmable systems emphasize and abstract these aspects differently.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/screenshot-cam-paint.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Meemoo screen-shot (March 2012)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Meemoo-screen-shot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -223,6 +286,27 @@ I did not start making Meemoo as an educational tool, but I have since been
  I think that Meemoo has the potential to be a good tool for learning by
  making.
  
+\end_layout
+
+\begin_layout Standard
+This thesis consists of Meemoo
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Demos and source available at 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://meemoo.org/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, which is a framework for hackable web apps.
 \end_layout
 
 \begin_layout Chapter
@@ -392,7 +476,7 @@ target "http://hackasaurus.org/"
 
 \end_inset
 
-, both aimed at getting children coding.
+, both aimed at getting children to explore coding.
 \end_layout
 
 \begin_layout Standard
@@ -485,7 +569,14 @@ App Icon
 I saw the rise of touchscreen devices like the iPhone and iPad as a step
  backwards for participatory media.
  As originally marketed, these devices were designed primarily for media
- consumption.
+ consumption 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jobs2007"
+
+\end_inset
+
+.
  The only media production capabilities afforded by these devices was taking
  and sharing photos.
  When Apple later opened up the App Store they took a timid step towards
@@ -501,7 +592,14 @@ timid
 
  because only developers that pay for the privilege can write apps for these
  devices, and only apps that pass an opaque curation process are allowed
- in the App Store.
+ in the App Store 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gruber2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -655,7 +753,7 @@ However, without an external keyboard, any kind of extended writing on touchscre
 en devices is a difficult task.
  It is also against Apple's regulations to load external scripts in native
  apps, which makes it hard to share code.
- Programs that you code in these apps can only run in the 
+ Code that you write in these apps can only run in the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -668,6 +766,38 @@ walled garden
 
 \begin_layout Section
 Metamedia
+\end_layout
+
+\begin_layout Standard
+The Dynabook was a research project of Xerox Palo Alto Research Center in
+ 1968.
+ It was a concept design that envisioned the personal computer, more or
+ less as we know it today.
+ Alan Kay outlines some of the goals and philosophical influences of the
+ project:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+Putting all this together, we want an apparently free environment in which
+ exploration causes desired sequences to happen (Montessori); one that allows
+ kinesthetic, iconic, and symbolic learning -- "doing with images makes
+ symbols" (Piaget & Bruner); the user is never trapped in a mode (GRAIL);
+ the magic is embedded in the familiar (Negroponte); and which acts as a
+ magnifying mirror for the user's own intelligence (Coleridge).
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kay1996"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -686,7 +816,7 @@ metamedium
  This means that people can create and consume media on the same tool.
  
 \begin_inset CommandInset citation
-LatexCommand citeyearpar
+LatexCommand citep
 key "Kay1977"
 
 \end_inset
@@ -718,6 +848,15 @@ key "Manovich2008"
 
 \end_layout
 
+\begin_layout Section
+The Internet
+\end_layout
+
+\begin_layout Standard
+If the computer is the metamedium, then the Internet is the metanetwork.
+ 
+\end_layout
+
 \begin_layout Subsection
 Web 2.0
 \end_layout
@@ -731,14 +870,19 @@ Web 2.0
 \begin_inset Quotes erd
 \end_inset
 
- is used to describe the rise of online services that facilitate publishing
- content.
+ was defined and clarified by Tim O'Reilly in 2005.
+\end_layout
+
+\begin_layout Standard
+One aspect of this trend is the rise of online services that facilitate
+ publishing content.
  This began with blogging services like LiveJournal in 1999, photo sharing
  sites like Flickr in 2004, and video sharing sites like Youtube in 2005.
  These services helped make the web more participatory, giving any person
  with internet access the ability to publish text, images, and video.
  These participatory platforms make media distribution easier by abstracting
  away the need to learn about web servers and HTML.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1184,42 +1328,7 @@ These digital tools are designed to afford hackability to one particular
  
 \end_layout
 
-\begin_layout Section
-The personal computer
-\end_layout
-
-\begin_layout Standard
-The Dynabook was a research project of Xerox Palo Alto Research Center that
- envisioned and designed the personal computer, more or less as we know
- it today.
- Alan Kay outlines some of the goals and philosophical influences of the
- project:
-\end_layout
-
-\begin_layout Quote
-\begin_inset Quotes eld
-\end_inset
-
-Putting all this together, we want an apparently free environment in which
- exploration causes desired sequences to happen (Montessori); one that allows
- kinesthetic, iconic, and symbolic learning -- "doing with images makes
- symbols" (Piaget & Bruner); the user is never trapped in a mode (GRAIL);
- the magic is embedded in the familiar (Negroponte); and which acts as a
- magnifying mirror for the user's own intelligence (Coleridge).
-\begin_inset Quotes erd
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Kay1996"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
+\begin_layout Subsection
 Direct manipulation
 \end_layout
 
@@ -1244,12 +1353,19 @@ key "Victor2012"
  His editor shows the output of the code in real-time, without needing to
  change windows, compile, or save and refresh.
  Any number or color in the source code opens a slider or color picker,
- which immediately changes the visual output (Figure ).
+ which immediately changes the visual output (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Direct-manipulation-of"
+
+\end_inset
+
+).
  As somebody with experience coding visual applications in JavaScript, Flash,
  and Processing, this demonstration was like seeing the light.
- Suddenly I could see that my normal workflow -- the need to save or recompile,
- change modes, and refresh between changing code and seeing the result --
- is a huge waste of time and mental energy.
+ Suddenly I could see that each mode change in my normal workflow is a waste
+ of time and mental energy -- the need to save or recompile, change modes,
+ and refresh between changing code and seeing the result.
  
 \end_layout
 
@@ -1371,7 +1487,7 @@ constructivism.
 \end_inset
 
  The basic idea is that people build knowledge structures through experiences.
- Papert added to this model, proposing that this happens best when 
+ Papert added to this model, proposing that learning happens best when 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1627,11 +1743,12 @@ I feel a little cheated to not have had Scratch when I was a child.
  I would have loved it.
  I extended my graphing calculator scripting experiments from high school
  with an absurdist animation of a cat running into walls and reciting Fibonacci
- numbers 
+ numbers
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
+Fibonacci Cat! by the author: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://scratch.mit.edu/projects/forresto/2398409"
@@ -1792,7 +1909,7 @@ status collapsed
 \begin_layout Plain Layout
 This works best with some kinds of code edits, like changing variables or
  colors.
- Moving larger blocks might require restarting the project.
+ Moving larger blocks sometimes requires restarting the project.
 \end_layout
 
 \end_inset
@@ -1812,7 +1929,7 @@ Visual programming languages
 Meemoo is a kind of dataflow visual programming environment.
  This means that programming is done by connecting modules with wires.
  The modules can hold and process arbitrary data: text, audio, images.
- The wires define where 
+ The wires define and visualize how data moves from module to module.
 \end_layout
 
 \begin_layout Standard
@@ -1922,6 +2039,81 @@ key "Morrison2010"
 n tend to be comfortable with connecting equipment with cables, so it is
  much easier to learn a system based on this metaphor than to learn a system
  based on linear-textual coding.
+\end_layout
+
+\begin_layout Standard
+One precedent for web-based visual programming is Yahoo! Pipes (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Yahoo!-Pipes"
+
+\end_inset
+
+).
+ This web application was released in 2007 with the goal 
+\begin_inset Quotes eld
+\end_inset
+
+assemble personalized information sources out of existing Web services and
+ data feeds
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sadri2007"
+
+\end_inset
+
+.
+ While Pipes has a focus on asynchronous data processing, Meemoo is designed
+ for real-time creativity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/yahoo-pipes.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Yahoo! Pipes layout that watches eBay for items with a search term and price
+ range 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Yahoo!-Pipes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2038,7 +2230,7 @@ I can confidently say that without these libraries Meemoo wouldn't exist.
 \end_layout
 
 \begin_layout Standard
-It isn't just the JavaScript libraries that Meemoo is built on that are
+It is not just the JavaScript libraries that Meemoo is built on that are
  free and open-source.
  Free software powers the majority of the web.
  As of March 2012 65% of web servers run the free Apache HTTP Server, versus
@@ -2075,18 +2267,43 @@ key "Villa2010"
 \end_layout
 
 \begin_layout Section
-JQuery plugins
+Plugin architecture
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Plugin-architecture"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Successful frameworks are designed to enable community members to make and
+ share 
+\begin_inset Quotes eld
+\end_inset
+
+plugins
+\begin_inset Quotes erd
+\end_inset
+
+ that extend the capabilities of the framework.
+\end_layout
+
+\begin_layout Subsection
+JQuery
 \end_layout
 
 \begin_layout Standard
 JQuery is hackable by virtue of its open-source license, but it is also
  hackable because it provides mechanisms for programmers to extend it with
  plugins.
- There is no official repository of plugins, but one site dedicated to JQuery
+ There is no official repository of plugins, but one site dedicated to jQuery
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
+jQuery4u plugins directory: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.jquery4u.com/plugins/"
@@ -2101,7 +2318,7 @@ target "http://www.jquery4u.com/plugins/"
  claims to have over 2000 listed in their directory.
  The only JQuery plugin that I'm using for Meemoo is the official JqueryUI
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 JqueryUI: 
@@ -2127,8 +2344,8 @@ The way the Meemoo framework accepts modules is analogous to JQuery's plugin
  Meemoo provides the framework and a communication standard for the modules.
 \end_layout
 
-\begin_layout Section
-Open hardware and maker movement
+\begin_layout Subsection
+Arduino
 \end_layout
 
 \begin_layout Standard
@@ -2204,9 +2421,9 @@ key "jalopy2005"
 \begin_layout Standard
 The Arduino was designed to make it easier to work with electronics.
  Programming can be done from a Mac or PC via a standard USB cable, where
- earlier programmable electronics would require hardware.
- They designed it to be affordable to start: $30 compared to $100 for earlier,
- less powerful microcontrollers.
+ earlier microcontrollers would require expensive programming hardware.
+ They designed it to be affordable to start: $30 compared to $100 for earlier
+ microcontrollers (that were less powerful).
  They released the schematics under a Creative Commons license.
  The creators say that the most important impact of the Arduino is 
 \begin_inset Quotes eld
@@ -2227,9 +2444,9 @@ key "Kushner2011"
 \end_layout
 
 \begin_layout Standard
-A cottage industry has spring up around Arduino.
+A cottage industry has sprung up around Arduino.
  In much the same way that any JavaScript developer can write a plugin for
- JQuery, anybody with knowledge of electronics can make 
+ JQuery, anybody with knowledge of electronics can make modular 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2238,7 +2455,7 @@ plugins
 \end_inset
 
  for Arduino.
- Two examples that recently did really well on Kickstarter are Gameduino
+ Two examples are Gameduino
 \begin_inset Foot
 status collapsed
 
@@ -2273,7 +2490,9 @@ target "http://kck.st/nae9lR"
 \end_inset
 
 .
- Gameduino is a 
+ (Both of these projects were funded on Kickstarter and raised many times
+ their funding goal, which shows the demand and interest in the Open Hardware
+ community.) Gameduino is a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2286,7 +2505,16 @@ shield
  Pulse Sensor is a simpler module that contains the electronics needed to
  measure heart rate from a fingertip or ear lobe.
  Plugging both of these modules into an Arduino would take a hacker a long
- way towards crating a pulse-controlled video game.
+ way towards creating a pulse-controlled video game.
+\end_layout
+
+\begin_layout Standard
+Arduino is a framework that simplifies electronic engineering.
+ The Arduino community makes modules that can interoperate with other modules
+ through that framework.
+ In the same way, Meemoo is a framework that simplifies web app development.
+ People will be able to experiment with creating apps by plugging modules
+ together, and they will also be able to make and share their own modules.
 \end_layout
 
 \begin_layout Chapter
@@ -2310,8 +2538,9 @@ I have experience with two dataflow visual programming environments: Quartz
  these environments appealed to me.
  They were able to do graphics and audio processing beyond my coding ability
  at the time, so I was able to explore new kinds of audio/visual experiments.
- They are great tools for interactive installations, but it is impossible
- to use them for creating web apps.
+ They are great tools for interactive installations, when you have control
+ over the system.
+ However, it is impossible to use them for creating web apps.
 \end_layout
 
 \begin_layout Standard
@@ -2619,7 +2848,7 @@ Megacam (2010), Flash
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
-placement o
+placement O
 overhang 4cm
 width "6cm"
 status collapsed
@@ -2667,7 +2896,7 @@ status open
 Megacam: 
 \begin_inset CommandInset href
 LatexCommand href
-target "http://sembiki.com/megacam"
+target "http://sembiki.com/megacam/"
 
 \end_inset
 
@@ -2699,25 +2928,118 @@ If Megacam were remade as a Meemoo app, it would be possible to keep the
 \end_layout
 
 \begin_layout Section
-Opera stage projection mapping (2011), Quartz Composer
+Opera projection mapping (2011), Quartz Composer
 \end_layout
 
 \begin_layout Standard
 Last year I was working on a multi-screen video projection system for the
  set design of an Opera.
- I found Quartz Composer modules for midi control, video playback, and projectio
-n mapping.
- I patched them together to create a system that controlled video on four
- projection-mapped screens from one projector.
+ I found Quartz Composer modules for midi control, video playback
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Movie Player by v002: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://v002.info/plugins-sources/v002-movie-player-beta/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, and projection mapping
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Projection mapping / quad warping by Mehmet Akten: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://memo.tv/archive/projection_mapping_quad_warping_with_quartz_composer_vdmx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ I patched them together (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Opera-QC"
+
+\end_inset
+
+) to create a system that controlled video on four projection-mapped screens
+ from one projector.
  These modules were all shared online by their authors in the open-source
  spirit.
- I needed to add a feature to one of them, and was able to do so in XCode.
+ I needed to add a feature to the video player module, and was able to do
+ so in XCode, Apple's proprietary development environment.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2011-opera-qc.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Opera-QC"
+
+\end_inset
+
+Connecting open-source modules in Quartz Composer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Developing this application together required searching the web for the
+ modules, modifying and recompiling one of the modules in a development
+ environment, and finally wiring the modules together in another environment.
+ I was able make this system with much less effort than if I had needed
+ to write all of the software myself.
+ However, it was several layers of abstraction and complexity to navigate.
 \end_layout
 
 \begin_layout Standard
 Meemoo will make it possible for people to not only share such modules online,
  but also wire them together, experiment, and save output instantly online.
- This will lower the barrier to entry and increase collaboration potential.
+ This will lower the barrier to entry by decreasing the number of applications
+ needed to just one: the web browser.
+ It will increase collaboration potential by allowing people to collaborate
+ and share modifications all online.
 \end_layout
 
 \begin_layout Section
@@ -2725,17 +3047,15 @@ Web Video Remixer (2011), HTML
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 4cm
-width "6cm"
+\begin_inset Float figure
+wide false
+sideways false
 status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/2011-web-video-remixer.jpg
-	width 6cm
+	filename images/2011-web-video-remixer.png
+	width 100text%
 
 \end_inset
 
@@ -2761,13 +3081,17 @@ name "fig:Web-Video-Remixer"
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-This is the direct parent project of Meemoo.
+This project is the direct ancestor of Meemoo.
  I wanted to create a remixer for web video, including Youtube.
  The interface was split between controller and player, which were in separate
  HTML pages to allow the player page to be put on a separate monitor or
@@ -2777,13 +3101,42 @@ This is the direct parent project of Meemoo.
  to module.
  In early 2011 this mechanism, 
 \family typewriter
-window.postMessage()
+window.postMessage
 \family default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+About 
+\family typewriter
+window.postMessage
+\family default
+ from Mozilla: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://developer.mozilla.org/en/DOM/window.postMessage"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 , was only able to send text data to another window.
  Around the middle of the year this limitation was lifted, allowing arbitrary
  data like images and audio to be sent.
  This expansion of the capabilities of browsers was a big inspiration to
- abstract this web video remixer into Meemoo, a web everything remixer.
+ abstract this project from web 
+\emph on
+video
+\emph default
+ remixer to web 
+\emph on
+remixer
+\emph default
+ remixer.
 \end_layout
 
 \begin_layout Standard
@@ -2802,16 +3155,69 @@ Development
 
 \begin_layout Standard
 Development on Meemoo's ancestor project began in January 2011.
- In October 2011 Meemoo became a Mozilla WebFWD fellow project.
+ In October 2011 Meemoo became a Mozilla WebFWD
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Mozilla WebFWD: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://webfwd.org/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ fellow project.
+ This program was created to mentor open-source projects that support Mozilla's
+ Manifesto.
+ One principle outlined in that manifesto that aligns particularly well
+ with this project is: 
+\begin_inset Quotes eld
+\end_inset
+
+Individuals must have the ability to shape their own experiences on the
+ Internet
+\begin_inset Quotes erd
+\end_inset
+
+ (The Mozilla Foundation, 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "Mozilla2008"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
 Meemoo is designed for hackability on all levels.
  On the highest level, people can add and remove modules and reconfigure
- wires without coding knowledge.
- On the lowest level, the entire project is free software under the MIT
- and AGPL licenses, which guarantee the right to fork the project and change
- how it works at any level.
+ wires in the browser, without coding knowledge.
+ On the lowest level, the entire project is free software
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Meemoo source code is hosted on Github: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/meemoo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ under the MIT and AGPL licenses, which guarantee the right to fork the
+ project and change how it works at any level.
  
 \end_layout
 
@@ -2820,7 +3226,7 @@ Software design for hackability
 \end_layout
 
 \begin_layout Standard
-One of the goals for the project is that it is hackable on all levels.
+One of the goals for the project is hackability on all levels.
  On the lowest level, this means that the code is open source.
 \end_layout
 
@@ -2829,12 +3235,21 @@ Common communication library for modules
 \end_layout
 
 \begin_layout Standard
-In order to design Meemoo for hackability, it must be easy for other developers
- to create modules.
+In order to design Meemoo for open modular hackability it must be easy for
+ other people to create modules (see 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Plugin-architecture"
+
+\end_inset
+
+).
+ Modules are referenced by their Universal Resource Identifier
 \end_layout
 
 \begin_layout Standard
-Each Meemoo module needs to include meemoo.js, which handles message routing.
+Each Meemoo module includes meemoo.js, a JavaScript library which handles
+ message routing.
  The inputs and outputs are then specified as in code sample  
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -2843,6 +3258,8 @@ reference "sub:Defining-Inputs-and"
 \end_inset
 
 .
+ Because every module is including the same library, it becomes a standard
+ for message communication.
 \end_layout
 
 \begin_layout Subsection
@@ -2860,8 +3277,8 @@ text blob
 \begin_inset Quotes erd
 \end_inset
 
- stores the position, connections, and state of all of the modules in the
- graph (code sample 
+ stores the web address, position, connections, and state of all of the
+ modules in the graph (code sample 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "sub:Meemoo-App-Source"
@@ -2955,11 +3372,22 @@ key "Boriss2011"
 \end_layout
 
 \begin_layout Standard
-Creators will use Meemoo apps to make audio-visual media and share them
- online.
- Hackers will explore how the apps work, and rewire them to work differently.
- Modders will use web technologies to modify modules and create new modules
- which will be used in different kinds of apps.
+
+\emph on
+Creators
+\emph default
+ will use Meemoo apps to make audio-visual media and share them online.
+ 
+\emph on
+Hackers
+\emph default
+ will explore how the apps work, and rewire them to work differently.
+ 
+\emph on
+Modders
+\emph default
+ will use web technologies to modify modules and create new modules which
+ will be used in different kinds of apps.
  It is designed in a way that each of these levels leads to the next, encouragin
 g people 
 \begin_inset Quotes eld
@@ -2970,7 +3398,7 @@ down the rabbit hole
 \end_inset
 
  towards learning coding.
- I wrote a short description of an imaginary person at each level of engagement,
+ I wrote a description of an imaginary person at each level of engagement,
  and how they would interact with the project (see Appendix 
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -3512,6 +3940,10 @@ Experiment with video feedback with webcam pointed at screen
 \end_layout
 
 \begin_layout Enumerate
+Collage that accepts images from many sources, like mobile phones
+\end_layout
+
+\begin_layout Enumerate
 Text-to-song generator
 \begin_inset Foot
 status collapsed
@@ -3565,6 +3997,18 @@ Parallax-based 2.5D diorama builder
 
 \begin_layout Enumerate
 Arduino module to connect Meemoo apps to physical sensors
+\end_layout
+
+\begin_layout Enumerate
+Two video players and a crossfader
+\end_layout
+
+\begin_layout Enumerate
+(Animated) image macro generator
+\end_layout
+
+\begin_layout Enumerate
+Side-scrolling game with placeholder image sprites that can be replaced
 \end_layout
 
 \begin_layout Enumerate
