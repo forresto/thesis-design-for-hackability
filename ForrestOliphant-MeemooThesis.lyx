@@ -93,14 +93,14 @@ raggedbottom
 
 
 \backslash
-pagenumbering{roman}
+pagestyle{empty}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-pagestyle{plain}
+pagenumbering{roman}
 \end_layout
 
 \end_inset
@@ -119,6 +119,24 @@ filename "children/Titlepage.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset External
+	template PDFPages
+	filename children/abstract-form.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -126,17 +144,23 @@ filename "children/Titlepage.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "children/Abstract.lyx"
+\begin_inset ERT
+status open
 
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+pagestyle{plain}
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
 \end_inset
 
 
@@ -165,9 +189,6 @@ status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-pagestyle{scrheadings}
 \end_layout
 
 \end_inset
@@ -196,6 +217,13 @@ LatexCommand tableofcontents
 \begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{scrheadings}
+\end_layout
 
 \begin_layout Plain Layout
 

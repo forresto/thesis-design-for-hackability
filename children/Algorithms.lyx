@@ -62,6 +62,48 @@
 \begin_body
 
 \begin_layout Chapter
+The Pitch
+\end_layout
+
+\begin_layout Standard
+When you think of an "app," do you think of something that you can open,
+ hack, and change how it works? Meemoo wants to give you this freedom.
+ If you can't open it, you don't own it.
+ Meemoo is a framework that connects open-source modules, powered by any
+ web technology.
+ The way that the data flows from module to module is defined and visualized
+ by colorful wires.
+ If you can connect a video player to a TV, you can program a Meemoo app.
+ Meemoo is:
+\end_layout
+
+\begin_layout Itemize
+a web-based creative tool maker 
+\end_layout
+
+\begin_layout Itemize
+a layer between polished app and source code to make it easy for people
+ to open, hack, bend, rewire, fork, and mod creative web applications 
+\end_layout
+
+\begin_layout Itemize
+an open-source framework that connects open-source modules 
+\end_layout
+
+\begin_layout Itemize
+like Arduino for the web 
+\end_layout
+
+\begin_layout Itemize
+100% of the web 
+\end_layout
+
+\begin_layout Itemize
+focused on audio/visual interactive applications, but the potential uses
+ are limitless 
+\end_layout
+
+\begin_layout Chapter
 Persona Profiles and Scenarios
 \begin_inset CommandInset label
 LatexCommand label

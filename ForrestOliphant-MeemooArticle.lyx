@@ -156,14 +156,6 @@ I wanted to combine my programming experience with visual programming and
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 1cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
 The main objectives of this project:
 \end_layout
 
@@ -175,7 +167,11 @@ Design a modular dataflow visual programming framework using web technologies.
 \begin_layout Itemize
 The framework should afford non-coders the ability to modify creative web
  apps by configuring wires that represent how modules communicate.
- There should be a simple syntax to define the inputs and outputs of a module.
+ 
+\end_layout
+
+\begin_layout Itemize
+There should be a simple syntax to define the inputs and outputs of a module.
  
 \end_layout
 
@@ -1732,8 +1728,8 @@ Processing is a textual programming language and environment based on Java.
  After using Scratch, I am surprised that Processing and Flash were the
  first languages introduced to students at Media Lab Helsinki.
  I think that Scratch is a better first introduction to coding, because
- it abstracts the syntax away and lets the beginner focus on learning logical
- structures.
+ it abstracts the syntax away and lets the beginner focus on learning the
+ logical structures of programming.
  I would recommend anybody teaching programming to beginners to start with
  Scratch, at least for the first lesson.
 \end_layout
@@ -2139,12 +2135,52 @@ Maker Movement
 
 \begin_layout Standard
 \noindent
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/MAKERS_RIGHTS.pdf
+	width 70text%
+	BoundingBox 40bp 40bp 590bp 780bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Maker's Bill of Rights 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-Maker's-Bill"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Wrap figure
 lines 0
 placement O
 overhang 4cm
 width "3.5cm"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2175,18 +2211,10 @@ name "fig:Open-me!"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-The Open Hardware and Maker movements value hackability in electronics and
- other physical objects.
+ The Open Hardware and Maker movements value hackability in electronics
+ and other physical objects.
  The Maker's Bill of Rights (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2204,49 +2232,6 @@ key "jalopy2005"
 \end_inset
 
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename images/MAKERS_RIGHTS.pdf
-	width 80text%
-	BoundingBox 40bp 40bp 590bp 780bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-The Maker's Bill of Rights 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:The-Maker's-Bill"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2509,17 +2494,18 @@ The Internet
 
 \begin_layout Standard
 People learn by imitating and communicating with people with more skill.
- Lev Vygotsky refers to the difference between what can do independently
- and what we can do with guidance the 
+ Lev Vygotsky refers to the difference between what one can do independently
+ and what one can do with guidance the 
 \begin_inset Quotes eld
 \end_inset
 
-zone of proximal development.
+zone of proximal development
 \begin_inset Quotes erd
 \end_inset
 
- This theoretical space is where learning happens for children, and can
- be seen both in play and in the classroom.
+ (ZPD).
+ This theoretical space is where learning happens, and can be seen in different
+ forms in work, play, and in the classroom.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2531,9 +2517,9 @@ key "Vygotsky2012"
 \end_layout
 
 \begin_layout Standard
-The Internet provides a social communication framework where people can
- learn from others: the ultimate zone of proximal development.
- Like most of my programming projects, Meemoo has pushed me into this zone
+The Internet provides a social communication framework where anybody connected
+ can learn from others: the ultimate zone of proximal development.
+ Like most of my programming projects, Meemoo has pushed me into the ZPD
  with several challenges, stretching my capabilities as a programmer.
  Stack Overflow
 \begin_inset Foot
@@ -2554,8 +2540,6 @@ target "http://stackoverflow.com/users/592125/forresto"
 
  has been an especially helpful community for learning from the questions
  and answers of others.
- The design of these platforms influences the kinds communities that form
- around them.
  
 \end_layout
 
@@ -3665,6 +3649,8 @@ Meemoo is designed for hackability on all levels, from the interface to
  the source code.
  On the highest level, people can add and remove modules and reconfigure
  wires in the browser, without coding knowledge.
+ On the next level, they can write and share their own modules with HTML,
+ JavaScript and CSS that extend the capabilities of the framework.
  On the lowest level, the entire project is free software
 \begin_inset Foot
 status collapsed
@@ -3983,6 +3969,13 @@ status collapsed
 \begin_layout Plain Layout
 January 2012, making wires go to side of port instead of behind; port informatio
 n pop-up
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:design-popup"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4175,22 +4168,7 @@ listen in
 
  to the thought process of the person using the system, making it easy to
  identify points of frustration.
- 
-\end_layout
-
-\begin_layout Standard
-I tried to talk and react as little as possible, to see how people would
- interact with the framework if they had found it on their own.
- I reminded everybody that we were not testing them, we were testing the
- usability of the project.
-\end_layout
-
-\begin_layout Standard
-...
-\end_layout
-
-\begin_layout Standard
-I recorded the sessions with screen-capture software for future reference
+ I recorded the sessions with screen-capture software for future reference
  (Figure 
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -4205,7 +4183,7 @@ reference "fig:Usability-testing"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -4236,6 +4214,231 @@ name "fig:Usability-testing"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I tried to talk as little as possible, to see how people would interact
+ with the framework if they had found it on their own.
+ I reminded each person that I was not testing them, we were testing the
+ usability of the project.
+ I tested some people with no programming experience, and some people of
+ varying experience with coding and visual programming.
+ There were some usability issues that became quite obvious:
+\end_layout
+
+\begin_layout Itemize
+An introduction to the framework would be helpful to introduce the basic
+ concepts.
+\end_layout
+
+\begin_layout Itemize
+I left the design of the modules plain to focus on the design of the framework.
+ This seemed to make some people miss the buttons within the modules, and
+ start by moving wires around.
+ I will need to make the inside of the modules the primary focus so that
+ people don't unwire the apps before they understand what they do.
+\end_layout
+
+\begin_layout Itemize
+Modules can specify the kind of data that ports send and accept.
+ I could implement something like the shaped variables from Scratch's codeblocks
+ to make it more obvious which ports can be wired together.
+ 
+\end_layout
+
+\begin_layout Itemize
+Connecting wires by drag and drop was easy for all levels.
+\end_layout
+
+\begin_layout Itemize
+Disconnecting wires is currently done by a less direct method that proved
+ much less intuitive.
+ First the port must be clicked to show the port information popup in which
+ there is a button with a scissor icon to disconnect the wire (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Port-information"
+
+\end_inset
+
+).
+ It was implemented this way as a temporary solution, and should be replaced
+ with a direct method, more like pulling the wire out of the port.
+\end_layout
+
+\begin_layout Itemize
+There is an indirect method to connect wires.
+ The button for that also got in the way.
+ The spacing between the 
+\begin_inset Quotes eld
+\end_inset
+
+click
+\begin_inset Quotes erd
+\end_inset
+
+ button and and the title of the 
+\begin_inset Quotes eld
+\end_inset
+
+disconnect
+\begin_inset Quotes erd
+\end_inset
+
+ section made people put those items together.
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Port-information"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+There is a method to input a value directly into the port from the port
+ information popup.
+ The submit function is a check-mark, which was overlooked by almost everybody.
+ They tended instead to click on the button that says 
+\begin_inset Quotes eld
+\end_inset
+
+click,
+\begin_inset Quotes erd
+\end_inset
+
+ which has a different function.
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Port-information"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Nobody saw any of the tool-tips that show information when hovering over
+ an element (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tool-tip"
+
+\end_inset
+
+).
+ The browser takes too long to show this information.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/user-testing-popup.png
+	width 3.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Port information 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Port-information"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/user-testing-title.png
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tool-tip
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tool-tip"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Usability issues
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Usability-issues"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Plain Layout
 
 \end_layout
@@ -4243,6 +4446,12 @@ name "fig:Usability-testing"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+There were some issues that came up for people of all skill levels as novices
+ to the framework.
+ 
 \end_layout
 
 \begin_layout Standard
