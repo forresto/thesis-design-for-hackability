@@ -11,7 +11,7 @@
 \fontencoding global
 \font_roman default
 \font_sans default
-\font_typewriter default
+\font_typewriter beramono
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false

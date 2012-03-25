@@ -1847,9 +1847,9 @@ Audio/visual environments
 
 \begin_layout Standard
 Visual programming is used most in the domain of real-time audio processing
- and synthesis (Pure Data and Max/MSP), visual effects (Quartz Composer
- and vvvv), and 3D material and shading design (Softimage Interactive Creative
- Environment) 
+ and synthesis (Pure Data and Max/MSP), generative animation and visual
+ effects (Quartz Composer and vvvv), and 3D material and shading design
+ (Softimage Interactive Creative Environment) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Morrison2010"
@@ -3588,63 +3588,6 @@ Development
 \end_layout
 
 \begin_layout Standard
-Development on Meemoo's ancestor project began in January 2011.
- In October 2011 Meemoo became a Mozilla WebFWD
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Mozilla WebFWD: 
-\begin_inset CommandInset href
-LatexCommand href
-target "https://webfwd.org/"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- fellow project.
- This program was created to mentor open-source projects that support The
- Mozilla Foundation's goals.
- One principle outlined in The Mozilla Manifesto that aligns particularly
- well with this project is: 
-\begin_inset Quotes eld
-\end_inset
-
-Individuals must have the ability to shape their own experiences on the
- Internet
-\begin_inset Quotes erd
-\end_inset
-
- (The Mozilla Foundation, 
-\begin_inset CommandInset citation
-LatexCommand citeyear
-key "Mozilla2008"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-The WebFWD fellowship has given me connections to mentors in and around
- Mozilla, and weekly online seminars.
- We also have a weekly call with all of the projects.
- It is helpful to learn from the experiences of the other projects.
- In December 2011 one representative from each project met at Mozilla Headquarte
-rs in Mountain View, California.
- It was a new experience to be around so many people that know more than
- me about web technologies.
-\end_layout
-
-\begin_layout Section
-Software design for hackability
-\end_layout
-
-\begin_layout Standard
 Meemoo is designed for hackability on all levels, from the interface to
  the source code.
  On the highest level, people can add and remove modules and reconfigure
@@ -3716,29 +3659,173 @@ I hope that Meemoo might enable somebody to explore creative programming
  
 \end_layout
 
-\begin_layout Subsection
-Common communication library for modules
+\begin_layout Section
+Mozilla WebFWD
 \end_layout
 
 \begin_layout Standard
-In order to design Meemoo for open modular hackability it must be easy for
- other people to create modules (see 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "sec:Plugin-architecture"
+Development on Meemoo's ancestor project began in January 2011.
+ In October 2011 Meemoo became a Mozilla WebFWD
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Mozilla WebFWD: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://webfwd.org/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ fellow project.
+ This program was created to mentor open-source projects that support The
+ Mozilla Foundation's goals.
+ One principle outlined in The Mozilla Manifesto that aligns particularly
+ well with this project is: 
+\begin_inset Quotes eld
+\end_inset
+
+Individuals must have the ability to shape their own experiences on the
+ Internet
+\begin_inset Quotes erd
+\end_inset
+
+ (The Mozilla Foundation, 
+\begin_inset CommandInset citation
+LatexCommand citeyear
+key "Mozilla2008"
 
 \end_inset
 
 ).
- Modules are simple web pages that can be hosted anywhere.
+\end_layout
+
+\begin_layout Standard
+The WebFWD fellowship has given me connections to mentors in and around
+ Mozilla, and weekly online seminars and group calls with all of the fellow
+ projects.
+ It is helpful to learn from the experiences of the other people involved
+ in open-source projects.
+ In December 2011 one representative from each project met at Mozilla Headquarte
+rs in Mountain View, California.
+ There we had sessions with people involved in different levels of the Mozilla
+ organization, from community relations to user experience
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Weekly seminar and summit videos: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://webfwd.org/resources/webinars/index.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ It was a new and helpful experience to be around so many people that know
+ more than me about web technologies.
+\end_layout
+
+\begin_layout Section
+Software design for hackability
+\end_layout
+
+\begin_layout Standard
+In open source projects, software design that considers potential collaborators
+ makes code that is more hackable.
+ I have studied the source code and design patterns of jQuery to make Meemoo
+ more hackable on the code level.
+\end_layout
+
+\begin_layout Subsection
+Common communication library for modules
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Common-communication-library"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 4cm
+width "3.5cm"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/design-module.png
+	width 3.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Module
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Module"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to design Meemoo for open modular hackability it must be easy for
+ other people to create modules, analogous to jQuery's plugins.
+ Meemoo modules are simple web pages that can be hosted anywhere.
  A module is referenced by its web address and loaded into the framework
  in an iframe.
+ The framework surrounds the iframe with a resizable window with inputs
+ on the left side at the top, and outputs on the right side on the bottom
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Module"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
 Each Meemoo module includes meemoo.js
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Meemoo.js: 
@@ -3753,7 +3840,7 @@ target "https://github.com/meemoo/meemoo"
 
 \end_inset
 
-, a JavaScript library which handles message routing.
+, the JavaScript library that handles port defining and message routing.
  The inputs and outputs are then specified as in code sample  
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -3791,11 +3878,28 @@ reference "sub:Meemoo-App-Source"
 
 ).
  Because it is a small amount of text, it is easy to share the app source
- code in email, forums, image descriptions, comments, etc.
+ code in email, forums, image descriptions, and comments.
 \end_layout
 
 \begin_layout Section
-User experience design for hackability
+Usability design for hackability
+\end_layout
+
+\begin_layout Standard
+The wiring view might be intimidating to some people at first glance.
+ This is a tradeoff that every design makes, balancing simplicity and power.
+ It is my hope that the simplicity of what is inside the modules will encourage
+ people to explore the power in the framework.
+ This is called a layered or spiral approach to learning, where success
+ with one level encourages exploration in the next 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 494"
+key "Shneiderman1986"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -3803,42 +3907,60 @@ Direct manipulation
 \end_layout
 
 \begin_layout Standard
-Ben Shneiderman 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Shneiderman1986"
+One design difference between Meemoo and Quartz Composer is that Meemoo
+ is able to have interface elements within each module.
+ By way of example, an image filter module shows what it does to the image
+ every time it receives image data (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Glitch-app"
 
 \end_inset
 
-
+).
+ This should make it easier for people to understand how data flows through
+ the application.
 \end_layout
 
 \begin_layout Standard
-Visual indication of what is happening in each module.
- (Like TouchDesigner).
- Dragging to change variables.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/design-glitch.png
+	width 100text%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Visual programming 
-\begin_inset Quotes eld
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Glitch app
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Glitch-app"
+
 \end_inset
 
-patching
-\begin_inset Quotes erd
-\end_inset
 
- metaphor
 \end_layout
 
-\begin_layout Standard
-\begin_inset Quotes eld
 \end_inset
 
-The use of flexible cords with plugs at their ends and sockets (jacks) to
- make temporary connections dates back to manually operated telephone switchboar
-ds.
-\begin_inset Quotes erd
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -3846,6 +3968,31 @@ ds.
 
 \begin_layout Subsection
 What is abstracted
+\end_layout
+
+\begin_layout Standard
+The Meemoo framework is a level of abstraction built on several levels of
+ abstraction: JavaScript, browser, operating system, computer hardware.
+ Modules can be made that do one programmatic function, which will lead
+ to more apps with more modules and wires to build the logical functions
+ required.
+ 
+\end_layout
+
+\begin_layout Standard
+My preference is to abstract away more logic in the JavaScript of the module.
+ This makes each module a small self-contained application, like the paint
+ module in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Meemoo-screen-shot"
+
+\end_inset
+
+.
+ I could have made the color picker from the paint application its own module.
+ The framework dictates no preference to how much is abstracted into each
+ module.
 \end_layout
 
 \begin_layout Section
@@ -4132,10 +4279,6 @@ reference "sec:Persona-Profiles"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Chapter
-Tests and Results
 \end_layout
 
 \begin_layout Section
@@ -4449,61 +4592,190 @@ name "fig:Usability-issues"
 \end_layout
 
 \begin_layout Standard
-There were some issues that came up for people of all skill levels as novices
- to the framework.
+This testing has made some usability issues quite obvious.
+ As I work to design solutions for these issues I will continue this kind
+ testing.
+\end_layout
+
+\begin_layout Chapter
+Apps
+\end_layout
+
+\begin_layout Standard
+A large part of the development of Meemoo was creating apps with the framework.
+ While creating apps, I think of processes that would have general purpose
+ as a module.
+ Adding these modules to the library gives more ideas about the kinds of
+ apps that can be made.
+\end_layout
+
+\begin_layout Standard
+I have also made two larger projects 
+\end_layout
+
+\begin_layout Section
+Example apps
+\end_layout
+
+\begin_layout Standard
+To show the different kinds of apps that can be created with Meemoo I have
+ been making a collection of demonstration apps.
+ 
+\end_layout
+
+\begin_layout Section
+Economic system modeled with Meemoo
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+Just two days ago I clarified my thinking about the economic reform in Russia
+ by programming a soft simulation of economic competition.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 37"
+key "Papert1993"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I was amused to read this anecdote in Seymour Papert's 
+\begin_inset Quotes eld
+\end_inset
+
+The Children's Machine,
+\begin_inset Quotes erd
+\end_inset
+
+ as I had just done something quite similar.
+ He used this example to show how his intellectual life has changed because
+ of the mass availability of personal computers and their utility as thinking
+ tools.
+\end_layout
+
+\begin_layout Standard
+I had been imagining a system for online tipping that would make it possible
+ for people to defer a certain percentage of a donation to any number of
+ other people.
+ For example, a film collective makes their work freely available on Pirate
+ Bay.
+ I download the film, enjoy it, and decide to give them a tip to show my
+ appreciation.
+ I see a tip widget on their website that explains that 10% of tips are
+ deferred to each of three actors, 5% to a band on the soundtrack, etc.
+ I send them $10, and the tip system divides and distributes the tip automatical
+ly.
+\end_layout
+
+\begin_layout Standard
+These networks of tips could get quite complicated.
+ The band's tips could be deferred to the band members.
+ There could be two people that defer tips to each other.
  
 \end_layout
 
 \begin_layout Standard
-There were eight sessions of 10-20 minutes each.
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
-\begin_layout Standard
-Some of the points of 
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/friction-free.png
+	width 100text%
 
-\begin_layout Standard
-Aino - Camdoodle
-\end_layout
-
-\begin_layout Standard
-Ginger - 
-\begin_inset Quotes eld
-\end_inset
-
-You should add an onionskin
-\begin_inset Quotes erd
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Teemu - Metronome animation
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Caption
 
-\begin_layout Standard
-Jona - 
-\begin_inset Quotes eld
+\begin_layout Plain Layout
+Economic model of deferred tipping
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Economic-model-of"
+
 \end_inset
 
-Can I use this in my class?
-\begin_inset Quotes erd
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Facebook Beta group
+In order to visualize these kinds of situations, I wrote a software simulation
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://meemoo.org/blog/2012-01-24-friction-free-post-scarcity-creative-economies/"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
-Economic model illustrated with Meemoo
+\end_inset
+
+ using the Meemoo framework (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Economic-model-of"
+
+\end_inset
+
+).
+ To make this simulation I wrote a Meemoo module that, when a number is
+ input, sends the percentages defined to each output and keeps the rest.
+ 
 \end_layout
 
 \begin_layout Standard
-http://meemoo.org/blog/2012-01-24-friction-free-post-scarcity-creative-economies/
+This application shows a nice feature of modular design.
+ Each node in the graph is the same HTML module with different settings.
+ This illustrates the object-oriented nature of the Meemoo framework, with
+ modules that are like individual computers in a network that communicate
+ with messages 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 1"
+key "Kay1996"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+By making this model interactive software people can experiment with the
+ system and see how tips to different nodes in the system get distributed.
+ The model is built on Meemoo, so it is inherently hackable.
+ If somebody disagrees with the model -- or has a similar idea -- they could
+ fork the project and modify how it works to illustrate their point.
+ This is an exciting possibility.
 \end_layout
 
 \begin_layout Section
@@ -4519,7 +4791,7 @@ name "sec:Live-animation-visuals"
 
 \begin_layout Standard
 I contacted Ze Frank to ask if he would be a project advisor.
- He said that he was intrigued by the idea, but gave me this warning:
+ He said that he was intrigued by the project, and gave me this warning:
 \end_layout
 
 \begin_layout Quote
@@ -4539,9 +4811,9 @@ Creating 'possibility spaces' can be exciting for a number of reasons...
 
 \begin_layout Standard
 Partially thanks to this provocation, I decided to find a venue to perform
- with Meemoo in a live setting.
- I was invited to do visuals for a Zodiak's Side-Step dance festival club
- night.
+ with Meemoo.
+ I was invited to VJ at Zodiak's Side-Step dance festival club night on
+ February 11, 2011.
  I used the gig as an opportunity to push Meemoo development and pressure-test
  the live-animation features.
  
@@ -4551,9 +4823,67 @@ Partially thanks to this provocation, I decided to find a venue to perform
 For the gig I made some special modules for creating a "world" into which
  I could insert animated sprites.
  On the software development side, I am happy that I decided to make two
- modules (Controller and World) share the same Backbone model.
+ modules (Controller and World, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Meemoo-World-interface"
+
+\end_inset
+
+) share the same Backbone model.
  Each module has its own view of the same model, so the data passed through
  the wire will be the same on both sides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/meemoo-world-control.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Meemoo World
+\begin_inset Quotes erd
+\end_inset
+
+ interface for controlling animation
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Meemoo-World-interface"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4567,16 +4897,34 @@ As the party started and I was still coding furiously, adding features to
 
 \begin_layout Standard
 We used clay and construction paper (and some glitter) as the basic building
- blocks of the visuals.
+ blocks of the visuals (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Claymation-fun-with"
+
+\end_inset
+
+).
  I am attracted to the textures and imperfections that come from using materials
  like these.
  Using the taptempo module, I synced the sprites' animation to the music's
  beat.
  It was fun to build these tiny animations and then throw them onto the
- screens around the dance floor.
+ screens around the dance floor (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Two-screens"
+
+\end_inset
+
+).
  
+\end_layout
+
+\begin_layout Standard
+Juho Santasalo documented the performance
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Video documentation of evening: 
@@ -4591,7 +4939,7 @@ target "http://youtu.be/T_tCyYGLWKM"
 
 \end_inset
 
-
+ in high definition video with a DSLR camera.
 \end_layout
 
 \begin_layout Standard
@@ -4601,8 +4949,15 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/meemoo-at-zodiak.png
+	filename images/meemoo-at-zodiak-2.png
+	lyxscale 20
 	width 100text%
 
 \end_inset
@@ -4614,7 +4969,153 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Meemoo at Zodiak
+Claymation fun with art supplies
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Claymation-fun-with"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/meemoo-at-zodiak-1.png
+	lyxscale 20
+	width 50text%
+	BoundingBox 200bp 0bp 1520bp 1080bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Glitter lips
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/meemoo-at-zodiak-3.png
+	lyxscale 20
+	width 50text%
+	BoundingBox 300bp 0bp 1620bp 1080bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Live wiring
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/meemoo-at-zodiak-4.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Two screens
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Two-screens"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Meemoo at Zodiak, photos by Juho Santasalo
 \end_layout
 
 \end_inset
@@ -4628,7 +5129,8 @@ Meemoo at Zodiak
 \end_layout
 
 \begin_layout Standard
-There are lots of improvements and ideas that came up in the evening:
+There are a few improvements and ideas that became clear in the course of
+ the evening:
 \end_layout
 
 \begin_layout Itemize
@@ -4655,6 +5157,8 @@ Flocking: I only had time to implement the tiled animation.
 \begin_layout Itemize
 UX tweaks: Confirm dialog on every delete got annoying when juggling around
  modules.
+ It would be better if there were an undo function, so delete could work
+ without confirmation.
  A method for un/replugging wires that is more direct would make it quicker
  and easier to change the workings of the app.
  

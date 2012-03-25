@@ -24,10 +24,10 @@
 			<false/>
 			<key>editorFrame</key>
 			<array>
-				<real>129.50003051757812</real>
-				<real>183.63525390625</real>
-				<real>740.21990966796875</real>
-				<real>1078.2198486328125</real>
+				<real>80.7100830078125</real>
+				<real>112.7427978515625</real>
+				<real>438</real>
+				<real>638</real>
 			</array>
 			<key>editorTextStorage</key>
 			<string>{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
@@ -41,7 +41,7 @@
 
 \fs16  
 \fs20 \
-Media                                   Master of Arts, New Media\
+Media                                  Master of Arts, New Media\
 \
 \
 
@@ -52,12 +52,12 @@ Meemoo: Hackable Web App Framework\
 
 \fs12  
 \fs20 \
-Project                                 English            55\
+Project and performance                English             55\
 \
 \
 Meemoo is a modular web app framework with a focus on design for hackability. People can create and modify new media tools with this framework in a web browser without writing code. Tools are made by wiring together pre-built modules. Modules are created with web standards.\
 \
-This thesis consists of Meemoo[1], which is a framework for hackable web apps. It is also a live animation performance[2] with an app created with the Meemoo framework.\
+This thesis consists of a software project and a performance. The software project is Meemoo[1], which is a framework for hackable web apps. The performance consisted of live animation[2] made with the Meemoo framework.\
 \
 The main objectives of this project:\
 \
@@ -65,21 +65,19 @@ The main objectives of this project:\
   technologies. \
 \
 \'95 The framework should afford non-coders the ability to modify creative \
-  web apps by configuring wires that represent how modules communicate.  \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
-\cf0 \
-\'95 \cf0 There should be a simple syntax to define the inputs and outputs of a \
-  module. \
+  web apps by configuring wires that represent how modules communicate.\
 \
 \'95 Apps created with the framework should have source code that is easy \
   to read and share.\
 \
-\'95 Web developers should be able create new modules for the framework \
-  using a simple standard.\
+\'95 Web coders should be able to extend the framework by creating modules   \
+  using web standards. There should be a simple syntax to define the \
+  inputs and outputs of a module. \
 \
 \
-\cf0 [1] Project page, demos, and source code: http://meemoo.org/\cf0 \
-\cf0 [2] Performance documentation: http://youtu.be/T_tCyYGLWKM\cf0 \
+---\
+[1] Project page, demos, and source code: http://meemoo.org/\
+[2] Performance documentation: http://youtu.be/T_tCyYGLWKM\
 \
 \
 \
@@ -94,7 +92,7 @@ The main objectives of this project:\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-\fs34  
+\fs34 \cf0  
 \fs20 \
 web, html, javascript, framework, design, modular, hackable, open source}</string>
 			<key>fillColor</key>

@@ -163,8 +163,10 @@ myName}
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /Users/forrestoliphant/Sites/meemoo/thesis-design-for-hackability/images/rand-grail-visual-dataflow.jpg
-	width 6cm
+	filename /Users/forrestoliphant/Sites/meemoo/thesis-design-for-hackability/images/meemoo-illo-by-jyri-pieniniemi.pdf
+	width 10cm
+	BoundingBox 250bp 150bp 560bp 525bp
+	clip
 
 \end_inset
 
@@ -173,7 +175,7 @@ myName}
 \end_inset
 
  
-\begin_inset VSpace medskip
+\begin_inset VSpace vfill
 \end_inset
 
 

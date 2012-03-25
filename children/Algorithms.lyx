@@ -255,6 +255,19 @@ name "sub:Defining-Inputs-and"
 \end_layout
 
 \begin_layout Standard
+This is an example Meemoo module with two functions: squaring numbers and
+ reversing text.
+ The inputs and outputs would be defined in Javascript like this:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \noindent
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
@@ -284,10 +297,48 @@ name "sub:Meemoo-App-Source"
 \end_layout
 
 \begin_layout Standard
+This is the source code of the app shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Meemoo-screen-shot"
+
+\end_inset
+
+.
+ There are two modules (nodes) connected with one wire (edge).
+ A webcam module sends an image to a painting module
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Try this app: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://meemoo.org/iframework/#/example/camdoodle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \noindent
 
 \family typewriter
-\size small
+\size footnotesize
 \begin_inset CommandInset include
 LatexCommand lstinputlisting
 filename "meemoo-graph-source.js"

@@ -1,13 +1,13 @@
 {
   "info": {
-    "title": "cam to gif",
+    "title": "cam doodle",
     "author": "forresto",
-    "description": "webcam to animated gif"
+    "description": "webcam to doodle"
   },
   "nodes": [
     {
       "src": "http://forresto.github.com/meemoo-camcanvas/onionskin.html",
-      "x": 128, "y": 45, "z": 0, "w": 343, "h": 280,
+      "x": 127, "y": 57, "z": 0, "w": 342, "h": 283,
       "state": {
         "quality": 75,
         "width": 320,
@@ -16,11 +16,10 @@
       "id": 1
     },
     {
-      "src": "http://forresto.github.com/meemoo-canvas2gif/canvas2gif.html",
-      "x": 622, "y": 43, "z": 0, "w": 357, "h": 285,
+      "src": "http://forresto.github.com/meemoo-paint/paint.html",
+      "x": 634, "y": 53, "z": 0, "w": 377, "h": 342,
       "state": {
-        "delay": 200,
-        "quality": 75
+        "linewidth": 2
       },
       "id": 2
     }

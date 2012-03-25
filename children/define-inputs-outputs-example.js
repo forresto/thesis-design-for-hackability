@@ -2,7 +2,7 @@ Meemoo
   .setInfo({ 
     title: "example", 
     author: "forresto", 
-    description: "this script defines a Meemoo module" 
+    description: "this script makes a Meemoo module" 
   })   
   .addInputs({ 
     square: { 
