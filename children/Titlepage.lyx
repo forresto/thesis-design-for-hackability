@@ -158,20 +158,10 @@ myName}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
 \begin_inset Graphics
 	filename /Users/forrestoliphant/Sites/meemoo/thesis-design-for-hackability/images/meemoo-illo-by-jyri-pieniniemi.pdf
 	width 10cm
-	BoundingBox 250bp 150bp 560bp 525bp
-	clip
 
-\end_inset
-
-
-\begin_inset Newline newline
 \end_inset
 
  
@@ -183,77 +173,11 @@ myName}
 
 \begin_layout Standard
 \align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mySubtitle
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-myDepartment
-\end_layout
-
-\end_inset
-
-
+Media Lab Helsinki
 \begin_inset Newline newline
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-myFaculty
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-myUni
-\end_layout
-
-\end_inset
-
-
+Aalto University
 \begin_inset Newline newline
 \end_inset
 

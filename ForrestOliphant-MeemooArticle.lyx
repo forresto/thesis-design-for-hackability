@@ -156,7 +156,7 @@ I wanted to combine my programming experience with visual programming and
 \end_layout
 
 \begin_layout Standard
-The main objectives of this project:
+The main objectives of this project: 
 \end_layout
 
 \begin_layout Itemize
@@ -171,18 +171,15 @@ The framework should afford non-coders the ability to modify creative web
 \end_layout
 
 \begin_layout Itemize
-There should be a simple syntax to define the inputs and outputs of a module.
+Apps created with the framework should have source code that is easy to
+ read and share.
  
 \end_layout
 
 \begin_layout Itemize
-Apps created with the framework should have source code that is easy to
- read and share.
-\end_layout
-
-\begin_layout Itemize
-Web developers should be able create new modules for the framework using
- a simple standard.
+Web coders should be able to extend the framework by creating modules using
+ web standards.
+ There should be a simple syntax to define the inputs and outputs of a module.
 \end_layout
 
 \begin_layout Standard
@@ -288,9 +285,10 @@ I did not start making Meemoo as an educational tool, but I have since been
 \end_layout
 
 \begin_layout Standard
-This thesis consists of Meemoo
+This thesis consists of a software project and a performance.
+ The software project is Meemoo
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Demos and source code available at 
@@ -306,9 +304,9 @@ target "http://meemoo.org/"
 \end_inset
 
 , which is a framework for hackable web apps.
- It is also a performance
+ The performance consisted of live animation
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Live animation performance documentation: 
@@ -323,7 +321,7 @@ target "http://youtu.be/T_tCyYGLWKM"
 
 \end_inset
 
- with an app created with the Meemoo framework for live animation (see 
+ made with the Meemoo framework (see 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "sec:Live-animation-visuals"
@@ -368,7 +366,7 @@ users
 \emph on
 developers
 \emph default
-, as I would like to blur this distinction with the project.
+, as I would like to make this distinction moot in the context of the project.
 \end_layout
 
 \begin_layout Section
@@ -1497,15 +1495,25 @@ Although creating a script with code blocks is more like snapping Legos
  together than writing code, it is still coding.
  The shape of the control structures is a direct metaphor to how code syntax
  works, and more visually obvious than brackets or indentation.
- I imagine those logical structures are transferable to textual coding.
+ I imagine these logical structures are transferable to textual coding.
 \end_layout
 
 \begin_layout Standard
 I feel a little cheated to not have had Scratch when I was a child.
+ 
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+I wish Scratch had been around when I was younger!
+\end_layout
+
+\end_inset
+
  I would have loved it.
- I extended my graphing calculator scripting experiments from high school
- with an absurdist animation of a cat running into walls and reciting Fibonacci
- numbers
+ To test it I extended my graphing calculator scripting experiments from
+ high school with an absurdist animation of a cat running into walls and
+ reciting Fibonacci numbers
 \begin_inset Foot
 status collapsed
 
@@ -2174,7 +2182,28 @@ name "fig:The-Maker's-Bill"
 
 \end_inset
 
+ The Open Hardware and Maker movements value hackability in electronics
+ and other physical objects.
+ The Maker's Bill of Rights (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-Maker's-Bill"
+
+\end_inset
+
+) from Make Magazine lists several commandments for makers and hardware
+ manufactures to consider.
  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jalopy2005"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Wrap figure
 lines 0
 placement O
@@ -2184,7 +2213,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/icon-screw-open-me.png
+	filename images/screw-by-jyri-pieniniemi.png
 	width 3.5cm
 
 \end_inset
@@ -2213,29 +2242,7 @@ name "fig:Open-me!"
 
 \end_inset
 
- The Open Hardware and Maker movements value hackability in electronics
- and other physical objects.
- The Maker's Bill of Rights (Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:The-Maker's-Bill"
-
-\end_inset
-
-) from Make Magazine lists several commandments for makers and hardware
- manufactures to consider.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "jalopy2005"
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Although Meemoo is a software project, it is designed to follow the spirit
+ Although Meemoo is a software project, it is designed to follow the spirit
  of this document.
  The 
 \begin_inset Quotes eld
@@ -2262,7 +2269,8 @@ open
 \end_inset
 
  and view the source.
- The wiring view is analogous to an electronics schematic.
+ The wiring view is analogous to an electronics schematic, and is always
+ included by design of the framework.
  
 \end_layout
 
@@ -4604,13 +4612,18 @@ Apps
 \begin_layout Standard
 A large part of the development of Meemoo was creating apps with the framework.
  While creating apps, I think of processes that would have general purpose
- as a module.
- Adding these modules to the library gives more ideas about the kinds of
- apps that can be made.
+ coded as a module.
+ Coding modules helps me think about features that could be added to the
+ framework.
+ Adding to the module library gives more ideas about the kinds of apps that
+ can be made.
 \end_layout
 
 \begin_layout Standard
-I have also made two larger projects 
+I have also made and written about two larger projects, an economic model
+ and a VJ system.
+ These two projects are quite different from each other.
+ They show the breadth of possibility with this open framework.
 \end_layout
 
 \begin_layout Section
@@ -4619,8 +4632,35 @@ Example apps
 
 \begin_layout Standard
 To show the different kinds of apps that can be created with Meemoo I have
- been making a collection of demonstration apps.
+ been making a collection of demonstration apps
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Example apps: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://meemoo.org/iframework/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ So far I have focused simple GIF animation tools, as this makes it easy
+ to engage creatively with the framework.
+ I made a module for instant uploading to Imgur, a popular image sharing
+ website.
+ The default image description provides a link back to the Meemoo app that
+ created it.
  
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section
@@ -5194,9 +5234,10 @@ Future Development
 \end_layout
 
 \begin_layout Standard
-This idea is bigger than one developer and one master's thesis.
- I plan on finding resources to continue work, and to bring more people
- with varied talents into the project.
+I believe that this idea is bigger than one developer and one master's thesis
+ project.
+ I hope to find resources to continue work, and to bring more people with
+ varied talents into the project.
 \end_layout
 
 \begin_layout Section
@@ -5205,17 +5246,122 @@ Community for sharing apps
 
 \begin_layout Standard
 Meemoo was designed for sharing.
- I would like to take elements of an App Store, Reddit, and Github to create
- a community for sharing and forking Meemoo apps.
- Because of the small amount of source code to describe a Meemoo app (Algorithm
- 
+ I would like to take inspiration from elements of Reddit, Github, and an
+ App Store to create a community for sharing and forking Meemoo apps.
+ It will combine the community curation and subcommunities of Reddit, open
+ source forking of Github, and the ease of use of an App Store (but the
+ apps are hackable).
+ Because of the small amount of source code to describe a Meemoo app it
+ will be relatively easy to make such a community scalable.
+\end_layout
+
+\begin_layout Standard
+I imagine that a common point of entry to the community will be to see an
+ image created with a Meemoo app.
+ From there, you will be able to use the app that created the image.
+ If you hack the app and want to save it, you can to your browser without
+ signing in.
+ If you want to save it publicly, you can sign up for the site at that point.
+ I would like to make a design where the first priority is to enable creative
+ hacking.
+ Roping the person into signing up for the community would be a secondary
+ priority.
+ (Figure 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "alg:Meemoo-App-Source"
+LatexCommand vref
+reference "fig:Flow-for-saving"
 
 \end_inset
 
-) it will be relatively easy to make the community scalable.
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/flow-community-save.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Flow for saving a new or forked app
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Flow-for-saving"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+An interesting possibility for a successful community would be tracing how
+ modules and apps are forked through time.
+ Each module can be considered the software manifestation of an idea, or
+ meme.
+ Ideas are recombinations of other ideas, and apps are recombinations of
+ modules.
+ That would make the source code of an app analogous to its DNA.
+ The tree of forking and modification would be a direct map of the meme
+ evolution of such a community.
+\end_layout
+
+\begin_layout Subsection
+Socket communication
+\end_layout
+
+\begin_layout Standard
+A potential feature of a community is socket communication.
+ This would allow people to send data from an app on one device to a different
+ app on another device.
+ For example, I could send an image from a small camera app on my phone
+ to a stop-motion animation app on my laptop.
+ This will allow devices with more limited capabilities to work in tandem
+ with other devices.
+\end_layout
+
+\begin_layout Standard
+It could also be used to collaboratively edit Meemoo apps.
+ This could have interesting uses in the classroom.
+ For example, some students could be coding a game while other students
+ are making the artwork for the game, with both groups able to see and test
+ the results in real-time.
+ This kind of collaboration happens in the online Scratch community, but
+ due to software limitations it isn't real-time 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 65"
+key "Resnick2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -5246,8 +5392,8 @@ Gestures for zooming and panning are common in touchscreen interaction,
 \begin_layout Standard
 Meemoo runs in browser, and in general JavaScript is slower than native
  code.
- However, as the power of these devices increases, the kinds of apps that
- can be built with Meemoo will likewise increase.
+ However, as the power of devices and browsers increase, the kinds of apps
+ that can be built with Meemoo will likewise increase.
 \end_layout
 
 \begin_layout Section
@@ -5434,24 +5580,6 @@ On touchscreens, coding with drag-and-drop codeblocks has the potential
 \end_layout
 
 \begin_layout Section
-Socket communication
-\end_layout
-
-\begin_layout Standard
-UX and server for sending arbitrary data from Meemoo on my smartphone to
- my laptop to your tablet (and back).
-\end_layout
-
-\begin_layout Section
-Meemoo hardware
-\end_layout
-
-\begin_layout Standard
-Cheap computers (Raspberry Pi) + knobs + sliders + physical patch cables
- for performative interaction.
-\end_layout
-
-\begin_layout Section
 Twenty Apps to Build With Meemoo
 \end_layout
 
@@ -5522,7 +5650,22 @@ Beatbox control of video mashup, where different sounds in the microphone
 status collapsed
 
 \begin_layout Plain Layout
-Idea from sCrAmBlEd?HaCkZ! by Sven König: http://youtu.be/eRlhKaxcKpA
+Idea from 
+\begin_inset Quotes eld
+\end_inset
+
+sCrAmBlEd?HaCkZ!
+\begin_inset Quotes erd
+\end_inset
+
+ by Sven König: 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://youtu.be/eRlhKaxcKpA"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5536,6 +5679,35 @@ Hourglass module that flows virtual sand to other modules through the wires
 
 \begin_layout Enumerate
 Animated comic builder
+\end_layout
+
+\begin_layout Enumerate
+Radiation data module to visualization and sonification modules
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Idea from 
+\begin_inset Quotes eld
+\end_inset
+
+Radiation Always
+\begin_inset Quotes erd
+\end_inset
+
+ by Ben Dromey: 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://vimeo.com/22329613"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -5559,7 +5731,11 @@ Side-scrolling game with placeholder image sprites that can be replaced
 \end_layout
 
 \begin_layout Enumerate
-...
+SVG pattern generator for laser-cut papercraft 3D model
+\end_layout
+
+\begin_layout Enumerate
+Processing.js sound visualizer
 \end_layout
 
 \begin_layout Enumerate
@@ -5609,12 +5785,13 @@ A Scratch game that draws different scenery based on location data
 \end_layout
 
 \begin_layout Standard
-These examples show how -- in the same way that the Internet encompasses
- all past and future media -- a hackable creative coding environment that
- runs in the browser can encompass and interact with all other creative
- coding environments.
+The last four examples show how -- in the same way that computers and the
+ Internet encompass all past and future media -- a hackable creative coding
+ environment that runs in the browser can encompass and interact with all
+ other creative coding environments.
  The educational philosophies that developed these systems can be hacked,
- updated, and incorporated into new educational goals.
+ updated, and incorporated into new educational goals on the radically open
+ web.
 \end_layout
 
 \begin_layout Chapter
@@ -5622,7 +5799,88 @@ Conclusions
 \end_layout
 
 \begin_layout Standard
-Call to action.
+The performance portion of this thesis was an enjoyable learning experience.
+ I would like to take what I learned and build on this concept of live animation.
+ It would be great to collaborate with musicians and build a story with
+ the visuals.
+ 
+\end_layout
+
+\begin_layout Standard
+The main objective for the project was to 
+\begin_inset Quotes eld
+\end_inset
+
+design a modular dataflow visual programming framework using web technologies.
+\begin_inset Quotes erd
+\end_inset
+
+ I think that this concept has been proven.
+ 
+\end_layout
+
+\begin_layout Standard
+I will examine the secondary objectives:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+The framework should afford non-coders the ability to modify creative web
+ apps by configuring wires that represent how modules communicate.
+\begin_inset Quotes erd
+\end_inset
+
+ According to usability testing, the framework does not yet satisfy this
+ requirement for novices.
+ I think that an interactive introduction to the Meemoo would help soften
+ its learning curve.
+ There are are also usability issues to address in the near future.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Apps created with the framework should have source code that is easy to
+ read and share.
+\begin_inset Quotes erd
+\end_inset
+
+ This has been accomplished by designing the source code to be as simple
+ as possible.
+ The complexity of each module's code is abstracted to its web address,
+ so the URL the and the state of the module are all that is needed.
+ The source code format of Meemoo apps is both concise and open-ended.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Web coders should be able to extend the framework by creating modules using
+ web standards.
+ There should be a simple syntax to define the inputs and outputs of a module.
+\begin_inset Quotes erd
+\end_inset
+
+ I am the only person that has written Meemoo modules, so I don't yet have
+ any feedback on this point.
+ I designed the library to be simple to use for people with JavaScript experienc
+e.
+\end_layout
+
+\begin_layout Standard
+I have made a framework that I look forward to building on for a long time.
+ It is open-ended enough that the possibilities are limitless.
+ The capabilities will increase with the capabilities of web browsers.
+\end_layout
+
+\begin_layout Standard
+I have been designing this framework for myself, but with an eye to a potential
+ future where others might find it valuable.
+ I'm interested to see what other people might build with it.
 \end_layout
 
 \end_body
