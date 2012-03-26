@@ -130,6 +130,7 @@ filename "children/Titlepage.lyx"
 \begin_inset External
 	template PDFPages
 	filename children/abstract-form.pdf
+	lyxscale 50
 
 \end_inset
 
@@ -178,19 +179,6 @@ filename "children/Acknowledgements.lyx"
 
 \begin_layout Standard
 \begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 

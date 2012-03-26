@@ -97,18 +97,17 @@ I hope to be a mad scientist.
 
 \begin_layout Standard
 \align block
-Teemu Leinonen found a position for me to do this research in LeGroup (Learning
- Environments research group).
- He and Anna Keune piled my desk with classics, giving me a jumpstart on
- getting perspective on my project within the context of people with similar
- goals through the years.
+Thanks to Teemu Leinonen for finding a position for me to do this research
+ in LeGroup, and for reading drafts.
+ He and Anna Keune piled my desk with literature, giving me a jumpstart
+ on getting perspective on my project within the context of people with
+ similar goals through the years.
  
 \end_layout
 
 \begin_layout Standard
-Thanks to Katian Witchger, Nuno Correia, Teemu Leinonen, and Tarmo Toikkanen
- for reading early versions of this manuscript and pointing me in interesting
- directions.
+Thanks to Katian Witchger, Nuno Correia, and Tarmo Toikkanen for reading
+ early versions of this manuscript and pointing me in interesting directions.
 \end_layout
 
 \begin_layout Standard
@@ -121,7 +120,7 @@ Jyri Pieniniemi is my Meemoo brain trust.
 \begin_layout Standard
 \align block
 Thanks to Pascal Finette, Diane Bisgeier, and Mozilla WebFWD for taking
- on me and my project, showing me how the überwebgeeks do it in Silicon
+ on me and my project, showing me how the überwebgeeks throw down in Silicon
  Valley, and fighting for the open web.
  
 \end_layout
@@ -135,8 +134,13 @@ My family and extended family around the John C.
 \begin_layout Standard
 \align block
 Aino, here's to a lifetime of tech and textile collaborations.
- Ilo, who came into the world in the middle of this writing process, thanks
- so much for the snuggle breaks.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+Tiniest but not least is Ilo, who came into the world a month ago.
+ Thanks so much for the snuggle breaks.
  You inspire me.
 \end_layout
 
@@ -152,7 +156,7 @@ Aino, here's to a lifetime of tech and textile collaborations.
 \begin_inset Graphics
 	filename /Users/forrestoliphant/Sites/meemoo/thesis-design-for-hackability/images/ilo-helping-me-write.jpg
 	lyxscale 10
-	width 80text%
+	width 90text%
 
 \end_inset
 
