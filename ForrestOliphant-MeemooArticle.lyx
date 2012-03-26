@@ -741,8 +741,8 @@ target "http://www.adobe.com/products/photoshop-touch.html"
  for iOS are tools for music creation and image manipulation designed for
  touchscreens.
  These tools are each highly designed for one kind of media creation.
- These apps don't afford any scripting-based hackability, and can only communica
-te with services that the designers have chosen.
+ These apps do not afford any scripting-based hackability, and can only
+ communicate with services that the designers have chosen.
 \end_layout
 
 \begin_layout Standard
@@ -1043,18 +1043,6 @@ key "Reas2007"
 
 \begin_layout Subsection
 Direct manipulation
-\end_layout
-
-\begin_layout Standard
-Ben Shneiderman outlines 
-\end_layout
-
-\begin_layout Standard
-...
-\end_layout
-
-\begin_layout Standard
-...
 \end_layout
 
 \begin_layout Standard
@@ -1500,19 +1488,13 @@ Although creating a script with code blocks is more like snapping Legos
 
 \begin_layout Standard
 I feel a little cheated to not have had Scratch when I was a child.
+ I would have loved it.
  
-\begin_inset Marginal
-status collapsed
-
-\begin_layout Plain Layout
-I wish Scratch had been around when I was younger!
 \end_layout
 
-\end_inset
-
- I would have loved it.
- To test it I extended my graphing calculator scripting experiments from
- high school with an absurdist animation of a cat running into walls and
+\begin_layout Standard
+To test it I extended a graphing calculator scripting experiment from high
+ school by making an absurdist animation of a cat running into walls and
  reciting Fibonacci numbers
 \begin_inset Foot
 status collapsed
@@ -2069,7 +2051,7 @@ JQuery seeks to abstract away browser differences, making it much easier
 \end_layout
 
 \begin_layout Standard
-I can confidently say that without these libraries Meemoo wouldn't exist.
+I can confidently say that without these libraries Meemoo would not exist.
  My programming knowledge is built on viewing and using source code made
  by other people.
  Meemoo is built on libraries made by other people.
@@ -2253,7 +2235,7 @@ case
 \end_inset
 
  or app view is easy to open and see the wiring view.
- I'm planning on using a screw icon (Figure 
+ I am planning on using a screw icon (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Open-me!"
@@ -2318,7 +2300,7 @@ target "http://www.jquery4u.com/plugins/"
 \end_inset
 
  claims to have over 2000 listed in their directory.
- The only JQuery plugin that I'm using for Meemoo is the official JqueryUI
+ The only JQuery plugin that I am using for Meemoo is the official JqueryUI
 \begin_inset Foot
 status collapsed
 
@@ -4331,46 +4313,6 @@ reference "fig:Usability-testing"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/user-testing.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Usability testing
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Usability-testing"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 I tried to talk as little as possible, to see how people would interact
  with the framework if they had found it on their own.
  I reminded each person that I was not testing them, we were testing the
@@ -4390,7 +4332,7 @@ I left the design of the modules plain to focus on the design of the framework.
  This seemed to make some people miss the buttons within the modules, and
  start by moving wires around.
  I will need to make the inside of the modules the primary focus so that
- people don't unwire the apps before they understand what they do.
+ people do not unwire the apps before they understand what they do.
 \end_layout
 
 \begin_layout Itemize
@@ -4485,6 +4427,46 @@ reference "fig:Tool-tip"
 ).
  The browser takes too long to show this information.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/user-testing.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Usability testing
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Usability-testing"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4631,8 +4613,8 @@ Example apps
 \end_layout
 
 \begin_layout Standard
-To show the different kinds of apps that can be created with Meemoo I have
- been making a collection of demonstration apps
+To demonstrate the different kinds of apps that can be created with Meemoo
+ I have been making a collection of example apps
 \begin_inset Foot
 status collapsed
 
@@ -4650,8 +4632,8 @@ target "http://meemoo.org/iframework/"
 \end_inset
 
 .
- So far I have focused simple GIF animation tools, as this makes it easy
- to engage creatively with the framework.
+ So far I have focused simple animation tools, as this makes it easy to
+ engage creatively with the framework.
  I made a module for instant uploading to Imgur, a popular image sharing
  website.
  The default image description provides a link back to the Meemoo app that
@@ -4660,7 +4642,149 @@ target "http://meemoo.org/iframework/"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/example-gif.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Webcam to GIF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/example-doodle.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Add a module: webcam to paint to GIF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/example-rotoscope.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Change a wire: webcam to tracing to GIF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example apps
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Example-apps"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The three examples in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Example-apps"
+
+\end_inset
+
+ illustrate the hackable nature of Meemoo apps.
+ The first app is the simplest stop-motion app, from camera to GIF.
+ The second modified the first by adding a paint module to allow doodling
+ on each frame of animation.
+ The third modifies the second by moving one wire, thus making it a rotoscoping
+ app.
 \end_layout
 
 \begin_layout Section
@@ -5353,7 +5477,7 @@ It could also be used to collaboratively edit Meemoo apps.
  are making the artwork for the game, with both groups able to see and test
  the results in real-time.
  This kind of collaboration happens in the online Scratch community, but
- due to software limitations it isn't real-time 
+ due to software limitations it is not real-time 
 \begin_inset CommandInset citation
 LatexCommand citep
 after "p. 65"
@@ -5624,7 +5748,15 @@ Text-to-song generator
 status collapsed
 
 \begin_layout Plain Layout
-Speech synthesizer in 1K of JavaScript by Mathieu 'p01' Henri: 
+Speech synthesizer in 1K of JavaScript by Mathieu 
+\begin_inset Quotes eld
+\end_inset
+
+p01
+\begin_inset Quotes erd
+\end_inset
+
+ Henri: 
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.p01.org/releases/JS1K_Speech_Synthesizer/JS1K_Speech_Synthesizer.htm"
@@ -5865,8 +5997,8 @@ Web coders should be able to extend the framework by creating modules using
 \begin_inset Quotes erd
 \end_inset
 
- I am the only person that has written Meemoo modules, so I don't yet have
- any feedback on this point.
+ I am the only person that has written Meemoo modules, so I do not yet have
+ any feedback from other people on this point.
  I designed the library to be simple to use for people with JavaScript experienc
 e.
 \end_layout
@@ -5880,7 +6012,7 @@ I have made a framework that I look forward to building on for a long time.
 \begin_layout Standard
 I have been designing this framework for myself, but with an eye to a potential
  future where others might find it valuable.
- I'm interested to see what other people might build with it.
+ I am interested to see what other people might build with it.
 \end_layout
 
 \end_body
