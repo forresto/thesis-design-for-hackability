@@ -3,6 +3,7 @@
 \begin_document
 \begin_header
 \textclass classicthesis
+\options footinclude=false
 \use_default_options true
 \maintain_unincluded_children false
 \language american
@@ -111,7 +112,7 @@ pagenumbering{roman}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "children/Titlepage.lyx"
+filename "Fo-Titlepage.lyx"
 
 \end_inset
 
@@ -170,7 +171,7 @@ setcounter{page}{1}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "children/Acknowledgements.lyx"
+filename "Fo-Acknowledgements.lyx"
 
 \end_inset
 
@@ -228,7 +229,7 @@ pagenumbering{arabic}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "ForrestOliphant-MeemooArticle.lyx"
+filename "Fo-MainContent.lyx"
 
 \end_inset
 
@@ -248,9 +249,6 @@ status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-pagestyle{plain}
 \end_layout
 
 \end_inset
@@ -279,11 +277,162 @@ Appendix
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "children/Algorithms.lyx"
+filename "Fo-Appendix.lyx"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{addmargin}[-10mm]{-30mm}  %%%%% symmetrical margins
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+large
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Graphics
+	filename images/meemoo-illo-by-jyri-pieniniemi-shut.png
+	lyxscale 10
+	width 16cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset CommandInset href
+LatexCommand href
+target "http://meemoo.org/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+Copyright © 2012 Forrest Oliphant
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+Some Rights Reserved
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Quotes eld
+\end_inset
+
+Meemoo: Hackable Web App Framework
+\begin_inset Quotes erd
+\end_inset
+
+ by Forrest Oliphant is licensed under a Creative Commons Attribution-NonCommerc
+ial 3.0 License.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset CommandInset href
+LatexCommand href
+target "http://creativecommons.org/licenses/by-nc/3.0/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{addmargin}
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \end_body
